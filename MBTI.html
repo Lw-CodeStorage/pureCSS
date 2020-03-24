@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/system/MBTI.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div class="discContainer">
+        <div class="uk-card  uk-card-default uk-card-hover uk-card-body">
+            <h2 class="uk-card-title uk-heading-divider">DISC行為科學測評問卷</h2>
+            <progress id="js-progressbar" class="uk-progress" value="0" max="1"></progress>
+            <p class="uk-heading-divider">第一頁</p>
+            <div class="page0">
+                <div class="discImage"></div>
+                <h2 class="uk-card-title uk-heading-divider">隱私權保護政策</h2>
+                <div class="privateDescription">
+                    <p>1. 本表單所取得的個人測評資料，僅提供作為評量受評量者職業興趣之用，不作任何其他目之使用。</p>
+                    <p>2. 會員於本網站所儲存的測評資料，本網站將採取適當的保護措施，以防止未經授權的資料存取，並確保會員資料的安全。</p>
+                    <p>3. 本網站致力於保護會員資料的安全，並維護會員的網路隱私權益，如會員對我們的隱私政策有任何疑問，歡迎與我們聯絡。</p>
+                    <p>4. 為了便利會員使用本網站功能，本網站使用cookie技術來提供適性服務；如果會員不接受cookie技術，可經由瀏覽器設定取消此項功能。</p>
+                    <p>5. 我們將視會員之需要，不定期修改隱私保護政策，以落實保障會員隱私之立意。如會員對我們的隱私政策有任何建議，歡迎與我們聯絡。</p>
+                </div>
+                <p id="checkbox_li" class="agree">
+                    <input name="checkbox" type="checkbox" value="同意" id="checkbox"> <label for="checkbox">同意</label>
+                </p>
+                <h2 class="uk-card-title uk-heading-divider">說明</h2>
+                <p class="discDescriptionContent">
+                    請在以下各方格內的一組四個詞句中，選出一項最像你的描述，勾選於"M"欄，並在"L"欄內選出一項最「不像」你的。請勿選擇你理想中的自己或別人認為的你。憑直覺回答，盡量不要深思或分析。也許你很難選出適當的答案，但盡量在每一組中做出選擇。請記住一組四個詞句中，只能選出一項勾選於M欄內，一項在L欄內。
+                </p>
+            </div>
+            <div class="page1">
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">1. 在平常宴會中，你通常比較習慣於</p>
+                    <input type="radio" name="location" value="E"> A. 和很多人交談、聊天，包括陌生人<br>
+                    <input type="radio" name="location" value="I"> B. 只和少數認識的人交談<br>
+
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">2. 你比較</p>
+                    <input type="radio" name="location" value="S"> A. 喜歡實際的事物多於運用想像力<br>
+                    <input type="radio" name="location" value="N"> B. 重視以想像來探索事物的意義<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle"> 3. 你認為何者說得對?</p>
+                    <input type="radio" name="location" value="S"> A. 太多用想像容易忽略實際的問題<br>
+                    <input type="radio" name="location" value="N"> B. 若是生活總是按常規做事會很無聊<br>
+
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">4. 下列何者影響你較深</p>
+                    <input type="radio" name="location" value="T"> A. 做事講求原則<br>
+                    <input type="radio" name="location" value="F"> B. 情感、情緒及人際關係<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">5. 你比較容易</p>
+                    <input type="radio" name="location" value="T"> A. 能以理說服別人，令人無話可說<br>
+                    <input type="radio" name="location" value="F"> B. 容易被別人感動<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">6. 在工作上，你通常喜歡</p>
+                    <input type="radio" name="location" value="J"> A. 有一定的期限和適當的進度表<br>
+                    <input type="radio" name="location" value="P"> B. 沒有一定的時間表，只要能完成即可<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">7. 在選擇事物時，你比較多是</p>
+                    <input type="radio" name="location" value="J"> A. 常小心謹慎的加以選擇<br>
+                    <input type="radio" name="location" value="P"> B. 容易衝動或隨當時的心情而定<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">8. 在一般宴會中，你大多是</p>
+                    <input type="radio" name="location" value="E"> A. 很晚才走，而且精神總是不錯<br>
+                    <input type="radio" name="location" value="I"> B. 較早走，不然會感到精神愈來愈疲倦<br>
+                </div>
+                <!-- <div class="MBTIquation">
+                    <p class="MBTIquationTitle">9. 本題不答</p>
+                    <input type="radio" name="location" value="Taipei"> <br>
+                    <input type="radio" name="location" value="Taoyuan"> <br>
+                </div> -->
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">10. 下列何者比較引起你的興趣</p>
+                    <input type="radio" name="location" value="S"> A. 實際上已經發生的事<br>
+                    <input type="radio" name="location" value="N"> B. 將來有可能發生的事<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">11. 在評斷別人時，你較容易受到何者的支配？</p>
+                    <input type="radio" name="location" value="T"> A. 原則問題：注重規定與原則<br>
+                    <input type="radio" name="location" value="F"> B. 處境問題：看情形辦事可因人而異<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">12. 你處事為人比較傾向</p>
+                    <input type="radio" name="location" value="T"> A. 客觀、重視目標、對事不對人<br>
+                    <input type="radio" name="location" value="F"> B. 重視人際關係、對人不對事<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">13. 你通常比較</p>
+                    <input type="radio" name="location" value="J"> A. 嚴守時間、較準時<br>
+                    <input type="radio" name="location" value="P"> B. 對時間較隨性<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">14. 何者令你較覺得苦惱?</p>
+                    <input type="radio" name="location" value="J"> A. 事情沒照進度做完<br>
+                    <input type="radio" name="location" value="P"> B. 工作都完成，沒有新任務<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">15. 在你參加的社團中，你比較</p>
+                    <input type="radio" name="location" value="E"> A. 屬於消息靈通人士<br>
+                    <input type="radio" name="location" value="I"> B. 不太知道團體發生了什麼事情<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">16. 對於日常事情的處理，你通常喜歡</p>
+                    <input type="radio" name="location" value="S"> A. 按照一般人的做法去做<br>
+                    <input type="radio" name="location" value="N"> B. 按照自己創新的方法去做<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">17. 你若寫文章，你會</p>
+                    <input type="radio" name="location" value="S"> A. 平鋪直敘，按事實說、不拐彎抹角<br>
+                    <input type="radio" name="location" value="N"> B. 用隱喻或比喻的寫法來加強表達<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">18. 何者比較像你</p>
+                    <input type="radio" name="location" value="T"> A. 思想前後一致<br>
+                    <input type="radio" name="location" value="F"> B. 和諧的人際關係<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">19. 你平時比較喜歡?</p>
+                    <input type="radio" name="location" value="T"> A. 邏輯推理(做理性分析)<br>
+                    <input type="radio" name="location" value="F"> B. 價值判斷(做感性選擇) <br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">20. 你喜歡讓事情</p>
+                    <input type="radio" name="location" value="J"> A. 塵埃落定，確定下來<br>
+                    <input type="radio" name="location" value="P"> B. 保持彈性，不一定向左或向右<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">21. 你認為你比較</p>
+                    <input type="radio" name="location" value="J"> A. 認真而有決斷力<br>
+                    <input type="radio" name="location" value="P"> B. 隨遇而安<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">22. 在打電話前你</p>
+                    <input type="radio" name="location" value="E"> A. 很少先計劃要說些什麼<br>
+                    <input type="radio" name="location" value="I"> B. 常事先準備並想想要說些什麼<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">23. 「一件事實」</p>
+                    <input type="radio" name="location" value="S"> A. 就是說明事實本身而已<br>
+                    <input type="radio" name="location" value="N"> B. 事實背後可以代表某些意義<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">24. 「憑空想像」是</p>
+                    <input type="radio" name="location" value="S"> A. 有點令人苦惱<br>
+                    <input type="radio" name="location" value="N"> B. 相當引人入勝的<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">25. 你通常是個</p>
+                    <input type="radio" name="location" value="T"> A. 很少先計劃要說些什麼<br>
+                    <input type="radio" name="location" value="F"> B. 十分古道熱腸、富感情的人<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">26. 那一種情況你認為比較糟糕</p>
+                    <input type="radio" name="location" value="T"> A. 不公平、不公義、不公正<br>
+                    <input type="radio" name="location" value="F"> B. 殘酷無情、無憐憫心、無同情心<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">27. 你通常希望事情的進行路線</p>
+                    <input type="radio" name="location" value="J"> A. 經過仔細的挑選、計劃、選擇<br>
+                    <input type="radio" name="location" value="P"> B. 大概方向即可，不經意的、碰運氣的<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">28. 你覺得何者是好</p>
+                    <input type="radio" name="location" value="J"> A. 購物時能買到所要的東西<br>
+                    <input type="radio" name="location" value="P"> B. 購物時東西多樣化，有較多的選擇性<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">29. 你在人群裡面</p>
+                    <input type="radio" name="location" value="E"> A. 主動找人談話、主動帶出話題<br>
+                    <input type="radio" name="location" value="I"> B. 常安靜、等著別人找你談話<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">30. 你覺得一般人所謂的常講「常識」</p>
+                    <input type="radio" name="location" value="S"> A. 通常是蠻可靠，不太會有問題的<br>
+                    <input type="radio" name="location" value="N"> B. 通常是有待商榷，值得懷疑<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">31. 你覺得自己通常是</p>
+                    <input type="radio" name="location" value="S"> A. 很少先計劃要說些什麼<br>
+                    <input type="radio" name="location" value="N"> B. 常事先準備並想想要說些什麼<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">32. 在決定某件事情時你比較</p>
+                    <input type="radio" name="location" value="T"> A. 很少先計劃要說些什麼<br>
+                    <input type="radio" name="location" value="F"> B. 常事先準備並想想要說些什麼<br>
+                </div>
+                <!-- <div class="MBTIquation">
+                    <p class="MBTIquationTitle">33. 本題不答</p>
+                    <input type="radio" name="location" value="T"> <br>
+                    <input type="radio" name="location" value="F"> <br>
+                </div> -->
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">34. 你認為你自己傾向於</p>
+                    <input type="radio" name="location" value="J"> A. 具有組織能力，辦事有方法<br>
+                    <input type="radio" name="location" value="P"> B. 有調適力及讓別人願意去做事的能力<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">35. 下列何者會令你比較舒服</p>
+                    <input type="radio" name="location" value="J"> A. 事情相當明確、有脈絡可循<br>
+                    <input type="radio" name="location" value="P"> B. 事情有彈性、有確商餘地<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">36. 與別人新的、非例常性的交往令你</p>
+                    <input type="radio" name="location" value="E"> A. 感到喜歡、興奮而精神充沛<br>
+                    <input type="radio" name="location" value="I"> B. 感到勉強、傷神<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">37. 你通常是個</p>
+                    <input type="radio" name="location" value="S"> A. 比較注重實際事務的人<br>
+                    <input type="radio" name="location" value="N"> B. 注意到別人怎麼看一個問題<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">38. 你通常比較</p>
+                    <input type="radio" name="location" value="S"> A. 注意到別人能做什麼<br>
+                    <input type="radio" name="location" value="N"> B. 注意到別人怎麼看一個問題<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">39. 何者令你比較滿意</p>
+                    <input type="radio" name="location" value="T"> A. 把整件事情討論得十分徹底<br>
+                    <input type="radio" name="location" value="F"> B. 討論一件事，能達成共識、彼此和氣<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">40. 你比較受到什麼的支配</p>
+                    <input type="radio" name="location" value="T"> A. 頭腦、理性<br>
+                    <input type="radio" name="location" value="F"> B. 心腸、感覺<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">41. 你比較傾向怎樣的工作</p>
+                    <input type="radio" name="location" value="J"> A. 有明確的計劃、有清楚的契約<br>
+                    <input type="radio" name="location" value="P"> B. 沒有明確規定、自然的、非正式的<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">42. 你通常會期望事情</p>
+                    <input type="radio" name="location" value="J"> A. 有秩序的，有規律地出現<br>
+                    <input type="radio" name="location" value="P"> B. 隨機、隨性、自由的出現<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">43. 你認為</p>
+                    <input type="radio" name="location" value="E"> A. 朋友可以很多，但交往不必太深入<br>
+                    <input type="radio" name="location" value="I"> B. 朋友不必多，但交往要較為深入<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">44. 你行事為人比較容易</p>
+                    <input type="radio" name="location" value="S"> A. 實事求是，就事論事<br>
+                    <input type="radio" name="location" value="N"> B. 太快下結論，常與事實有出入<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">45. 何者你較有興趣</p>
+                    <input type="radio" name="location" value="S"> A. 生產及銷售<br>
+                    <input type="radio" name="location" value="N"> B. 研究與設計<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">46. 你認為何者是較大的恭維</p>
+                    <input type="radio" name="location" value="T"> A. 你是個非常有邏輯的人<br>
+                    <input type="radio" name="location" value="F"> B. 你是個非常富感情的人<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">47. 你覺得自己較屬於那種特質</p>
+                    <input type="radio" name="location" value="T"> A. 毅然決然、意志堅定不搖動<br>
+                    <input type="radio" name="location" value="F"> B. 全心投入、忠實的、充滿熱忱的<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">48. 你通常比較傾向於</p>
+                    <input type="radio" name="location" value="J"> A. 確定、不隨意變更的陳述	<br>
+                    <input type="radio" name="location" value="P"> B. 提案式的、暫時性、準備性的陳述<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">49. 你覺得何時比較舒坦</p>
+                    <input type="radio" name="location" value="J"> A. 做出正確的判斷<br>
+                    <input type="radio" name="location" value="P"> B. 讓事情自然發展<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">50. 你通常和陌生人</p>
+                    <input type="radio" name="location" value="E"> A. 很容易交談，可以談很多<br>
+                    <input type="radio" name="location" value="I"> B. 可以交談，但只說一些話<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">51. 你比較相信你自己的</p>
+                    <input type="radio" name="location" value="S"> A. 經驗<br>
+                    <input type="radio" name="location" value="N"> B. 預感、第六感<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">52. 你覺得自己</p>
+                    <input type="radio" name="location" value="S"> A. 較為實際、實用甚於發明創造<br>
+                    <input type="radio" name="location" value="N"> B. 有發明創造的能力甚於實際應用<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">53. 那一種人比較令你欣賞</p>
+                    <input type="radio" name="location" value="T"> A. 有清楚理智的人<br>
+                    <input type="radio" name="location" value="F"> B. 具有強烈情感的人<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">54. 你比較傾向於</p>
+                    <input type="radio" name="location" value="T"> A. 公平、公益<br>
+                    <input type="radio" name="location" value="F"> B. 富有同情心<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">55. 何者比較像你</p>
+                    <input type="radio" name="location" value="J"> A. 確定事情都有安排與計劃<br>
+                    <input type="radio" name="location" value="P"> B. 隨性、船到橋頭自然直<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">56. 在人際關係上大多數的事應該</p>
+                    <input type="radio" name="location" value="J"> A. 再協商或談判<br>
+                    <input type="radio" name="location" value="P"> B. 不經意，隨遇而安<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">57. 電話鈴響的時候你通常</p>
+                    <input type="radio" name="location" value="E"> A. 第一個趕著去接<br>
+                    <input type="radio" name="location" value="I"> B. 希望別人會去接<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">58. 你認為自己那一點較值得讚賞</p>
+                    <input type="radio" name="location" value="S"> A. 具有強烈的現實感<br>
+                    <input type="radio" name="location" value="N"> B. 具有強烈的想像力<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">59. 你比較容易</p>
+                    <input type="radio" name="location" value="S"> A. 注意基本、重要的、原理的事<br>
+                    <input type="radio" name="location" value="N"> B. 注意寓意、弦外之音<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">60. 下列何者是較大的錯誤</p>
+                    <input type="radio" name="location" value="T"> A. 太熱情、動感情、多情<br>
+                    <input type="radio" name="location" value="F"> B. 太注重客觀<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">61. 你認為自己基本上是一個</p>
+                    <input type="radio" name="location" value="T"> A. 硬的，冷靜、腳踏實地的人<br>
+                    <input type="radio" name="location" value="F"> B. 軟的， 性情溫和的人<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">62. 你比較喜歡那一種情境</p>
+                    <input type="radio" name="location" value="J"> A. 有計畫、有進度表的<br>
+                    <input type="radio" name="location" value="P"> B. 沒有計劃的、沒有進度表的<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">63. 你是個比較將事情</p>
+                    <input type="radio" name="location" value="J"> A. 例行化多於幻想、遐想、奇想<br>
+                    <input type="radio" name="location" value="P"> B. 幻想、遐想、奇想多於按例行事<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">64. 你覺得你比較</p>
+                    <input type="radio" name="location" value="E"> A. 較放得開，讓人容易接近<br>
+                    <input type="radio" name="location" value="I"> B. 較保守，與人有些微隔閡或保持距離<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">65. 在寫作時你比較喜愛</p>
+                    <input type="radio" name="location" value="S"> A. 詳實不誇張，實實在在描寫<br>
+                    <input type="radio" name="location" value="N"> B. 用比喻、象徵性、修飾的描寫<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">66. 何者對你而言較容易</p>
+                    <input type="radio" name="location" value="S"> A. 運用別人的長處<br>
+                    <input type="radio" name="location" value="N"> B. 認同別人的想法<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">67. 你比較</p>
+                    <input type="radio" name="location" value="T"> A. 有清楚的理智<br>
+                    <input type="radio" name="location" value="F"> B. 有同情心<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">68. 你認為何者是較大的過錯</p>
+                    <input type="radio" name="location" value="T"> A. 不分青紅皂白、善惡不分<br>
+                    <input type="radio" name="location" value="F"> B. 愛批評別人<br>
+                </div>
+                <!-- <div class="MBTIquation">
+                        <p class="MBTIquationTitle">69. 此題跳過</p>
+                        <input type="radio" name="location" value="Taipei"> <br>
+                        <input type="radio" name="location" value="Taoyuan"> <br>
+                    </div> -->
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">70. 你是個比較</p>
+                    <input type="radio" name="location" value="J"> A. 深思熟慮的人<br>
+                    <input type="radio" name="location" value="P"> B. 讓事情自生自發的人<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">71. 你通常</p>
+                    <input type="radio" name="location" value="E"> A. 容易表達自己的感受<br>
+                    <input type="radio" name="location" value="I"> B. 隱藏自己的感受於內心<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">72. 你比較傾向於</p>
+                    <input type="radio" name="location" value="S"> A. 遵照傳統做法<br>
+                    <input type="radio" name="location" value="N"> B. 容易在傳統外考慮創新<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">73. 何者比較引起你的關心</p>
+                    <input type="radio" name="location" value="S"> A. 細節，見樹不見林<br>
+                    <input type="radio" name="location" value="N"> B. 整體，見林不見樹<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">74. 與同事人際關係搞不好時你</p>
+                    <input type="radio" name="location" value="T"> A. 仍能堅守崗位做自己該做的事<br>
+                    <input type="radio" name="location" value="F"> B. 很難專心工作<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">75. 何者你感到較容易</p>
+                    <input type="radio" name="location" value="T"> A. 做出一個合理的評估<br>
+                    <input type="radio" name="location" value="F"> B. 講出一句適當的安慰話<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">76. 何者比較像你</p>
+                    <input type="radio" name="location" value="J"> A. 集結資料，做出決定<br>
+                    <input type="radio" name="location" value="P"> B. 難做決定，因不知何時資料才算足夠<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">77. 你比較傾向</p>
+                    <input type="radio" name="location" value="J"> A. 用固定、穩定的方法做工作<br>
+                    <input type="radio" name="location" value="P"> B. 用新鮮、創新的方法去做<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">78. 你比較花多一點的時間去注意</p>
+                    <input type="radio" name="location" value="E"> A. 外面的人與事<br>
+                    <input type="radio" name="location" value="I"> B. 自己內在的思想與計劃<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">79. 你認為自己常會注意到</p>
+                    <input type="radio" name="location" value="S"> A. 桌上的盆栽或牆上新掛的圖畫<br>
+                    <input type="radio" name="location" value="N"> B. 對周圍環境的變化不會太敏感<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">80. 你比較是屬於</p>
+                    <input type="radio" name="location" value="S"> A. 穩定，可以長期信賴的人<br>
+                    <input type="radio" name="location" value="N"> B. 倚靠靈感行事的人<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">81. 你需要做抉擇時，下列何者優先</p>
+                    <input type="radio" name="location" value="T"> A. 忠實、忠誠、值得信賴<br>
+                    <input type="radio" name="location" value="F"> B. 通融、機敏、圓滑，避免衝突<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">82. 你的說話屬於</p>
+                    <input type="radio" name="location" value="T"> A. 簡潔、扼要、簡明、概括的<br>
+                    <input type="radio" name="location" value="F"> B. 善表達、表現、富表情的<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">83. 你的生活較接近</p>
+                    <input type="radio" name="location" value="J"> A. 凡物皆放定位與保持秩序<br>
+                    <input type="radio" name="location" value="P"> B. 隨意擺設，不拘小節<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">84. 何者對你而言較適應</p>
+                    <input type="radio" name="location" value="J"> A. 做工作計劃、按照計劃行事<br>
+                    <input type="radio" name="location" value="P"> B. 水來土掩、兵來將擋<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">85. 你覺得自己比較傾向</p>
+                    <input type="radio" name="location" value="E"> A. 外向一些，注意力不會集中太久<br>
+                    <input type="radio" name="location" value="I"> B. 內向一些，能長時間只做一件事<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">86. 你容易</p>
+                    <input type="radio" name="location" value="S"> A. 對太複雜的事情感到挫折<br>
+                    <input type="radio" name="location" value="N"> B. 容易看出字與記號的意義<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">87. 下列的動作你很容易做得不錯</p>
+                    <input type="radio" name="location" value="S"> A. 對於查對、檢查之類的事情<br>
+                    <input type="radio" name="location" value="N"> B. 容易想出解決事情的方法<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">88. 何者對你而言是真的</p>
+                    <input type="radio" name="location" value="T"> A. 容易被缺乏邏輯的話激怒<br>
+                    <input type="radio" name="location" value="F"> B. 對人充滿熱忱<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">89. 哪一項比較像你</p>
+                    <input type="radio" name="location" value="T"> A. 不太注意自己的言行是否使人感到不舒服<br>
+                    <input type="radio" name="location" value="F"> B. 喜歡人甚於事情或點子<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">90. 你喜歡</p>
+                    <input type="radio" name="location" value="J"> A. 規定得很清楚的工作<br>
+                    <input type="radio" name="location" value="P"> B. 把不喜歡的事情盡量拖延<br>
+                </div>
+                <div class="MBTIquation">
+                    <p class="MBTIquationTitle">91. 你善於處理</p>
+                    <input type="radio" name="location" value="J"> A. 按照計畫的事情<br>
+                    <input type="radio" name="location" value="P"> B. 突然發生、未預期的事情或意外<br>
+                </div>
+
+    
+
+
+            </div>
+            <div class="uk-text-right">
+                <spen id="spinner_container"></spen>
+                <button class="uk-button uk-button-primary uk-button-small " id="Previous" name="Previous" type="button"
+                    style="display: none;">上一頁</button>
+                <button class="uk-button uk-button-primary uk-button-small uk-width-auto " id="Next" name="Next"
+                    type="button" style="">下一頁</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

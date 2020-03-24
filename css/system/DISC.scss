@@ -1,0 +1,82 @@
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+@media (min-width: 300px) {
+  .discContainer {
+    max-width: 1280px;
+    margin: auto;
+    .uk-card {
+      padding: 40px;
+    }
+    .page0 {
+      display: none;
+      .discImage {
+        width: 100%;
+        height: 375px;
+        background-image: url("https://picsum.photos/id/56/2880/1920");
+        background-size: cover;
+        background-position: center;
+      }
+      .privateDescription {
+      }
+
+      .discDescriptionContent {
+        padding-right: 150px;
+      }
+      .uk-card-title {
+        margin-top: 10px;
+      }
+    }
+    .page1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .Q{
+   
+        padding: 10px;
+        border-bottom: 2px solid lightslategray;
+      
+        max-width: 300px;
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      .Qrow1{
+        .ML {
+          display: flex;
+          justify-content: flex-start;
+          span:nth-child(1){
+            padding-left: 42px;
+          }
+          span:nth-child(2){
+            padding-left: 30px;
+          }
+        }
+      }
+      .Qrow2 {
+        display: flex;
+        .qcolumn1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+         width: 25px;
+          p {
+            margin: 0px;
+          }
+        }
+        .qcolumn2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          .ckb {
+            display: flex;
+            justify-content: space-around;
+          }
+          width: 80px;
+          padding: 0px 5px 0px 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,786 @@
+$cardColor: rgb(46, 48, 55); //卡片顏色
+$inversColor: rgb(57, 58, 66); //反白顏色
+$inputColor: #494b54; //input顏色
+$backgroundColor: rgb(37, 38, 46);
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+//排序顏色基數
+table.dataTable.display tbody tr.odd > .sorting_1,
+table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+  border-top: 2px solid #363840;
+  border-bottom: 2px solid #2e3037;
+  border-right: 2px solid #2e3037;
+  background: #383a43 !important;
+}
+//排序顏色偶數
+table.dataTable.display tbody tr.even > .sorting_1,
+table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+  border-top: 2px solid #363840;
+  border-bottom: 2px solid #2e3037;
+  border-right: 2px solid #2e3037;
+  background: #2e3037 !important;
+}
+//hover顏色
+#table_id_example10 tr:hover td {
+  background-color: #454545 !important;
+}
+//右下角資料頁顏色
+#table_id_example10_paginate {
+  padding: 0px;
+  margin-top: 10px;
+  border: 2px solid #494b54;
+  border-radius: 5px;
+  a {
+    color: rgb(129, 137, 145) !important;
+  }
+  .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+//原生響應不會字不會換行，需加上下面ＣＳＳ ****
+.child {
+  white-space: normal !important;
+  background: $cardColor;
+  li {
+    display: flex;
+    padding: 0px !important;
+    .dtr-title {
+      min-width: 100px !important;
+      padding-right: 5px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid $inputColor;
+    }
+    .dtr-data {
+      padding: 20px;
+    }
+  }
+}
+//為table新增自定義按鈕
+.selfTablecContainer{
+  display: flex;
+  justify-content: space-around;
+
+  .selfTableFunctionEdit{
+    outline: none;
+    padding: 5px;
+    color:white !important;
+    background: transparent !important;
+    border: 0px; 
+    border-radius: 5px;
+    }
+  .selfTableFunctionTrash{
+    outline: none;
+    padding: 5px;
+    color:white !important;
+    background: transparent !important;
+    border-radius: 5px;
+    border: 0px; 
+  
+  }
+  .selfTableFunctionEdit:active{
+    color: steelblue;
+  }
+  .selfTableFunctionTrash:active{
+    color: red;
+  }
+}
+.selfTableFunctionTHContainer{
+  display: flex;
+  justify-content: space-around;
+  .selfTableFunctionAdd{
+    // background: $inversColor !important;
+     color: white !important;
+     background:  $cardColor !important;
+     border: 0px;
+     outline: none;
+   }
+}
+
+
+@media (min-width: 767px) {
+  body {
+    font-family: apple !important;
+  }
+  .systemBodyContainer {
+    .fixedDiv {
+      display: flex;
+      letter-spacing: 2px;
+      padding: 20px;
+      background: #313131;
+      border-radius: 7px;
+      position: fixed;
+      top: 80px;
+      right: 20px;
+    }
+    position: relative;
+    background: $backgroundColor;
+    color: white;
+    padding: 40px 40px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    .resumeContainer {
+      display: flex;
+      justify-content: center;
+
+      max-width: 1400px;
+      margin: auto;
+      .userImageContainer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        position: sticky; //單側黏住flex css
+        align-self: flex-start; //單側黏住flex css
+        top: 20px; //單側黏住flex css
+        .userimage {
+          background-image: url(https://picsum.photos/id/40/300/300);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border: 5px solid $cardColor;
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+        }
+        .userimageText {
+          p {
+            margin: 0px;
+          }
+          padding: 10px 40px 10px 40px;
+          background: $cardColor;
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+        .userimageText:hover {
+          cursor: pointer;
+          background: $inversColor;
+        }
+        .userDataUpdate {
+          p {
+            margin: 0px;
+          }
+          padding: 10px 40px 10px 40px;
+          background: $cardColor;
+          margin-top: 40px;
+        }
+        .userDataUpdate:hover {
+          cursor: pointer;
+          background: $inversColor;
+        }
+      }
+      .Info {
+        margin: 10px;
+        width: 900px;
+
+        .baseInfoTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+        }
+        .baseInfoContent {
+          background: $cardColor;
+          padding: 20px 30px 20px 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          letter-spacing: 2px;
+
+          .baseInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid $inversColor;
+          }
+          .baseInfoContentRowTextArea {
+            display: flex;
+            flex-direction: column;
+            textarea {
+              padding: 20px;
+              margin-top: 20px;
+              outline: none;
+              background: $inputColor;
+              color: white;
+              border: 0px;
+              resize: none;
+              overflow: auto;
+            }
+          }
+          select {
+            text-align: center;
+            text-align-last: center; /*兼容chrome*/
+            color: white;
+            outline: none;
+            max-width: 300px;
+            background: $cardColor;
+            border-color: $inversColor;
+          }
+          option {
+            text-align: center;
+          }
+          input {
+            color: white;
+            background: $cardColor;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: right;
+          }
+          .nameInput {
+            max-width: 300px;
+          }
+        }
+
+        .organizationTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP {
+            margin: 0;
+          }
+        }
+        .organizationContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+        }
+
+        .keyPositionTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP {
+            margin: 0;
+          }
+        }
+        .keyPositionContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          /*自定義datatable*/
+
+          color: rgb(129, 137, 145);
+          input,
+          select {
+            color: #949ba2;
+            border: none;
+            box-shadow: none;
+            transition: none;
+            background-color: #494b54;
+            font-size: 1rem;
+          }
+          label,
+          .dataTables_info {
+            color: white;
+          }
+          table {
+            border: 0px;
+            border-collapse: collapse;
+          }
+          thead {
+            th {
+              border: 0px;
+            }
+          }
+
+          .odd {
+            td {
+              border-top: 2px solid rgb(54, 56, 64);
+              border-bottom: 2px solid rgb(46, 48, 55);
+              border-right: 2px solid rgb(46, 48, 55);
+              background: rgb(56, 58, 67);
+            }
+          }
+
+          .even {
+            td {
+              border-top: 2px solid rgb(54, 56, 64);
+              border-bottom: 2px solid rgb(46, 48, 55);
+              border-right: 2px solid rgb(46, 48, 55);
+              background: rgb(46, 48, 55);
+            }
+          }
+        }
+
+        .businessTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP {
+            margin: 0;
+          }
+        }
+        .businessContent {
+          //排序顏色基數
+          table.dataTable.display tbody tr.odd > .sorting_1,
+          table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+            border-top: 2px solid #363840;
+            border-bottom: 2px solid #2e3037;
+            border-right: 2px solid #2e3037;
+            background: #383a43 !important;
+          }
+          //排序顏色偶數
+          table.dataTable.display tbody tr.even > .sorting_1,
+          table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+            border-top: 2px solid #363840;
+            border-bottom: 2px solid #2e3037;
+            border-right: 2px solid #2e3037;
+            background: #2e3037 !important;
+          }
+          //hover顏色
+          #table_id_example11 tr:hover td {
+            background-color: #454545 !important;
+          }
+          //右下角資料頁顏色
+          #table_id_example11_paginate {
+            padding: 0px;
+            margin-top: 10px;
+            border: 2px solid #494b54;
+            border-radius: 5px;
+            a {
+              color: rgb(129, 137, 145) !important;
+            }
+            .paginate_button:hover {
+              outline: none;
+              border: 0px;
+              background: rgba(0, 0, 0, 0.1);
+            }
+            .paginate_button.current {
+              outline: none;
+              border: 0px;
+              background: rgba(0, 0, 0, 0.3);
+            }
+            .paginate_button:active {
+              outline: none;
+              border: 0px;
+              background: rgba(0, 0, 0, 0.1);
+            }
+          }
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          /*自定義datatable*/
+
+          color: rgb(129, 137, 145);
+          input,
+          select {
+            color: #949ba2;
+            border: none;
+            box-shadow: none;
+            transition: none;
+            background-color: #494b54;
+            font-size: 1rem;
+          }
+          label,
+          .dataTables_info {
+            color: white;
+          }
+          table {
+            border: 0px;
+            border-collapse: collapse;
+          }
+          thead {
+            th {
+              border: 0px;
+            }
+          }
+
+          .odd {
+            td {
+              border-top: 2px solid rgb(54, 56, 64);
+              border-bottom: 2px solid rgb(46, 48, 55);
+              border-right: 2px solid rgb(46, 48, 55);
+              background: rgb(56, 58, 67);
+            }
+          }
+
+          .even {
+            td {
+              border-top: 2px solid rgb(54, 56, 64);
+              border-bottom: 2px solid rgb(46, 48, 55);
+              border-right: 2px solid rgb(46, 48, 55);
+              background: rgb(46, 48, 55);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 415px) {
+  body {
+    font-family: apple !important;
+  }
+  .systemBodyContainer {
+    .fixedDiv {
+      font-size: 14px;
+      display: flex;
+      letter-spacing: 2px;
+      padding: 10px;
+      background: #313131;
+      border-radius: 7px;
+      position: fixed;
+      top: 50px;
+      right: 10px;
+      z-index: 888;
+    }
+    position: relative;
+    background: $backgroundColor;
+    color: white;
+    padding: 40px 10px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    .resumeContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1400px;
+      margin: auto;
+      .userImageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        .userimage {
+          background-image: url(https://picsum.photos/id/40/300/300);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border: 5px solid $cardColor;
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+        }
+        .phoneButtonGp{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding: 10px;
+          margin-top: 10px;
+          background:$inversColor ;
+          border-radius: 5px;
+          position: fixed;       //單側黏住flex css
+          bottom: 0px;              //單側黏住flex css
+          z-index: 888;
+        }
+        .userimageText {
+          p {
+            margin: 0px;
+          }
+          padding: 10px 40px 10px 40px;
+          background: $cardColor;
+          border-radius: 10px;
+        }
+        .userimageText:active {
+          background: $inversColor;
+        }
+        .userDataUpdate {
+          p {
+            margin: 0px;
+          }
+          border-radius: 10px;
+          padding: 10px 40px 10px 40px;
+          background: $cardColor;
+          margin-top: 10px;
+        }
+        .userDataUpdate:active {
+          background: $inversColor;
+        }
+      }
+      .Info {
+        margin: 10px;
+        width: 900px;
+
+        .baseInfoTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+        }
+        .baseInfoContent {
+          background: $cardColor;
+          padding: 20px 20px 20px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          letter-spacing: 2px;
+
+          .baseInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid $inversColor;
+            font-size: 14px;
+          }
+          .baseInfoContentRowTextArea {
+            display: flex;
+            flex-direction: column;
+            textarea {
+              padding: 20px;
+              margin-top: 20px;
+              outline: none;
+              background: $inputColor;
+              color: white;
+              border: 0px;
+              resize: none;
+              overflow: auto;
+            }
+          }
+          select {
+            text-align: center;
+            text-align-last: center; /*兼容chrome*/
+            color: white;
+            outline: none;
+            max-width: 300px;
+            background: $cardColor;
+            border-color: $inversColor;
+          }
+          option {
+            text-align: center;
+          }
+          input {
+            color: white;
+            background: $cardColor;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: right;
+          }
+          .nameInput {
+            max-width: 300px;
+          }
+        }
+
+        .organizationTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP {
+            margin: 0;
+          }
+        }
+        .organizationContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+        }
+
+        .keyPositionTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP {
+            margin: 0;
+          }
+        }
+        .keyPositionContent {
+          padding: 20px 10px 20px 10px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          font-size: 14px;
+          /*自定義datatable*/
+          color: rgb(129, 137, 145);
+          input,
+          select {
+            color: #949ba2;
+            border: none;
+            box-shadow: none;
+            transition: none;
+            background-color: #494b54;
+            font-size: 1rem;
+          }
+          label,
+          .dataTables_info {
+            color: white;
+          }
+          table {
+            border: 0px;
+            border-collapse: collapse;
+          }
+          thead {
+            th {
+              border: 0px;
+            }
+          }
+
+          .odd {
+            td {
+              border-top: 2px solid rgb(54, 56, 64);
+              border-bottom: 2px solid rgb(46, 48, 55);
+              border-right: 2px solid rgb(46, 48, 55);
+              background: rgb(56, 58, 67);
+            }
+          }
+
+          .even {
+            td {
+              border-top: 2px solid rgb(54, 56, 64);
+              border-bottom: 2px solid rgb(46, 48, 55);
+              border-right: 2px solid rgb(46, 48, 55);
+              background: rgb(46, 48, 55);
+            }
+          }
+        }
+
+        .businessTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP {
+            margin: 0;
+          }
+        }
+        .businessContent {
+          font-size: 14px;
+          //排序顏色基數
+          table.dataTable.display tbody tr.odd > .sorting_1,
+          table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+            border-top: 2px solid #363840;
+            border-bottom: 2px solid #2e3037;
+            border-right: 2px solid #2e3037;
+            background: #383a43 !important;
+          }
+          //排序顏色偶數
+          table.dataTable.display tbody tr.even > .sorting_1,
+          table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+            border-top: 2px solid #363840;
+            border-bottom: 2px solid #2e3037;
+            border-right: 2px solid #2e3037;
+            background: #2e3037 !important;
+          }
+          //hover顏色
+          #table_id_example11 tr:hover td {
+            background-color: #454545 !important;
+          }
+          //右下角資料頁顏色
+          #table_id_example11_paginate {
+            padding: 0px;
+            margin-top: 10px;
+            border: 2px solid #494b54;
+            border-radius: 5px;
+            a {
+              color: rgb(129, 137, 145) !important;
+            }
+            .paginate_button:hover {
+              outline: none;
+              border: 0px;
+              background: rgba(0, 0, 0, 0.1);
+            }
+            .paginate_button.current {
+              outline: none;
+              border: 0px;
+              background: rgba(0, 0, 0, 0.3);
+            }
+            .paginate_button:active {
+              outline: none;
+              border: 0px;
+              background: rgba(0, 0, 0, 0.1);
+            }
+          }
+          padding: 20px 10px 20px 10px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          /*自定義datatable*/
+
+          color: rgb(129, 137, 145);
+          input,
+          select {
+            color: #949ba2;
+            border: none;
+            box-shadow: none;
+            transition: none;
+            background-color: #494b54;
+            font-size: 1rem;
+          }
+          label,
+          .dataTables_info {
+            color: white;
+          }
+          table {
+            border: 0px;
+            border-collapse: collapse;
+          }
+          thead {
+            th {
+              border: 0px;
+            }
+          }
+
+          .odd {
+            td {
+              border-top: 2px solid rgb(54, 56, 64);
+              border-bottom: 2px solid rgb(46, 48, 55);
+              border-right: 2px solid rgb(46, 48, 55);
+              background: rgb(56, 58, 67);
+            }
+          }
+
+          .even {
+            td {
+              border-top: 2px solid rgb(54, 56, 64);
+              border-bottom: 2px solid rgb(46, 48, 55);
+              border-right: 2px solid rgb(46, 48, 55);
+              background: rgb(46, 48, 55);
+            }
+          }
+        }
+      }
+    }
+  }
+}

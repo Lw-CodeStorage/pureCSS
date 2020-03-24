@@ -1,0 +1,1301 @@
+@font-face {
+  font-family: apple;
+  src: url(/GenJyuuGothic-Monospace-Normal.ttf);
+}
+html,
+body {
+  font-family: apple !important;
+  scroll-behavior: smooth; //滾動滑順用於錨點
+  margin: 0px;
+}
+p {
+  margin: 0px;
+}
+
+.frame {
+  .selfMenu {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 50px;
+    z-index: 999;
+    animation: menuMove 1.5s ease;
+    @keyframes menuMove {
+      0% {
+        top: -40px;
+      }
+      100% {
+        top: 50px;
+      }
+    }
+
+    .logo {
+      width: 400px;
+      margin-left: 120px;
+      background-image: url("/行銷頁面/img/Logo.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .selfMenuItem {
+      display: flex;
+      margin-right: 83px;
+      justify-content: space-around;
+      align-content: space-between;
+      width: 480px;
+      align-items: baseline;
+      font-size: 20px;
+    }
+  }
+
+  .Container1 {
+    max-width: 1920px;
+    height: 100vh;
+    margin: auto;
+
+    .i1 {
+      padding: 35px 40px 40px 40px;
+      margin: auto;
+      position: relative;
+      top: calc(50vh - 330px);
+      .bp1 {
+        max-width: 1920px;
+        width: 100%;
+        height: 660px;
+        position: absolute;
+        background-image: url(/行銷頁面/img/bp1.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 0;
+        animation: bp1-movement 0.8s ease 0s;
+
+        @keyframes bp1-movement {
+          0% {
+            top: 400px;
+            opacity: 0;
+          }
+          50% {
+            opacity: 0.2;
+          }
+          100% {
+            top: 35px;
+            opacity: 1;
+          }
+        }
+      }
+      .bp2 {
+        max-width: 1920px;
+        width: 100%;
+        height: 660px;
+        position: absolute;
+        background-image: url(/行銷頁面/img/bp2.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 0;
+        animation: bp2-movement 1.2s ease 0s;
+        @keyframes bp2-movement {
+          0% {
+            top: 400px;
+            opacity: 0;
+          }
+          100% {
+            top: 35px;
+            opacity: 1;
+          }
+        }
+      }
+      .bp3 {
+        max-width: 1920px;
+        width: 100%;
+        height: 660px;
+        position: absolute;
+        background-image: url(/行銷頁面/img/bp3.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 0;
+        animation: bp3-movement 1.4s ease 0s;
+        @keyframes bp3-movement {
+          0% {
+            top: 400px;
+            opacity: 0.2;
+          }
+          100% {
+            top: 35px;
+            opacity: 1;
+          }
+        }
+      }
+      .bp4-pointer {
+        width: 200px;
+        height: 200px;
+        background: red;
+        background: transparent;
+        position: absolute;
+        left: 44%;
+        top: 250px;
+        cursor: pointer;
+        z-index: 99999;
+      }
+      .bp4 {
+        max-width: 1920px;
+        width: 100%;
+        height: 660px;
+        position: absolute;
+        background-image: url(/行銷頁面/img/bp4.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: 0;
+        z-index: 9;
+        animation: bp4-movement 1.8s ease 0s;
+        @keyframes bp4-movement {
+          0% {
+            top: 400px;
+            opacity: 0;
+          }
+          100% {
+            top: 35px;
+            opacity: 1;
+          }
+        }
+      }
+
+      //hover後 同層其他元素變化
+      .bp4-pointer:hover + .bp4 {
+        transition: 0.6s;
+        transform: scale(1.2);
+      }
+      .bp4-pointer:not(:hover) + .bp4 {
+        transition: 2s;
+        transform: scale(1);
+      }
+    }
+  }
+
+  .i1-footer {
+    width: 100%;
+    height: 90px;
+    background: #b9d4b9;
+    position: absolute;
+    top: calc(100vh - 90px);
+  }
+  // .fa-chevron-down {
+  //   position: absolute;
+  //   left: 50%;
+  //   margin-left: -13px;
+  //   font-size: 30px;
+  //   animation: down-movement 0.6s linear 0s infinite alternate;
+  //   top: 640px;
+  // }
+
+  // @keyframes down-movement {
+  //   100% {
+  //     top: 670px;
+  //   }
+  // }
+
+  // .shandow {
+  //   width: 16px;
+  //   height: 3px;
+  //   background: darkgray;
+  //   border-radius: 100%;
+  //   margin: auto;
+  //   margin-top: 650px;
+  //   animation: down-shandow 0.6s linear 0s infinite alternate;
+  // }
+  //   @keyframes down-shandow {
+  //   100% {
+  //     transform: scale(1.5);
+
+  //     background: gray;
+  //   }
+  // }
+}
+.Container2 {
+  height: 1300vh;
+  .fixedFrame {
+    top: 10px;
+    position: sticky;
+    width: 100%;
+  }
+  .i2Ttitle {
+    margin: auto;
+    max-width: 392px;
+    font-size: 44px;
+    letter-spacing: 4.5px;
+    color: #5f5f5f;
+    text-align: center;
+    padding-top: 160px;
+    border-bottom: 5px solid #707070;
+  }
+  .i2Subtitle {
+    text-align: center;
+    height: 52px;
+    font-size: 37px;
+    color: #5f5f5f;
+    letter-spacing: 8.5px;
+    font: Regular 37px/52px Arial Black;
+  }
+  .i2 {
+    margin: auto;
+    max-width: 1920px;
+    display: flex;
+
+    .RAISEC-Circle {
+      margin: auto;
+      width: 443px;
+      height: 443px;
+      margin-top: 100px;
+      background-image: url(/行銷頁面/img/RIASEC底圖.svg); //載入的陸姓是看此css的地點下去推的
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+      opacity: 0;
+
+      .circleItem-C {
+        margin: auto;
+        width: 162px;
+        height: 138px;
+        background-image: url(/行銷頁面/img/C.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 18px;
+        left: 53px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-R {
+        margin: auto;
+        width: 161px;
+        height: 137px;
+        background-image: url(/行銷頁面/img/R.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 17px;
+        right: 50px;
+        z-index: 50;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-I {
+        margin: auto;
+        width: 103px;
+        height: 185px;
+        background-image: url(/行銷頁面/img/I.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: 130px;
+        right: 15px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-A {
+        margin: auto;
+        width: 162px;
+        height: 138px;
+        background-image: url(/行銷頁面/img/A.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-S {
+        margin: auto;
+        width: 162px;
+        height: 138px;
+        background-image: url(/行銷頁面/img/S.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-E {
+        margin: auto;
+        width: 103px;
+        height: 185px;
+        background-image: url(/行銷頁面/img/E.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: 130px;
+        left: 15px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-A:hover,
+      .circleItem-S:hover,
+      .circleItem-C:hover,
+      .circleItem-R:hover,
+      .circleItem-I:hover,
+      .circleItem-E:hover {
+        cursor: pointer;
+        transition: 0.2s ease;
+        transform: scale(1.1) !important;
+      }
+    }
+    .RAISEC-Circle-Aninimation {
+      animation: circleMove 2s ease;
+      animation-fill-mode: forwards;
+      @keyframes circleMove {
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+    .RAISEC-Circle:hover {
+      // transition: 0.5s;
+      // transform: scale(1.1);
+    }
+    .RAISEC-Circle:not(:hover) {
+      // transition: 0.5s;
+      // transform: scale(1);
+    }
+    //R
+    #Rline {
+      right: -170px;
+      top: -50px;
+      position: absolute;
+      display: none;
+      stroke-width: 6;
+      stroke: #707070;
+      fill: none;
+
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #Rimage {
+      display: none;
+      position: absolute;
+      right: -470px;
+      top: -50px;
+      width: 400px;
+      height: 275px;
+      background-image: url(/行銷頁面/img/Rimage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      .RTitle {
+        margin-top: 350px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .RSubTitle {
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .typing {
+        width: 550px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing 8s steps(24, end);
+
+        word-break: break-all;
+        overflow: hidden;
+      }
+      /* 打印效果 */
+      @keyframes typing {
+        100% {
+          width: 550px;
+        }
+      }
+      /* 光标闪啊闪 */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: currentColor;
+        }
+      }
+    }
+    #Rchart {
+      display: none;
+      width: 340px;
+      height: 380px;
+      position: absolute;
+      left: -480px;
+      bottom: -180px;
+      // fill: rgb(19, 134, 117);
+      // stroke: rgb(19, 134, 117);
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+
+      #Rresult {
+        position: absolute;
+        stroke: #707070;
+        stroke-width: 2px;
+        fill-opacity: 0;
+        fill: rgba(19, 134, 117, 0.5);
+        width: 180px !important;
+        height: 165px;
+        z-index: -1 !important;
+        top: 24px;
+        left: 79px;
+        width: 160px;
+      }
+      .RresultFinished {
+        fill-opacity: 1 !important;
+        transition: 1s;
+      }
+      .RresultLeave {
+        fill-opacity: 0 !important;
+        transition: 0.5s;
+      }
+    }
+    .RContext {
+      display: none;
+      position: absolute;
+      top: -480px;
+      left: -480px;
+      .R1Title {
+        margin-top: 300px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .R1subTitle {
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+      .R2Title {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+      }
+      .R2subTitle {
+        margin-top: 10px;
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+    }
+
+    //I
+    #Iline {
+      display: none;
+      right: -270px;
+      top: 100px;
+      position: absolute;
+      stroke-width: 6;
+      stroke: #707070;
+      fill: none;
+
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #Iimage {
+      display: none;
+      position: absolute;
+      right: -580px;
+      top: 20px;
+      width: 320px;
+      height: 290px;
+      background-image: url(/行銷頁面/img/Iimage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      .ITitle {
+        margin-top: 350px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .ISubTitle {
+        width: 400px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .ISubTitle2 {
+        width: 0px;
+        overflow: hidden;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .typing2 {
+        width: 230px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+        word-break: break-all;
+      }
+
+      /* 打印效果 2*/
+      @keyframes typing2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 230px;
+        }
+      }
+      .typing {
+        width: 400px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+        word-break: break-all;
+        overflow: hidden;
+      }
+      /* 打印效果 */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 400px;
+        }
+      }
+      /* 光标闪啊闪 */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: currentColor;
+        }
+      }
+    }
+    #Ichart {
+      display: none;
+      width: 340px;
+      height: 380px;
+      position: absolute;
+      left: -480px;
+      bottom: -150px;
+      // fill: rgb(19, 134, 117);
+      // stroke: rgb(19, 134, 117);
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+      #Iresult {
+        position: absolute;
+        stroke: #707070;
+        stroke-width: 2px;
+        fill-opacity: 0;
+        fill: rgba(122, 0, 154, 0.5);
+        width: 140px;
+        height: 160px;
+        z-index: -1 !important;
+        top: 70px;
+        left: 175px;
+      }
+      .IresultFinished {
+        fill-opacity: 1 !important;
+        transition: 1s;
+      }
+      .IresultLeave {
+        fill-opacity: 0 !important;
+        transition: 0.5s;
+      }
+    }
+    .IContext {
+      display: none;
+      position: absolute;
+      top: -480px;
+      left: -480px;
+      .I1Title {
+        margin-top: 300px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .I1subTitle {
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+      .I2Title {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+      }
+      .I2subTitle {
+        margin-top: 10px;
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+    }
+
+    //A
+
+    #Aline {
+      display: none;
+      right: -127px;
+      top: 400px;
+      width: 175px;
+      height: 15px;
+      position: absolute;
+      stroke-width: 4;
+      stroke: #707070;
+      fill: none;
+
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #Aimage {
+      display: none;
+      position: absolute;
+      right: -450px;
+      top: 160px;
+      width: 280px;
+      height: 347px;
+      background-image: url(/行銷頁面/img/Aimage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      .AimageContext {
+        position: absolute;
+        top: -550px;
+        left: -100px;
+      }
+      .ATitle {
+        margin-top: 350px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .ASubTitle {
+        width: 400px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .ASubTitle2 {
+        width: 0px;
+        overflow: hidden;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .typing2 {
+        width: 255px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+        word-break: break-all;
+      }
+
+      /* 打印效果 2*/
+      @keyframes typing2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 260px;
+        }
+      }
+      .typing {
+        width: 400px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+        word-break: break-all;
+        overflow: hidden;
+      }
+      /* 打印效果 */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 350px;
+        }
+      }
+      /* 光标闪啊闪 */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: currentColor;
+        }
+      }
+    }
+    #Achart {
+      display: none;
+      width: 340px;
+      height: 380px;
+      position: absolute;
+      left: -480px;
+      bottom: -180px;
+      // fill: rgb(19, 134, 117);
+      // stroke: rgb(19, 134, 117);
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+      #Aresult {
+        position: absolute;
+        stroke: #707070;
+        stroke-width: 2px;
+        fill-opacity: 0;
+        fill: rgba(16, 60, 95, 0.7);
+        width: 140px;
+        height: 160px;
+        z-index: -1 !important;
+        top: 125px;
+        left: 175px;
+      }
+      .AresultFinished {
+        fill-opacity: 1 !important;
+        transition: 1s;
+      }
+      .AresultLeave {
+        fill-opacity: 0 !important;
+        transition: 0.5s;
+      }
+    }
+    .AContext {
+      display: none;
+      position: absolute;
+      top: -480px;
+      left: -480px;
+      .A1Title {
+        margin-top: 300px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .A1subTitle {
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+      .A2Title {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+      }
+      .A2subTitle {
+        margin-top: 10px;
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+    }
+    //S
+
+    #Sline {
+      display: none;
+      right: 370px;
+      top: 400px;
+      width: 175px;
+      height: 15px;
+      position: absolute;
+      stroke-width: 4;
+      stroke: #707070;
+      fill: none;
+
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #Simage {
+      display: none;
+      position: absolute;
+      left: -550px;
+      top: 160px;
+      width: 350px;
+      height: 328px;
+      background-image: url(/行銷頁面/img/Simage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      .SimageContext {
+        position: absolute;
+        top: -550px;
+        left: -17px;
+      }
+      .STitle {
+        margin-top: 350px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .SSubTitle {
+        width: 400px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .SSubTitle2 {
+        width: 0px;
+        overflow: hidden;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .typing2 {
+        width: 200px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+        word-break: break-all;
+      }
+
+      /* 打印效果 2*/
+      @keyframes typing2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 200px;
+        }
+      }
+      .typing {
+        width: 400px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+        word-break: break-all;
+        overflow: hidden;
+      }
+      /* 打印效果 */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 350px;
+        }
+      }
+      /* 光标闪啊闪 */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: currentColor;
+        }
+      }
+    }
+    #Schart {
+      display: none;
+      width: 340px;
+      height: 380px;
+      position: absolute;
+      right: -555px;
+      bottom: -200px;
+      // fill: rgb(19, 134, 117);
+      // stroke: rgb(19, 134, 117);
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+      #Sresult {
+        position: absolute;
+        stroke: #707070;
+        stroke-width: 2px;
+        fill-opacity: 0;
+        fill: rgba(239, 59, 63, 0.7);
+        width: 187px;
+        height: 158px;
+        z-index: -1 !important;
+        top: 188px;
+        left: 92px;
+      }
+      .SresultFinished {
+        fill-opacity: 1 !important;
+        transition: 1s;
+      }
+      .SresultLeave {
+        fill-opacity: 0 !important;
+        transition: 0.5s;
+      }
+    }
+    .SContext {
+      display: none;
+      position: absolute;
+      top: -480px;
+      right: -550px;
+      .S1Title {
+        margin-top: 300px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .S1subTitle {
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+      .S2Title {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+      }
+      .S2subTitle {
+        margin-top: 10px;
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+    }
+
+    //E
+    #Eline {
+      display: none;
+      right: 450px;
+      top: 230px;
+      width: 175px;
+      height: 15px;
+      position: absolute;
+      stroke-width: 4;
+      stroke: #707070;
+      fill: none;
+
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #Eimage {
+      display: none;
+      position: absolute;
+      left: -550px;
+      top: 160px;
+      width: 295px;
+      height: 337px;
+      background-image: url(/行銷頁面/img/Eimage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      .EimageContext {
+        position: absolute;
+        top: -550px;
+        left: -17px;
+      }
+      .ETitle {
+        margin-top: 350px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .ESubTitle {
+        width: 400px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .ESubTitle2 {
+        width: 0px;
+        overflow: hidden;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .typing2 {
+        width: 200px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+        word-break: break-all;
+      }
+
+      /* 打印效果 2*/
+      @keyframes typing2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 200px;
+        }
+      }
+      .typing {
+        width: 500px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+        word-break: break-all;
+        overflow: hidden;
+      }
+      /* 打印效果 */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 500px;
+        }
+      }
+      /* 光标闪啊闪 */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: currentColor;
+        }
+      }
+    }
+    #Echart {
+      display: none;
+      width: 340px;
+      height: 380px;
+      position: absolute;
+      right: -555px;
+      bottom: -200px;
+      // fill: rgb(19, 134, 117);
+      // stroke: rgb(19, 134, 117);
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+      #Eresult {
+        position: absolute;
+        stroke: #707070;
+        stroke-width: 2px;
+        fill-opacity: 0;
+        fill: rgba(247, 143, 8, 0.7);
+        width: 136px;
+        height: 155px;
+        z-index: 50 !important;
+        top: 143px;
+        left: 39px;
+      }
+      .EresultFinished {
+        fill-opacity: 1 !important;
+        transition: 1s;
+      }
+      .EresultLeave {
+        fill-opacity: 0 !important;
+        transition: 0.5s;
+      }
+    }
+    .EContext {
+      display: none;
+      position: absolute;
+      top: -480px;
+      right: -550px;
+      .E1Title {
+        margin-top: 300px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .E1subTitle {
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+      .E2Title {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+      }
+      .E2subTitle {
+        margin-top: 10px;
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+    }
+
+    //c
+    #Cline {
+      display: none;
+      right: 380px;
+      top: 20px;
+      width: 175px;
+      height: 15px;
+      position: absolute;
+      stroke-width: 4;
+      stroke: #707070;
+      fill: none;
+
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    #Cimage {
+      display: none;
+      position: absolute;
+      left: -550px;
+      top: 160px;
+      width: 300px;
+      height: 346px;
+      background-image: url(/行銷頁面/img/Cimage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      .CimageContext {
+        position: absolute;
+        top: -550px;
+        left: -17px;
+      }
+      .CTitle {
+        margin-top: 350px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .CSubTitle {
+        width: 400px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .CSubTitle2 {
+        width: 0px;
+        overflow: hidden;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 20px;
+      }
+      .typing2 {
+        width: 250px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+        word-break: break-all;
+      }
+
+      /* 打印效果 2*/
+      @keyframes typing2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 250px;
+        }
+      }
+      .typing {
+        width: 350px;
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+        word-break: break-all;
+        overflow: hidden;
+      }
+      /* 打印效果 */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 350px;
+        }
+      }
+      /* 光标闪啊闪 */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: currentColor;
+        }
+      }
+    }
+    #Cchart {
+      display: none;
+      width: 340px;
+      height: 380px;
+      position: absolute;
+      right: -555px;
+      bottom: -200px;
+      // fill: rgb(19, 134, 117);
+      // stroke: rgb(19, 134, 117);
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+      #Cresult {
+        position: absolute;
+        stroke: #707070;
+        stroke-width: 2px;
+        fill-opacity: 0;
+        fill: rgba(85, 191, 196, 0.7);
+        width: 139px;
+        height: 148px;
+        z-index: 10 !important;
+        top: 93px;
+        left: 37px;
+      }
+      .CresultFinished {
+        fill-opacity: 1 !important;
+        transition: 1s;
+      }
+      .CresultLeave {
+        fill-opacity: 0 !important;
+        transition: 0.5s;
+      }
+    }
+    .CContext {
+      display: none;
+      position: absolute;
+      top: -480px;
+      right: -550px;
+      .C1Title {
+        margin-top: 300px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .C1subTitle {
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+      .C2Title {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        color: #676767;
+        font-size: 26px;
+      }
+      .C2subTitle {
+        margin-top: 10px;
+        letter-spacing: 2px;
+        color: #676767 !important;
+        font-size: 20px;
+        width: 380px;
+      }
+    }
+  }
+}

@@ -1,0 +1,301 @@
+$cardColor: rgb(46, 48, 55); //卡片顏色
+$inversColor: rgb(57, 58, 66); //反白顏色
+$inputColor: #494b54; //input顏色
+$backgroundColor: rgb(37, 38, 46);
+@media (max-width: 416px) {
+  .eduInfoContent {
+    padding: 15px !important;
+  }
+}
+.courseSetContainer {
+  justify-content: center; //jq display時就已經是flex了
+}
+.Info {
+  margin: 10px;
+  width: 900px;
+
+  .baseInfoTitle {
+    padding: 20px 0px 10px 0px;
+    font-size: 20px;
+    border-bottom: 2px solid $inversColor;
+    margin-bottom: 20px;
+  }
+  .baseInfoContent {
+    background: $cardColor;
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    letter-spacing: 2px;
+
+    .baseInfoContentRow {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid $inversColor;
+    }
+    .baseInfoContentRowTextArea {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #393a42;
+      textarea {
+        padding: 20px;
+        margin-top: 20px;
+        outline: none;
+        background: $inputColor;
+        color: white;
+        border: 0px;
+        resize: none;
+        overflow: auto;
+      }
+    }
+    select {
+      text-align: center;
+      text-align-last: center; /*兼容chrome*/
+      color: white;
+      outline: none;
+      max-width: 300px;
+      background: $cardColor;
+      border-color: $inversColor;
+    }
+    option {
+      text-align: center;
+    }
+    input {
+      color: white;
+      background: $cardColor;
+      outline: none;
+      border-style: solid;
+      border-top: 0px;
+      border-right: 0px;
+      border-bottom: 0px;
+      border-left: 0px;
+      text-align: right;
+    }
+    .nameInput {
+      max-width: 300px;
+      border-radius: 5px;
+      background-color: $inversColor;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+  .eduTitle {
+    padding: 20px 0px 10px 0px;
+    font-size: 20px;
+    border-bottom: 2px solid $inversColor;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .titleP {
+      margin: 0;
+    }
+    .titleb {
+      margin: 0;
+      border: 2px solid $inversColor;
+      font-size: 16px;
+      padding: 5px 20px;
+      border-radius: 10px;
+    }
+    .titleb:hover {
+      background: $inversColor;
+      color: $backgroundColor;
+      cursor: pointer;
+    }
+  }
+  .eduInfoContent {
+    padding: 20px 30px 20px 30px;
+    letter-spacing: 2px;
+    background: $cardColor;
+    .eduInfoContentRow {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+     flex-wrap: wrap;
+     textarea {
+        max-width: 500px;
+        width: 100%;
+        padding: 20px;
+       border-radius: 5px;
+        outline: none;
+        background: $inputColor;
+        color: white;
+        border: 0px;
+        resize: none;
+        overflow: auto;
+      }
+     .settitle{
+          margin-bottom: 10px;
+      }
+    }
+    .eduInput {
+      max-width: 500px;
+      width: 100%;
+      color: white;
+      background: $inputColor;
+      border-radius: 5px;
+      border-style: solid;
+      border: 0px;
+      padding: 5px;
+      text-align: center;
+    }
+    .workCom {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 500px;
+      width: 100%;
+      justify-content: space-between;
+      border-bottom: 2px solid ;
+      padding-bottom: 5px;
+    }
+  }
+
+  .workTitle {
+    padding: 20px 0px 10px 0px;
+    font-size: 20px;
+    border-bottom: 2px solid $inversColor;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .titleP {
+      margin: 0;
+    }
+    .titleb {
+      margin: 0;
+      border: 2px solid $inversColor;
+      font-size: 16px;
+      padding: 5px 20px;
+      border-radius: 10px;
+    }
+    .titleb:hover {
+      background: $inversColor;
+      color: $backgroundColor;
+      cursor: pointer;
+    }
+  }
+  .workInfoContent {
+    padding: 20px 30px 20px 30px;
+    letter-spacing: 2px;
+    background: $cardColor;
+    .workInfoContentRow {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    input {
+      max-width: 300px;
+      color: white;
+      background: $inputColor;
+      border-radius: 5px;
+      outline: none;
+      border-style: solid;
+      border-top: 0px;
+      border-right: 0px;
+      border-bottom: 0px;
+      border-left: 0px;
+      text-align: center;
+    }
+  }
+
+  .tranTitle {
+    padding: 20px 0px 10px 0px;
+    font-size: 20px;
+    border-bottom: 2px solid $inversColor;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .titleP {
+      margin: 0;
+    }
+    .titleb {
+      margin: 0;
+      border: 2px solid $inversColor;
+      font-size: 16px;
+      padding: 5px 20px;
+      border-radius: 10px;
+    }
+    .titleb:hover {
+      background: $inversColor;
+      color: $backgroundColor;
+      cursor: pointer;
+    }
+  }
+  .tranInfoContent {
+    padding: 20px 30px 20px 30px;
+    letter-spacing: 2px;
+    background: $cardColor;
+    .tranInfoContentRow {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    input {
+      max-width: 300px;
+      color: white;
+      background: $inputColor;
+      border-radius: 5px;
+      outline: none;
+      border-style: solid;
+      border-top: 0px;
+      border-right: 0px;
+      border-bottom: 0px;
+      border-left: 0px;
+      text-align: center;
+    }
+  }
+
+  .skillTitle {
+    padding: 20px 0px 10px 0px;
+    font-size: 20px;
+    border-bottom: 2px solid $inversColor;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .titleP {
+      margin: 0;
+    }
+    .titleb {
+      margin: 0;
+      border: 2px solid $inversColor;
+      font-size: 16px;
+      padding: 5px 20px;
+      border-radius: 10px;
+    }
+    .titleb:hover {
+      background: $inversColor;
+      color: $backgroundColor;
+      cursor: pointer;
+    }
+  }
+  .skillInfoContent {
+    padding: 20px 30px 20px 30px;
+    letter-spacing: 2px;
+    background: $cardColor;
+    .skillInfoContentRow {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    input {
+      max-width: 300px;
+      color: white;
+      background: $inputColor;
+      border-radius: 5px;
+      outline: none;
+      border-style: solid;
+      border-top: 0px;
+      border-right: 0px;
+      border-bottom: 0px;
+      border-left: 0px;
+      text-align: center;
+    }
+  }
+}

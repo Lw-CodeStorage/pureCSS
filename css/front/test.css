@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*******ajax資料滯留布幕****/
+body {
+  margin: 0;
+}
+
+#spinner_overlay {
+  position: absolute;
+  background: white;
+  opacity: 0.1;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /*padding-top: 25%;*/
+  z-index: 1;
+}
+
+/*********布幕裡的等待動圖****/
+.spinnerContainer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  width: 65px;
+  -webkit-animation: rotate 0.8s infinite linear;
+          animation: rotate 0.8s infinite linear;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.spinner .spinnerCover {
+  position: absolute;
+  z-index: 1;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background: white;
+}
+
+.spinner .spinnerCover::after {
+  content: "";
+  background: white;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 20px;
+  height: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 1;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.spinnerImage {
+  position: absolute;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  background-image: url(http://fois.online/wp-content/themes/fois2.0_theme/img/favicon-20190628101037983.ico);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*# sourceMappingURL=test.css.map */

@@ -1,0 +1,576 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+ background: rgb(245,245,245);
+
+}
+@media (min-width:1001px ){
+    .activityWarp {
+        max-width: 1140px;
+        margin: auto;
+    }
+    
+     .activityContainer {
+        width: 100%;
+        display: flex;
+        margin-top: 40px;
+        padding: 20px;
+        background: white;
+        border: 0px solid rgb(213, 213, 213);
+        border-radius: 10px;
+        /* background: salmon; */
+    }
+    
+    .activityWarp .column1 {
+        max-width: 486px;
+        width: 100%;
+        padding: 0px 15px 0px 15px;
+        
+        /* background: firebrick; */
+    }
+    
+    .activityWarp .imageContainer {
+        position: relative;
+        width: 100%;
+        /* background: aqua; */
+        margin-bottom: 10px;
+       
+    }
+    .activityWarp .imageContainer >img{
+    width: 100%;
+    }
+    .activityWarp .imageContainer > img{
+        border-radius: 5px;
+    }
+    .activityWarp .imageCover {
+        position: absolute;
+        width: 100%;
+        height:6.25rem;
+        padding: 20px;
+        background: rgba(0, 0, 0, .5);
+        border-left: 15px solid orange;
+        left: 0;
+        bottom: 0px;
+        color: whitesmoke;
+        font-size: 1.5rem;
+    }
+    
+    
+    .activityWarp .imageCoverRelative{
+        position: relative;
+    }
+    .activityWarp .imageTitle{
+        position: absolute;
+    }
+    .activityWarp .imageTitle p{
+        margin-bottom: 16px;
+    }
+    .activityWarp .imageButton{
+        position: absolute;
+        display: inline-block;
+        font-size: 40px;
+        right: 0px;
+    }
+    .activityWarp .imageButton:active{
+        color: palevioletred;
+    }
+    
+    .activityWarp .infoContainer {
+        width: 100%;
+        border: 1px solid rgb(213, 213, 213);
+        margin-bottom: 20px;
+    }
+    
+    .activityWarp .infoTitle {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        padding: 20px 10px 10px 10px;
+        text-align: center;
+        color: #2053a3;
+        border-bottom: 1px solid#2053a3;
+    }
+    .subInfoContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+
+    }
+    .activityWarp .clock {
+        display: inline-block;
+        font-size: 40px;
+    
+        color: #2053a3;
+    }
+    .activityWarp .infoContainer .subInfoTitle { 
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+    }
+    .activityWarp .infoContainer .subInfoTitle p{
+        margin: 5px;
+    }
+    .activityContainer .infoContainer .connectButton{
+        display: inline-block;
+        padding: 10px;
+        background: rgb(89, 98, 106);
+        border-radius: 5px;
+       
+    }
+    .activityContainer .infoContainer .connectButton a{
+        padding: 10px;
+        font-size: 12px;
+        color:white;
+        text-decoration:none;
+    }
+    .activityWarp .column2 {
+        max-width: 680px;
+        width: 100%;
+      
+        /* background: aqua; */
+        padding: 0px 15px 0px 15px;
+    }
+    .activityWarp .column2-1{
+        padding: 0px 0px 10px 0px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(213, 213, 213);
+    }
+    .activityWarp .text{
+        display:flex;
+        justify-content: space-between;
+        color: #2053a3;
+    }
+    .activityWarp .textTitle1 > i{
+        font-size: 24px;
+        margin-right:10px; 
+    }
+    .activityWarp .textTitle1  h4{
+        font-size: 24px;
+        font-weight: bold;
+        display: inline-block;
+    }
+    .activityWarp .subTitle{
+       padding-top: 10px;
+        font-size: 14px;
+    }
+    .activityWarp .subTitle1-1{
+        display: inline-block;
+        margin-right: 10px;
+        color: red;
+    }
+    .activityWarp .subTitle1-2{
+        color: red;
+    }
+    .activityWarp .ActivityButton{
+        width: 100%;
+        margin: 20px 0px 10px 0px;
+        padding: 10px;
+        border-radius: 5px;
+        background: red;
+        text-align: center;
+    }
+    .activityWarp .ActivityButton >a ,.ActivityButton >i {
+        font-size: 18px;
+        color: white;
+        text-decoration: none ;
+    }
+    .activityWarp .row2{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 14px;
+        margin: 20px 0px 10px 0px;
+    }
+    .activityWarp .row2 a{
+        padding: 10px;
+        border-radius: 20px;
+        width: 49%;
+        color: white;
+        background: rgb(89, 98, 105);
+        text-decoration: none !important;
+        
+    }
+    
+    .activityWarp .row3{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 14px;
+        margin: 20px 0px 10px 0px;
+    }
+    .activityWarp .row3 a{
+        text-decoration: none !important;
+        padding:10px 20px 10px 20px;
+        border-radius: 5px;
+        color: white;
+        background: rgb(135, 135, 135)
+    }
+    .activityWarp .row4{
+        display: flex;
+        justify-content: space-around;
+        background: rgb(203, 233, 209);
+        border-radius: 5px;
+        margin: 20px 0px 10px 0px;
+    }
+    .activityWarp .row4>div{ 
+        line-height: 24px;
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .activityWarp .row5{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px 10px 0px;
+        line-height: 26px;
+    }
+    .activityWarp .row5>div:first-child{
+        text-align: center;
+        width: 49%;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgb(254, 241, 194);
+        color:rgb(135, 107, 40);
+    }
+    .activityWarp .row5>div:last-child{
+        text-align: center;
+        width: 49%;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgb(246, 204, 209);
+        color:rgb(93, 18, 27);
+    }
+    .activityWarp .row5>div>p{
+        margin: 0px;
+    }
+    .activityWarp .row6{
+        margin: 20px 0px 10px 0px;
+        border:1px solid rgb(213, 213, 213);
+        border-radius: 5px;
+        padding: 20px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .activityWarp .row6 p{
+        margin-bottom: 5px;
+    }
+    .activityWarp .row7{
+        margin: 20px 0px 10px 0px;
+        border:1px solid rgb(213, 213, 213);
+        border-radius: 5px;
+        padding: 20px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+}
+
+@media (max-width:992px){
+    body{
+        font-size: 16px;
+    }
+    .activityWarp {
+        max-width: 480px;
+        margin: auto;
+    }
+    
+     .activityContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 15px;
+        background: white;
+        border: 0px solid rgb(213, 213, 213);
+        border-radius: 10px;
+        /* background: salmon; */
+    }
+    
+    .activityWarp .column1 {
+        max-width: 486px;
+        width: 100%;
+    }
+    
+    .activityWarp .imageContainer {
+        position: relative;
+        width: 100%;
+        /* background: aqua; */
+        margin-bottom: 10px;
+       
+    }
+    .activityWarp .imageContainer >img{
+    width: 100%;
+    }
+    .activityWarp .imageContainer > img{
+        border-radius: 5px;
+    }
+    .activityWarp .imageCover {
+        position: absolute;
+        width: 100%;
+        height:80px;
+        padding: 10px 20px 10px 20px;
+        background: rgba(0, 0, 0, .5);
+        border-left: 15px solid orange;
+        left: 0;
+        bottom: 0px;
+        color: whitesmoke;
+        font-size: 1rem;
+    }
+    .activityWarp .imageCoverRelative{
+        position: relative;
+    }
+    .activityWarp .imageTitle{
+        top: 0px;
+        line-height: 26px;
+        position: absolute;
+    }
+    .activityWarp .imageButton{
+        position: absolute;
+        display: inline-block;
+        font-size: 2rem;
+        right: 0px;
+    }
+    .activityWarp .imageButton:active{
+        color: palevioletred;
+    }
+    
+    .activityWarp .infoContainer {
+        width: 100%;
+        border: 1px solid rgb(213, 213, 213);
+        margin-bottom: 20px;
+    }
+    
+    .activityWarp .infoTitle {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        font-size: 1rem;
+        padding: 20px 10px 10px 10px;
+        text-align: center;
+        color: #2053a3;
+        border-bottom: 1px solid#2053a3;
+    }
+    .subInfoContainer{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+
+    }
+    .activityWarp .clock {
+        display: inline-block;
+        font-size: 40px;
+    
+        color: #2053a3;
+    }
+    .activityWarp .infoContainer .subInfoTitle { 
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+    }
+    .activityWarp .infoContainer .subInfoTitle p{
+        margin: 5px;
+    }
+    .activityContainer .infoContainer .connectButton{
+        display: inline-block;
+        background: rgb(89, 98, 106);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .activityContainer .infoContainer .connectButton a{
+     
+        font-size: 12px;
+        color:white;
+        text-decoration:none;
+    }
+    .activityWarp .column2 {
+        max-width: 680px;
+        width: 100%; 
+        padding: 0px 15px 0px 15px;
+    }
+    .activityWarp .column2-1{
+        padding: 0px 0px 10px 0px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(213, 213, 213);
+    }
+    .activityWarp .text{
+        display:flex;
+        justify-content: space-between;
+        color: #2053a3;
+    }
+    .activityWarp .textTitle1 > i{
+        font-size: 1.2rem;
+        margin-right:10px; 
+    }
+    .activityWarp .textTitle1 > h4{
+        font-size: 1.2rem;
+        display: inline-block;
+    }
+    .activityWarp .subTitle{
+    font-size: 14px;
+    }
+    .activityWarp .subTitle1-1{
+        display: inline-block;
+        margin-right: 10px;
+        color: red;
+    }
+    .activityWarp .subTitle1-2{
+        color: red;
+    }
+    .activityWarp .ActivityButton{
+        width: 100%;
+        margin: 20px 0px 10px 0px;
+        padding: 10px;
+        border-radius: 5px;
+        background: red;
+        text-align: center;
+    }
+    .activityWarp .ActivityButton >a ,.ActivityButton >i {
+        font-size: 18px;
+        color: white;
+        text-decoration: none !important;
+    }
+    .activityWarp .row2{
+        text-align: center;
+        font-size: 14px;
+        margin: 20px 0px 10px 0px;
+    }
+    .activityWarp .row2 a{
+        display: block;
+        margin-top: 10px;
+        line-height:26px;
+        border-radius: 20px;
+        width: 100%;
+        color: white;
+        background: rgb(89, 98, 105);
+        text-decoration: none !important;
+        
+    }
+    
+    .activityWarp .row3{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 12px;
+        margin: 20px 0px 10px 0px;
+    }
+    .activityWarp .row3 a{
+        text-decoration: none !important;
+        padding: 10px 5px 10px 5px;
+        border-radius: 5px;
+        color: white;
+        background: rgb(135, 135, 135)
+    }
+    .activityWarp .row4{
+        display: flex;
+        justify-content: space-around;
+        background: rgb(203, 233, 209);
+        border-radius: 5px;
+        margin: 20px 0px 10px 0px;
+        
+    }
+    .activityWarp .row4>div{
+        line-height: 24px;
+        font-size: 0.9rem;
+        padding:10px; 
+        text-align: center;
+        display: inline-block;
+    }
+    .activityWarp .row5{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px 10px 0px;
+    }
+    .activityWarp .row5>div:first-child{
+        line-height: 24px;
+        font-size: 0.9rem;
+        text-align: center;
+        width: 49%;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgb(254, 241, 194);
+        color:rgb(135, 107, 40);
+    }
+    .activityWarp .row5>div:last-child{
+        line-height: 24px;
+        font-size: 0.9rem;
+        text-align: center;
+        width: 49%;
+        padding: 10px;
+        border-radius: 5px;
+        background: rgb(246, 204, 209);
+        color:rgb(93, 18, 27);
+    }
+    .activityWarp .row5>div>p{
+        margin: 0px;
+    }
+    .activityWarp .row6{
+        line-height: 24px;
+        margin: 20px 0px 10px 0px;
+        border:1px solid rgb(213, 213, 213);
+        border-radius: 5px;
+        padding: 20px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .activityWarp .row6 p{
+        margin-bottom: 5px;
+    }
+    .activityWarp .row7{
+        line-height: 24px;
+        margin: 20px 0px 10px 0px;
+        border:1px solid rgb(213, 213, 213);
+        border-radius: 5px;
+        padding: 20px;
+        width: 100%;
+        font-size: 14px;
+    }
+      
+}

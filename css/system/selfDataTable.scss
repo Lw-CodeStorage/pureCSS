@@ -1,0 +1,138 @@
+@import "_color.scss";
+//取消點擊cell的outline
+.sorting_1 {
+  outline: none !important;
+}
+//排序顏色奇數
+table.dataTable.display tbody tr.odd > .sorting_1,
+table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+  border-top: 2px solid #363840;
+  border-bottom: 2px solid #2e3037;
+  border-right: 2px solid #2e3037;
+  background: #383a43 !important;
+} //排序顏色偶數
+table.dataTable.display tbody tr.even > .sorting_1,
+table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+  border-top: 2px solid #363840;
+  border-bottom: 2px solid #2e3037;
+  border-right: 2px solid #2e3037;
+  background: #2e3037 !important;
+}
+//hover顏色
+#table_id_example11 tr:hover td {
+  background-color: #454545 !important;
+} //右下角資料頁顏色
+#table_id_example11_paginate {
+  padding: 0px;
+  margin-top: 10px;
+  border: 2px solid #494b54;
+  border-radius: 5px;
+  a {
+    color: rgb(129, 137, 145) !important;
+  }
+  .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+/*自定義datatable*/
+.tableCard {
+  margin: auto;
+  margin-top: 20px;
+  background: $cardColor;
+  padding: 20px;
+  background: rgb(46, 48, 55); //卡片顏色
+  border-radius: 5px;
+  input,
+  select {
+    color: #949ba2;
+    border: none;
+    box-shadow: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  label,
+  .dataTables_info {
+    color: white;
+  }
+  table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  thead {
+    color: white !important;
+    th {
+      border: 0px;
+    }
+  }
+  #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+
+  .odd {
+    td:first-child {
+      border-top: 2px solid rgb(54, 56, 64);
+      border-bottom: 2px solid rgb(46, 48, 55);
+      border-right: 2px solid rgb(46, 48, 55);
+      background: rgb(56, 58, 67);
+    }
+    td {
+      border-top: 2px solid rgb(54, 56, 64);
+      border-bottom: 2px solid rgb(46, 48, 55);
+      border-right: 2px solid rgb(46, 48, 55);
+      background: rgb(56, 58, 67);
+    }
+  }
+
+  .even {
+    td:first-child {
+      border-top: 2px solid rgb(54, 56, 64);
+      border-bottom: 2px solid rgb(46, 48, 55);
+      border-right: 2px solid rgb(46, 48, 55);
+      background: rgb(46, 48, 55);
+    }
+    td {
+      border-top: 2px solid rgb(54, 56, 64);
+      border-bottom: 2px solid rgb(46, 48, 55);
+      border-right: 2px solid rgb(46, 48, 55);
+      background: rgb(46, 48, 55);
+    }
+  }
+
+  #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+    a {
+      color: rgb(129, 137, 145) !important;
+    }
+    .paginate_button:hover {
+      outline: none;
+      border: 0px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+    .paginate_button.current {
+      outline: none;
+      border: 0px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .paginate_button:active {
+      outline: none;
+      border: 0px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+}

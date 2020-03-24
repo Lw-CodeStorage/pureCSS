@@ -1,0 +1,608 @@
+.title {
+  padding: 5px 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (min-width: 765px) {
+  .jobDiscriptionContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .jobCategory {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 2px solid gainsboro;
+    margin-bottom: 20px;
+  }
+  .jobCategory .jobNameContainer {
+    width: 200px;
+  }
+  .jobCategory .jobNameContainer .jobNameTitle {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .jobCategory .jobCode {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .jobCategory .jobCode .jobCodeTitle {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .jobCategory .jobCode .jobCodeContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .jobCategory .jobName {
+    width: 400px;
+  }
+  .jobCategory .jobName .jobNameTitle {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .jobAbstract {
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .orgStrucuret {
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .jobTask {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .jobTask .jobTaskD1 {
+    width: 350px;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .jobTask .jobTaskD1 div {
+    font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .jobTask .jobTaskD1 div p {
+    padding: 5px 20px;
+  }
+  .jobTask .jobTaskD1 div .levelCode {
+    background: navajowhite;
+    border-radius: 5px;
+  }
+  .jobTask .jobTaskD2 {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .jobTask .jobTaskD2 .chart {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .jobTask .jobTaskD3 {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .taskDescriptionContainer {
+    background: whitesmoke;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+  .taskDescriptionContainer div:nth-child(1) {
+    text-align: center;
+    width: 100px;
+    background: gainsboro;
+  }
+  .taskDescriptionContainer div:nth-child(2) {
+    text-align: center;
+    width: 800px;
+    background: gainsboro;
+  }
+  .taskDescriptionContainer div:nth-child(3) {
+    text-align: center;
+    width: 50px;
+    background: gainsboro;
+  }
+  .taskDescriptionContainer div:nth-child(4) {
+    text-align: center;
+    width: 50px;
+    background: gainsboro;
+  }
+  .taskDescriptionContainer div:nth-child(5) {
+    text-align: center;
+    width: 50px;
+    background: gainsboro;
+  }
+  .scrollContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: relative;
+    height: 600px;
+    margin-top: 20px;
+  }
+  .scrollContainer .scrollCol1 {
+    width: 200px;
+  }
+  .scrollContainer .scrollCol2 {
+    width: 800px;
+    overflow: scroll;
+  }
+  .scrollContainer .scrollCol2 .taskDetail .taskDetailTitle {
+    font-weight: 800;
+  }
+  .scrollContainer .scrollCol2 .taskDetail .taskDetailContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    margin: 20px 20px;
+  }
+  .scrollContainer .scrollCol2 .taskDetail .taskDetailContent .taskDetailCol1 {
+    width: 350px;
+  }
+  .scrollContainer .scrollCol2 .taskDetail .taskDetailContent .taskDetailCol2 {
+    width: 350px;
+  }
+  .staffSpecificationContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .staffSpecificationContainer .staffSpecificationContainerCard1 {
+    width: 350px;
+    height: 300px;
+    border: 2px solid lightslategray;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px;
+  }
+  .staffSpecificationContainer .staffSpecificationContainerCard1 .staffSpecificationContainerCard1Col1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 200px;
+  }
+  .staffSpecificationContainer .staffSpecificationContainerCard1 .staffSpecificationContainerCard1Col2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 200px;
+  }
+  .staffSpecificationContainer .staffSpecificationContainerCard1 .staffSpecificationContainerCard1Col2 span {
+    text-align: center;
+    width: 150px;
+    background: gainsboro;
+    padding: 5px 20px;
+  }
+  .functionalRequirementsContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .functionalRequirementsContainer .functionalRequirementsContainerCard1 {
+    margin: 10px;
+    padding: 5px;
+    width: 350px;
+    height: 200px;
+    border: 2px solid lightslategray;
+    font-size: 16px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: scroll;
+  }
+  .functionalRequirementsContainer .functionalRequirementsContainerCard1 p {
+    padding: 5px 10px;
+    background: lightslategray;
+    margin: 0px;
+    width: 140px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 415px) {
+  .jobDiscriptionContainer {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .jobCategory {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 2px solid gainsboro;
+    margin-bottom: 20px;
+  }
+  .jobCategory .jobNameContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .jobCategory .jobNameContainer .jobNameTitle {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .jobCategory .jobCode {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .jobCategory .jobCode .jobCodeTitle {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .jobCategory .jobCode .phoneLay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .jobCategory .jobCode .phoneLay .jobCodeContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .jobCategory .jobName {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .jobCategory .jobName .jobNameTitle {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .jobAbstract {
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .orgStrucuret {
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .jobTask {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .jobTask .jobTaskD1 {
+    width: 350px;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .jobTask .jobTaskD1 div {
+    font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .jobTask .jobTaskD1 div p {
+    padding: 5px 20px;
+  }
+  .jobTask .jobTaskD1 div .levelCode {
+    background: navajowhite;
+    border-radius: 5px;
+  }
+  .jobTask .jobTaskD2 {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .jobTask .jobTaskD2 .chart {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .jobTask .jobTaskD3 {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .taskDescriptionContainer {
+    background: whitesmoke;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+  .taskDescriptionContainer div:nth-child(1) {
+    text-align: center;
+    width: 100px;
+    background: gainsboro;
+  }
+  .taskDescriptionContainer div:nth-child(2) {
+    text-align: center;
+    width: 800px;
+    background: gainsboro;
+  }
+  .taskDescriptionContainer div:nth-child(3) {
+    text-align: center;
+    width: 50px;
+    background: gainsboro;
+  }
+  .taskDescriptionContainer div:nth-child(4) {
+    text-align: center;
+    width: 50px;
+    background: gainsboro;
+  }
+  .taskDescriptionContainer div:nth-child(5) {
+    text-align: center;
+    width: 50px;
+    background: gainsboro;
+  }
+  .scrollContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    height: 600px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .scrollContainer .scrollCol1 {
+    width: 100px;
+    margin-right: 20px;
+  }
+  .scrollContainer .scrollCol2 {
+    overflow: scroll;
+  }
+  .scrollContainer .scrollCol2 .taskDetail .taskDetailTitle {
+    font-weight: 800;
+  }
+  .scrollContainer .scrollCol2 .taskDetail .taskDetailContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    margin: 20px 20px;
+  }
+  .scrollContainer .scrollCol2 .taskDetail .taskDetailContent .taskDetailCol1 {
+    width: 350px;
+  }
+  .scrollContainer .scrollCol2 .taskDetail .taskDetailContent .taskDetailCol2 {
+    width: 350px;
+  }
+  .staffSpecificationContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .staffSpecificationContainer .staffSpecificationContainerCard1 {
+    width: 350px;
+    height: 300px;
+    border: 2px solid lightslategray;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px;
+  }
+  .staffSpecificationContainer .staffSpecificationContainerCard1 .staffSpecificationContainerCard1Col1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 200px;
+  }
+  .staffSpecificationContainer .staffSpecificationContainerCard1 .staffSpecificationContainerCard1Col2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 200px;
+  }
+  .staffSpecificationContainer .staffSpecificationContainerCard1 .staffSpecificationContainerCard1Col2 span {
+    text-align: center;
+    width: 150px;
+    background: gainsboro;
+    padding: 5px 20px;
+  }
+  .functionalRequirementsContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .functionalRequirementsContainer .functionalRequirementsContainerCard1 {
+    margin: 10px;
+    padding: 5px;
+    width: 350px;
+    height: 200px;
+    border: 2px solid lightslategray;
+    font-size: 16px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: scroll;
+  }
+  .functionalRequirementsContainer .functionalRequirementsContainerCard1 p {
+    padding: 5px 10px;
+    background: lightslategray;
+    margin: 0px;
+    width: 140px;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=jobDescription.css.map */

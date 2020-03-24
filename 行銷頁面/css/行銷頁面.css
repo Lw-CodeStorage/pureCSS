@@ -1,0 +1,1359 @@
+@charset "UTF-8";
+@font-face {
+  font-family: apple;
+  src: url(/GenJyuuGothic-Monospace-Normal.ttf);
+}
+
+html,
+body {
+  font-family: apple !important;
+  scroll-behavior: smooth;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.frame .selfMenu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 50px;
+  z-index: 999;
+  animation: menuMove 1.5s ease;
+}
+
+@keyframes menuMove {
+  0% {
+    top: -40px;
+  }
+  100% {
+    top: 50px;
+  }
+}
+
+.frame .selfMenu .logo {
+  width: 400px;
+  margin-left: 120px;
+  background-image: url("/行銷頁面/img/Logo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.frame .selfMenu .selfMenuItem {
+  display: flex;
+  margin-right: 83px;
+  justify-content: space-around;
+  align-content: space-between;
+  width: 480px;
+  align-items: baseline;
+  font-size: 20px;
+}
+
+.frame .Container1 {
+  max-width: 1920px;
+  height: 100vh;
+  margin: auto;
+}
+
+.frame .Container1 .i1 {
+  padding: 35px 40px 40px 40px;
+  margin: auto;
+  position: relative;
+  top: calc(50vh - 330px);
+}
+
+.frame .Container1 .i1 .bp1 {
+  max-width: 1920px;
+  width: 100%;
+  height: 660px;
+  position: absolute;
+  background-image: url(/行銷頁面/img/bp1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0;
+  animation: bp1-movement 0.8s ease 0s;
+}
+
+@keyframes bp1-movement {
+  0% {
+    top: 400px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    top: 35px;
+    opacity: 1;
+  }
+}
+
+.frame .Container1 .i1 .bp2 {
+  max-width: 1920px;
+  width: 100%;
+  height: 660px;
+  position: absolute;
+  background-image: url(/行銷頁面/img/bp2.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0;
+  animation: bp2-movement 1.2s ease 0s;
+}
+
+@keyframes bp2-movement {
+  0% {
+    top: 400px;
+    opacity: 0;
+  }
+  100% {
+    top: 35px;
+    opacity: 1;
+  }
+}
+
+.frame .Container1 .i1 .bp3 {
+  max-width: 1920px;
+  width: 100%;
+  height: 660px;
+  position: absolute;
+  background-image: url(/行銷頁面/img/bp3.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0;
+  animation: bp3-movement 1.4s ease 0s;
+}
+
+@keyframes bp3-movement {
+  0% {
+    top: 400px;
+    opacity: 0.2;
+  }
+  100% {
+    top: 35px;
+    opacity: 1;
+  }
+}
+
+.frame .Container1 .i1 .bp4-pointer {
+  width: 200px;
+  height: 200px;
+  background: red;
+  background: transparent;
+  position: absolute;
+  left: 44%;
+  top: 250px;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.frame .Container1 .i1 .bp4 {
+  max-width: 1920px;
+  width: 100%;
+  height: 660px;
+  position: absolute;
+  background-image: url(/行銷頁面/img/bp4.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0;
+  z-index: 9;
+  animation: bp4-movement 1.8s ease 0s;
+}
+
+@keyframes bp4-movement {
+  0% {
+    top: 400px;
+    opacity: 0;
+  }
+  100% {
+    top: 35px;
+    opacity: 1;
+  }
+}
+
+.frame .Container1 .i1 .bp4-pointer:hover + .bp4 {
+  transition: 0.6s;
+  transform: scale(1.2);
+}
+
+.frame .Container1 .i1 .bp4-pointer:not(:hover) + .bp4 {
+  transition: 2s;
+  transform: scale(1);
+}
+
+.frame .i1-footer {
+  width: 100%;
+  height: 90px;
+  background: #b9d4b9;
+  position: absolute;
+  top: calc(100vh - 90px);
+}
+
+.Container2 {
+  height: 1300vh;
+}
+
+.Container2 .fixedFrame {
+  top: 10px;
+  position: sticky;
+  width: 100%;
+}
+
+.Container2 .i2Ttitle {
+  margin: auto;
+  max-width: 392px;
+  font-size: 44px;
+  letter-spacing: 4.5px;
+  color: #5f5f5f;
+  text-align: center;
+  padding-top: 160px;
+  border-bottom: 5px solid #707070;
+}
+
+.Container2 .i2Subtitle {
+  text-align: center;
+  height: 52px;
+  font-size: 37px;
+  color: #5f5f5f;
+  letter-spacing: 8.5px;
+  font: Regular 37px/52px Arial Black;
+}
+
+.Container2 .i2 {
+  margin: auto;
+  max-width: 1920px;
+  display: flex;
+}
+
+.Container2 .i2 .RAISEC-Circle {
+  margin: auto;
+  width: 443px;
+  height: 443px;
+  margin-top: 100px;
+  background-image: url(/行銷頁面/img/RIASEC底圖.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  opacity: 0;
+}
+
+.Container2 .i2 .RAISEC-Circle .circleItem-C {
+  margin: auto;
+  width: 162px;
+  height: 138px;
+  background-image: url(/行銷頁面/img/C.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 18px;
+  left: 53px;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.Container2 .i2 .RAISEC-Circle .circleItem-R {
+  margin: auto;
+  width: 161px;
+  height: 137px;
+  background-image: url(/行銷頁面/img/R.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 17px;
+  right: 50px;
+  z-index: 50;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.Container2 .i2 .RAISEC-Circle .circleItem-I {
+  margin: auto;
+  width: 103px;
+  height: 185px;
+  background-image: url(/行銷頁面/img/I.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  bottom: 130px;
+  right: 15px;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.Container2 .i2 .RAISEC-Circle .circleItem-A {
+  margin: auto;
+  width: 162px;
+  height: 138px;
+  background-image: url(/行銷頁面/img/A.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.Container2 .i2 .RAISEC-Circle .circleItem-S {
+  margin: auto;
+  width: 162px;
+  height: 138px;
+  background-image: url(/行銷頁面/img/S.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.Container2 .i2 .RAISEC-Circle .circleItem-E {
+  margin: auto;
+  width: 103px;
+  height: 185px;
+  background-image: url(/行銷頁面/img/E.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  bottom: 130px;
+  left: 15px;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.Container2 .i2 .RAISEC-Circle .circleItem-A:hover,
+.Container2 .i2 .RAISEC-Circle .circleItem-S:hover,
+.Container2 .i2 .RAISEC-Circle .circleItem-C:hover,
+.Container2 .i2 .RAISEC-Circle .circleItem-R:hover,
+.Container2 .i2 .RAISEC-Circle .circleItem-I:hover,
+.Container2 .i2 .RAISEC-Circle .circleItem-E:hover {
+  cursor: pointer;
+  transition: 0.2s ease;
+  transform: scale(1.1) !important;
+}
+
+.Container2 .i2 .RAISEC-Circle-Aninimation {
+  animation: circleMove 2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes circleMove {
+  100% {
+    opacity: 1;
+  }
+}
+
+.Container2 .i2 #Rline {
+  right: -170px;
+  top: -50px;
+  position: absolute;
+  display: none;
+  stroke-width: 6;
+  stroke: #707070;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.Container2 .i2 #Rimage {
+  display: none;
+  position: absolute;
+  right: -470px;
+  top: -50px;
+  width: 400px;
+  height: 275px;
+  background-image: url(/行銷頁面/img/Rimage.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* 打印效果 */
+  /* 光标闪啊闪 */
+}
+
+.Container2 .i2 #Rimage .RTitle {
+  margin-top: 350px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 #Rimage .RSubTitle {
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Rimage .typing {
+  width: 550px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing 8s steps(24, end);
+  word-break: break-all;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  100% {
+    width: 550px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
+
+.Container2 .i2 #Rchart {
+  display: none;
+  width: 340px;
+  height: 380px;
+  position: absolute;
+  left: -480px;
+  bottom: -180px;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.Container2 .i2 #Rchart #Rresult {
+  position: absolute;
+  stroke: #707070;
+  stroke-width: 2px;
+  fill-opacity: 0;
+  fill: rgba(19, 134, 117, 0.5);
+  width: 180px !important;
+  height: 165px;
+  z-index: -1 !important;
+  top: 24px;
+  left: 79px;
+  width: 160px;
+}
+
+.Container2 .i2 #Rchart .RresultFinished {
+  fill-opacity: 1 !important;
+  transition: 1s;
+}
+
+.Container2 .i2 #Rchart .RresultLeave {
+  fill-opacity: 0 !important;
+  transition: 0.5s;
+}
+
+.Container2 .i2 .RContext {
+  display: none;
+  position: absolute;
+  top: -480px;
+  left: -480px;
+}
+
+.Container2 .i2 .RContext .R1Title {
+  margin-top: 300px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 .RContext .R1subTitle {
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 .RContext .R2Title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+}
+
+.Container2 .i2 .RContext .R2subTitle {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 #Iline {
+  display: none;
+  right: -270px;
+  top: 100px;
+  position: absolute;
+  stroke-width: 6;
+  stroke: #707070;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.Container2 .i2 #Iimage {
+  display: none;
+  position: absolute;
+  right: -580px;
+  top: 20px;
+  width: 320px;
+  height: 290px;
+  background-image: url(/行銷頁面/img/Iimage.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* 打印效果 2*/
+  /* 打印效果 */
+  /* 光标闪啊闪 */
+}
+
+.Container2 .i2 #Iimage .ITitle {
+  margin-top: 350px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 #Iimage .ISubTitle {
+  width: 400px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Iimage .ISubTitle2 {
+  width: 0px;
+  overflow: hidden;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Iimage .typing2 {
+  width: 230px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 230px;
+  }
+}
+
+.Container2 .i2 #Iimage .typing {
+  width: 400px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
+
+.Container2 .i2 #Ichart {
+  display: none;
+  width: 340px;
+  height: 380px;
+  position: absolute;
+  left: -480px;
+  bottom: -150px;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.Container2 .i2 #Ichart #Iresult {
+  position: absolute;
+  stroke: #707070;
+  stroke-width: 2px;
+  fill-opacity: 0;
+  fill: rgba(122, 0, 154, 0.5);
+  width: 140px;
+  height: 160px;
+  z-index: -1 !important;
+  top: 70px;
+  left: 175px;
+}
+
+.Container2 .i2 #Ichart .IresultFinished {
+  fill-opacity: 1 !important;
+  transition: 1s;
+}
+
+.Container2 .i2 #Ichart .IresultLeave {
+  fill-opacity: 0 !important;
+  transition: 0.5s;
+}
+
+.Container2 .i2 .IContext {
+  display: none;
+  position: absolute;
+  top: -480px;
+  left: -480px;
+}
+
+.Container2 .i2 .IContext .I1Title {
+  margin-top: 300px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 .IContext .I1subTitle {
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 .IContext .I2Title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+}
+
+.Container2 .i2 .IContext .I2subTitle {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 #Aline {
+  display: none;
+  right: -127px;
+  top: 400px;
+  width: 175px;
+  height: 15px;
+  position: absolute;
+  stroke-width: 4;
+  stroke: #707070;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.Container2 .i2 #Aimage {
+  display: none;
+  position: absolute;
+  right: -450px;
+  top: 160px;
+  width: 280px;
+  height: 347px;
+  background-image: url(/行銷頁面/img/Aimage.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* 打印效果 2*/
+  /* 打印效果 */
+  /* 光标闪啊闪 */
+}
+
+.Container2 .i2 #Aimage .AimageContext {
+  position: absolute;
+  top: -550px;
+  left: -100px;
+}
+
+.Container2 .i2 #Aimage .ATitle {
+  margin-top: 350px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 #Aimage .ASubTitle {
+  width: 400px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Aimage .ASubTitle2 {
+  width: 0px;
+  overflow: hidden;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Aimage .typing2 {
+  width: 255px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 260px;
+  }
+}
+
+.Container2 .i2 #Aimage .typing {
+  width: 400px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 350px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
+
+.Container2 .i2 #Achart {
+  display: none;
+  width: 340px;
+  height: 380px;
+  position: absolute;
+  left: -480px;
+  bottom: -180px;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.Container2 .i2 #Achart #Aresult {
+  position: absolute;
+  stroke: #707070;
+  stroke-width: 2px;
+  fill-opacity: 0;
+  fill: rgba(16, 60, 95, 0.7);
+  width: 140px;
+  height: 160px;
+  z-index: -1 !important;
+  top: 125px;
+  left: 175px;
+}
+
+.Container2 .i2 #Achart .AresultFinished {
+  fill-opacity: 1 !important;
+  transition: 1s;
+}
+
+.Container2 .i2 #Achart .AresultLeave {
+  fill-opacity: 0 !important;
+  transition: 0.5s;
+}
+
+.Container2 .i2 .AContext {
+  display: none;
+  position: absolute;
+  top: -480px;
+  left: -480px;
+}
+
+.Container2 .i2 .AContext .A1Title {
+  margin-top: 300px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 .AContext .A1subTitle {
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 .AContext .A2Title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+}
+
+.Container2 .i2 .AContext .A2subTitle {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 #Sline {
+  display: none;
+  right: 370px;
+  top: 400px;
+  width: 175px;
+  height: 15px;
+  position: absolute;
+  stroke-width: 4;
+  stroke: #707070;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.Container2 .i2 #Simage {
+  display: none;
+  position: absolute;
+  left: -550px;
+  top: 160px;
+  width: 350px;
+  height: 328px;
+  background-image: url(/行銷頁面/img/Simage.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* 打印效果 2*/
+  /* 打印效果 */
+  /* 光标闪啊闪 */
+}
+
+.Container2 .i2 #Simage .SimageContext {
+  position: absolute;
+  top: -550px;
+  left: -17px;
+}
+
+.Container2 .i2 #Simage .STitle {
+  margin-top: 350px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 #Simage .SSubTitle {
+  width: 400px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Simage .SSubTitle2 {
+  width: 0px;
+  overflow: hidden;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Simage .typing2 {
+  width: 200px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+.Container2 .i2 #Simage .typing {
+  width: 400px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 350px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
+
+.Container2 .i2 #Schart {
+  display: none;
+  width: 340px;
+  height: 380px;
+  position: absolute;
+  right: -555px;
+  bottom: -200px;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.Container2 .i2 #Schart #Sresult {
+  position: absolute;
+  stroke: #707070;
+  stroke-width: 2px;
+  fill-opacity: 0;
+  fill: rgba(239, 59, 63, 0.7);
+  width: 187px;
+  height: 158px;
+  z-index: -1 !important;
+  top: 188px;
+  left: 92px;
+}
+
+.Container2 .i2 #Schart .SresultFinished {
+  fill-opacity: 1 !important;
+  transition: 1s;
+}
+
+.Container2 .i2 #Schart .SresultLeave {
+  fill-opacity: 0 !important;
+  transition: 0.5s;
+}
+
+.Container2 .i2 .SContext {
+  display: none;
+  position: absolute;
+  top: -480px;
+  right: -550px;
+}
+
+.Container2 .i2 .SContext .S1Title {
+  margin-top: 300px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 .SContext .S1subTitle {
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 .SContext .S2Title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+}
+
+.Container2 .i2 .SContext .S2subTitle {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 #Eline {
+  display: none;
+  right: 450px;
+  top: 230px;
+  width: 175px;
+  height: 15px;
+  position: absolute;
+  stroke-width: 4;
+  stroke: #707070;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.Container2 .i2 #Eimage {
+  display: none;
+  position: absolute;
+  left: -550px;
+  top: 160px;
+  width: 295px;
+  height: 337px;
+  background-image: url(/行銷頁面/img/Eimage.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* 打印效果 2*/
+  /* 打印效果 */
+  /* 光标闪啊闪 */
+}
+
+.Container2 .i2 #Eimage .EimageContext {
+  position: absolute;
+  top: -550px;
+  left: -17px;
+}
+
+.Container2 .i2 #Eimage .ETitle {
+  margin-top: 350px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 #Eimage .ESubTitle {
+  width: 400px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Eimage .ESubTitle2 {
+  width: 0px;
+  overflow: hidden;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Eimage .typing2 {
+  width: 200px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+.Container2 .i2 #Eimage .typing {
+  width: 500px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 500px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
+
+.Container2 .i2 #Echart {
+  display: none;
+  width: 340px;
+  height: 380px;
+  position: absolute;
+  right: -555px;
+  bottom: -200px;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.Container2 .i2 #Echart #Eresult {
+  position: absolute;
+  stroke: #707070;
+  stroke-width: 2px;
+  fill-opacity: 0;
+  fill: rgba(247, 143, 8, 0.7);
+  width: 136px;
+  height: 155px;
+  z-index: 50 !important;
+  top: 143px;
+  left: 39px;
+}
+
+.Container2 .i2 #Echart .EresultFinished {
+  fill-opacity: 1 !important;
+  transition: 1s;
+}
+
+.Container2 .i2 #Echart .EresultLeave {
+  fill-opacity: 0 !important;
+  transition: 0.5s;
+}
+
+.Container2 .i2 .EContext {
+  display: none;
+  position: absolute;
+  top: -480px;
+  right: -550px;
+}
+
+.Container2 .i2 .EContext .E1Title {
+  margin-top: 300px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 .EContext .E1subTitle {
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 .EContext .E2Title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+}
+
+.Container2 .i2 .EContext .E2subTitle {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 #Cline {
+  display: none;
+  right: 380px;
+  top: 20px;
+  width: 175px;
+  height: 15px;
+  position: absolute;
+  stroke-width: 4;
+  stroke: #707070;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.Container2 .i2 #Cimage {
+  display: none;
+  position: absolute;
+  left: -550px;
+  top: 160px;
+  width: 300px;
+  height: 346px;
+  background-image: url(/行銷頁面/img/Cimage.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* 打印效果 2*/
+  /* 打印效果 */
+  /* 光标闪啊闪 */
+}
+
+.Container2 .i2 #Cimage .CimageContext {
+  position: absolute;
+  top: -550px;
+  left: -17px;
+}
+
+.Container2 .i2 #Cimage .CTitle {
+  margin-top: 350px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 #Cimage .CSubTitle {
+  width: 400px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Cimage .CSubTitle2 {
+  width: 0px;
+  overflow: hidden;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 20px;
+}
+
+.Container2 .i2 #Cimage .typing2 {
+  width: 250px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+.Container2 .i2 #Cimage .typing {
+  width: 350px;
+  height: 1.25em;
+  border-right: 1px solid transparent;
+  animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 350px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
+
+.Container2 .i2 #Cchart {
+  display: none;
+  width: 340px;
+  height: 380px;
+  position: absolute;
+  right: -555px;
+  bottom: -200px;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.Container2 .i2 #Cchart #Cresult {
+  position: absolute;
+  stroke: #707070;
+  stroke-width: 2px;
+  fill-opacity: 0;
+  fill: rgba(85, 191, 196, 0.7);
+  width: 139px;
+  height: 148px;
+  z-index: 10 !important;
+  top: 93px;
+  left: 37px;
+}
+
+.Container2 .i2 #Cchart .CresultFinished {
+  fill-opacity: 1 !important;
+  transition: 1s;
+}
+
+.Container2 .i2 #Cchart .CresultLeave {
+  fill-opacity: 0 !important;
+  transition: 0.5s;
+}
+
+.Container2 .i2 .CContext {
+  display: none;
+  position: absolute;
+  top: -480px;
+  right: -550px;
+}
+
+.Container2 .i2 .CContext .C1Title {
+  margin-top: 300px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Container2 .i2 .CContext .C1subTitle {
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}
+
+.Container2 .i2 .CContext .C2Title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #676767;
+  font-size: 26px;
+}
+
+.Container2 .i2 .CContext .C2subTitle {
+  margin-top: 10px;
+  letter-spacing: 2px;
+  color: #676767 !important;
+  font-size: 20px;
+  width: 380px;
+}

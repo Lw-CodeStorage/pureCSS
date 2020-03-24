@@ -1,0 +1,10 @@
+.bidContainer {
+  color: black;
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

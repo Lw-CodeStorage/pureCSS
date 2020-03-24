@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- chartJS -->
+    <script src="js/Chart.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/system/selfBs4ModalKit.css">
+    <link rel="stylesheet" href="css/system/DISC-Result.css">
+    <script src="js/system/DISC-Result.js"></script>
+</head>
+
+<body>
+    <a class="rigisterNow" data-toggle="modal" data-target="#exampleModal">modal元件</a>
+
+    <div id="exampleModal" class="modal fade bd-example-modal-lg " tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="selfModalContent ">
+                    <p class="discTitle">DISC 測評分析 : </p>
+                    <div class="chartContainer">
+                        <div class="chart">
+                            <canvas id="myChart1" width="100%" height="100%"></canvas>
+                        </div>
+                        <div class="chart">
+                            <canvas id="myChart2" width="100%" height="100%"></canvas>
+                        </div>
+                    </div>
+                    <p class="discTitle">DISC 說明: </p>
+                    <div class="evaluationResultContainer">
+                        <div class="evaluationResultTitle">特徵</div>
+                        <div class="evaluationResultContent">
+                            <p>支配型(D)</p>
+                            <div>指揮者，天生領袖，擅長領導與指揮，自尊心較強，行事果決，講求效率，代表性動物為老虎。</div>
+                            <p>影響型(I)</p>
+                            <div>社交者，口才佳，擅社交，是優秀的公關。追求互動，希望對方能給予鼓勵與掌聲，是個樂觀主義者，代表性動物為孔雀。</div>
+                            <p>穩健型(S)</p>
+                            <div>支持者，善傾聽，穩健度極高，喜歡按部就班，是團隊中非常好的擁護者，代表性動物為無尾熊。</div>
+                            <p>服從型(C)</p>
+                            <div>思考者，善分析，注重細節，是高標準的完美主義者。喜歡謹慎思考後再做出行動，重視規劃、順序、流程及制度，做事上希望他人提供詳細資料，代表性動物為貓頭鷹。</div>
+                        </div>
+                    </div>
+
+                    <p class="discTitle">DISC 測評結果 : </p>
+                    <div class="evaluationResultContainer">
+                        <div class="evaluationResultTitle">個性傾向</div>
+                        <div class="evaluationResultContent">
+                            <p> <span>最真實的我：</span> 支配型(D)</p>
+                            <div>
+                                此類型的人個性外向開朗，擁有自己的想法，追求成功與成就，擅於讓別人依他們的方法做事，行事會做全盤考量，並看情況是否有利，為滿足自己的需要，會透過壓迫性的行為掌控環境，但現況不利時，他們通常能壓住反對的聲音。適合的工作：將軍、主管
+                            </div>
+                            <p>個性</p>
+                            <div>傾向於透過言語說服力來與他人建立關係；在友善的、良好的環境中就能夠發揮得淋漓盡致。</div>
+                            <p>優點</p>
+                            <div>樂觀主義、喜愛表現、注重人際關係、追求認同、具說服力、不怕陌生、注重友誼、活力充沛。</div>
+                            <p>缺點</p>
+                            <div>說話太多、天馬行空、情感衝動、容易分心。</div>
+                        </div>
+                        <div class="evaluationResultContent">
+                            <p> <span>別人期望的我：</span> 支配型(D)</p>
+                            <div>
+                                此類型的人個性外向開朗，擁有自己的想法，追求成功與成就，擅於讓別人依他們的方法做事，行事會做全盤考量，並看情況是否有利，為滿足自己的需要，會透過壓迫性的行為掌控環境，但現況不利時，他們通常能壓住反對的聲音。適合的工作：將軍、主管
+                            </div>
+                            <p>個性</p>
+                            <div>傾向於透過言語說服力來與他人建立關係；在友善的、良好的環境中就能夠發揮得淋漓盡致。</div>
+                            <p>優點</p>
+                            <div>樂觀主義、喜愛表現、注重人際關係、追求認同、具說服力、不怕陌生、注重友誼、活力充沛。</div>
+                            <p>缺點</p>
+                            <div>說話太多、天馬行空、情感衝動、容易分心。</div>
+                        </div>
+
+                    </div>
+                    <div class="evaluationResultContainer">
+                        <div class="evaluationResultTitle">特質類型</div>
+                        <div class="evaluationResultContent">
+
+                            <p> <span>外在特質 : </span>Accuracy精確性</p>
+                            <div>
+                                高服從(C)及低影響(I)的特徵為「謹慎」，擁有這種特徵的人非常不喜歡犯錯，他們會反覆地檢查工作，並且會糾正別人工作中的錯誤（不論別人有沒有要他這樣做）。這種對於確定性的需要表示他們除非萬不得已，否則很少願意冒任何風險。他們在溝通時也是非常謹慎，除了必要的信息外，極少會泄露有關自己的事情。
+                            </div>
+                        </div>
+                        <div class="evaluationResultContent">
+
+                            <p> <span>內在特質 : </span>Accuracy精確性</p>
+                            <div>
+                                高服從(C)及低影響(I)的特徵為「謹慎」，擁有這種特徵的人非常不喜歡犯錯，他們會反覆地檢查工作，並且會糾正別人工作中的錯誤（不論別人有沒有要他這樣做）。這種對於確定性的需要表示他們除非萬不得已，否則很少願意冒任何風險。他們在溝通時也是非常謹慎，除了必要的信息外，極少會泄露有關自己的事情。
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 墊高葉絞高度 -->
+                    <div style="height:120px;"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

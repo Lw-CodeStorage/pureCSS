@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/system/DISC.css">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+  <div class="discContainer">
+    <div class="uk-card  uk-card-default uk-card-hover uk-card-body">
+      <h2 class="uk-card-title uk-heading-divider">DISC行為科學測評問卷</h2>
+      <progress id="js-progressbar" class="uk-progress" value="0" max="1"></progress>
+      <p class="uk-heading-divider">第一頁</p>
+      <div class="page0">
+        <div class="discImage"></div>
+        <h2 class="uk-card-title uk-heading-divider">隱私權保護政策</h2>
+        <div class="privateDescription">
+          <p>1. 本表單所取得的個人測評資料，僅提供作為評量受評量者職業興趣之用，不作任何其他目之使用。</p>
+          <p>2. 會員於本網站所儲存的測評資料，本網站將採取適當的保護措施，以防止未經授權的資料存取，並確保會員資料的安全。</p>
+          <p>3. 本網站致力於保護會員資料的安全，並維護會員的網路隱私權益，如會員對我們的隱私政策有任何疑問，歡迎與我們聯絡。</p>
+          <p>4. 為了便利會員使用本網站功能，本網站使用cookie技術來提供適性服務；如果會員不接受cookie技術，可經由瀏覽器設定取消此項功能。</p>
+          <p>5. 我們將視會員之需要，不定期修改隱私保護政策，以落實保障會員隱私之立意。如會員對我們的隱私政策有任何建議，歡迎與我們聯絡。</p>
+        </div>
+        <p id="checkbox_li" class="agree">
+          <input name="checkbox" type="checkbox" value="同意" id="checkbox"> <label for="checkbox">同意</label>
+        </p>
+        <h2 class="uk-card-title uk-heading-divider">說明</h2>
+        <p class="discDescriptionContent">
+          請在以下各方格內的一組四個詞句中，選出一項最像你的描述，勾選於"M"欄，並在"L"欄內選出一項最「不像」你的。請勿選擇你理想中的自己或別人認為的你。憑直覺回答，盡量不要深思或分析。也許你很難選出適當的答案，但盡量在每一組中做出選擇。請記住一組四個詞句中，只能選出一項勾選於M欄內，一項在L欄內。
+        </p>
+      </div>
+      <div class="page1">
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>1.</p>
+              <p>2.</p>
+              <p>3.</p>
+              <p>4.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>仁慈，友善，關懷</div>
+              <div>規矩，莊重</div>
+              <div>要求高，有權威感</div>
+              <div>外向，活躍</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>5.</p>
+              <p>6.</p>
+              <p>7.</p>
+              <p>8.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>有趣，創造樂趣</div>
+              <div>堅定，堅強</div>
+              <div>守法，細心</div>
+              <div>溫和，柔軟，謙虛</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>9.</p>
+              <p>10.</p>
+              <p>11.</p>
+              <p>12.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>大膽，敢於嘗試</div>
+              <div>和藹，令人輕鬆愉快</div>
+              <div>忠誠，忠實</div>
+              <div>精打細算，善於分析</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>13.</p>
+              <p>14.</p>
+              <p>15.</p>
+              <p>16.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>保守，拘謹</div>
+              <div>容易相信人，心思開放</div>
+              <div>不愛爭端，息事寧人</div>
+              <div>自信，有說服力</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>17.</p>
+              <p>18.</p>
+              <p>19.</p>
+              <p>20.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>果斷，肯定，有把握</div>
+              <div>友善，熱忱，受歡迎</div>
+              <div>小心，謹慎</div>
+              <div>順服，順從</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>21.</p>
+              <p>22.</p>
+              <p>23.</p>
+              <p>24.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>促進，鼓動性</div>
+              <div>直截了當，奉公守法</div>
+              <div>承當風險，有勇氣</div>
+              <div>討好人的，好脾氣的</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>25.</p>
+              <p>26.</p>
+              <p>27.</p>
+              <p>28.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>體諒，替別人著想</div>
+              <div>強硬，意志堅強</div>
+              <div>興緻高昂，充滿活力</div>
+              <div>完美主義，精準的</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>29.</p>
+              <p>30.</p>
+              <p>31.</p>
+              <p>32.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>易於滿足，不挑剔</div>
+              <div>一板一眼，照章行事</div>
+              <div>勇敢，有探險精神</div>
+              <div>熱心，有影響力</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>33.</p>
+              <p>34.</p>
+              <p>35.</p>
+              <p>36.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>能言善道，口齒伶俐</div>
+              <div>關懷，真誠，誠實</div>
+              <div>有毅力，努力不懈</div>
+              <div>要求正確，重對錯</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>37.</p>
+              <p>38.</p>
+              <p>39.</p>
+              <p>40.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>積極，樂觀</div>
+              <div>有喜感的，逗趣的</div>
+              <div>溫和，害羞</div>
+              <div>有能力的，把事做對</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>41.</p>
+              <p>42.</p>
+              <p>43.</p>
+              <p>44.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>深思熟慮，重思考</div>
+              <div>會調解的，有外交手腕</div>
+              <div>令人欣賞，舉止優雅</div>
+              <div>好勝的，好競爭</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>45.</p>
+              <p>46.</p>
+              <p>47.</p>
+              <p>48.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>令人喜悅，令人快樂</div>
+              <div>靈活，易通融，有彈性</div>
+              <div>有抱負的，積極行動力</div>
+              <div>有深度的，嚴肅認真</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>49.</p>
+              <p>50.</p>
+              <p>51.</p>
+              <p>52.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>穩重，可靠</div>
+              <div>健談，能言善道</div>
+              <div>追求挑戰，激勵別人</div>
+              <div>精確，準確</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>53.</p>
+              <p>54.</p>
+              <p>55.</p>
+              <p>56.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>穩定，平衡</div>
+              <div>充滿自信，自立</div>
+              <div>有覺察力，有洞察力</div>
+              <div>生動活潑，表達力強</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>57.</p>
+              <p>58.</p>
+              <p>59.</p>
+              <p>60.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>有駕馭性，喜歡主導</div>
+              <div>有憐憫心，敏感</div>
+              <div>深入探索，有好奇心</div>
+              <div>使人信服，有說服力</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+            <div class="Qrow1">
+              <div class="ML">
+                <span>M</span>
+                <span>L</span>
+              </div>
+            </div>
+            <div class="Qrow2">
+              <div class="qcolumn1">
+                <p>61.</p>
+                <p>62.</p>
+                <p>63.</p>
+                <p>64.</p>
+              </div>
+              <div class="qcolumn2">
+  
+                <div class="ckb">
+                  <input type="checkbox" name="vehicle1" value="I">
+                  <input type="checkbox" name="vehicle1" value="B">
+                </div>
+                <div class="ckb">
+                  <input type="checkbox" name="vehicle1" value="D">
+                  <input type="checkbox" name="vehicle1" value="D">
+                </div>
+                <div class="ckb">
+                  <input type="checkbox" name="vehicle1" value="S">
+                  <input type="checkbox" name="vehicle1" value="S">
+                </div>
+                <div class="ckb">
+                  <input type="checkbox" name="vehicle1" value="C">
+                  <input type="checkbox" name="vehicle1" value="B">
+                </div>
+              </div>
+              <div class="qcolumn3">
+                <div>喜愛社交，與人互動</div>
+                <div>嚴肅，意志堅定</div>
+                <div>體貼，有溫情</div>
+                <div>自我保護，善於掩飾</div>
+              </div>
+            </div>
+          </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>65.</p>
+              <p>66.</p>
+              <p>67.</p>
+              <p>68.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>有影響力，不易屈服</div>
+              <div>開朗，使人雀躍</div>
+              <div>慷慨，樂於施與</div>
+              <div>凡事預備，喜好鑽研</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>69.</p>
+              <p>70.</p>
+              <p>71.</p>
+              <p>72.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>怕羞，輕聲細語</div>
+              <div>有條理，按步就班</div>
+              <div>勤奮，努力工作</div>
+              <div>快樂，面帶笑容</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>73.</p>
+              <p>74.</p>
+              <p>75.</p>
+              <p>76.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>喜追究，好探問</div>
+              <div>容忍，有耐性</div>
+              <div>有衝勁，果斷</div>
+              <div>有動力，給人深刻印象</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>77.</p>
+              <p>78.</p>
+              <p>79.</p>
+              <p>80.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="D">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="C">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>服務精神，自我犧牲</div>
+              <div>精明，打動人心</div>
+              <div>開門見山，切中重點</div>
+              <div>獨創性，有創意</div>
+            </div>
+          </div>
+        </div>
+        <div class="Q">
+          <div class="Qrow1">
+            <div class="ML">
+              <span>M</span>
+              <span>L</span>
+            </div>
+          </div>
+          <div class="Qrow2">
+            <div class="qcolumn1">
+              <p>81.</p>
+              <p>82.</p>
+              <p>83.</p>
+              <p>84.</p>
+            </div>
+            <div class="qcolumn2">
+
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="I">
+                <input type="checkbox" name="vehicle1" value="I">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="B">
+                <input type="checkbox" name="vehicle1" value="D">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="S">
+                <input type="checkbox" name="vehicle1" value="S">
+              </div>
+              <div class="ckb">
+                <input type="checkbox" name="vehicle1" value="C">
+                <input type="checkbox" name="vehicle1" value="B">
+              </div>
+            </div>
+            <div class="qcolumn3">
+              <div>精力充沛，開朗活潑</div>
+              <div>忠誠的，奉獻的</div>
+              <div>注重禮節，彬彬有禮</div>
+              <div>嚴格，不易妥協</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="Q">
+            <div class="Qrow1">
+              <div class="ML">
+                <span>M</span>
+                <span>L</span>
+              </div>
+            </div>
+            <div class="Qrow2">
+              <div class="qcolumn1">
+                <p>85.</p>
+                <p>86.</p>
+                <p>87.</p>
+                <p>88.</p>
+              </div>
+              <div class="qcolumn2">
+  
+                <div class="ckb">
+                  <input type="checkbox" name="vehicle1" value="D">
+                  <input type="checkbox" name="vehicle1" value="D">
+                </div>
+                <div class="ckb">
+                  <input type="checkbox" name="vehicle1" value="I">
+                  <input type="checkbox" name="vehicle1" value="I">
+                </div>
+                <div class="ckb">
+                  <input type="checkbox" name="vehicle1" value="B">
+                  <input type="checkbox" name="vehicle1" value="C">
+                </div>
+                <div class="ckb">
+                  <input type="checkbox" name="vehicle1" value="S">
+                  <input type="checkbox" name="vehicle1" value="S">
+                </div>
+              </div>
+              <div class="qcolumn3">
+                <div>快人快語，有主見的</div>
+                <div>有魅力，有說服力</div>
+                <div>善於創作，有想像力</div>
+                <div>好客，愛結伴</div>
+              </div>
+            </div>
+          </div>
+          <div class="Q">
+              <div class="Qrow1">
+                <div class="ML">
+                  <span>M</span>
+                  <span>L</span>
+                </div>
+              </div>
+              <div class="Qrow2">
+                <div class="qcolumn1">
+                  <p>89.</p>
+                  <p>90.</p>
+                  <p>91.</p>
+                  <p>92.</p>
+                </div>
+                <div class="qcolumn2">
+    
+                  <div class="ckb">
+                    <input type="checkbox" name="vehicle1" value="D">
+                    <input type="checkbox" name="vehicle1" value="D">
+                  </div>
+                  <div class="ckb">
+                    <input type="checkbox" name="vehicle1" value="B">
+                    <input type="checkbox" name="vehicle1" value="B">
+                  </div>
+                  <div class="ckb">
+                    <input type="checkbox" name="vehicle1" value="C">
+                    <input type="checkbox" name="vehicle1" value="C">
+                  </div>
+                  <div class="ckb">
+                    <input type="checkbox" name="vehicle1" value="I">
+                    <input type="checkbox" name="vehicle1" value="I">
+                  </div>
+                </div>
+                <div class="qcolumn3">
+                  <div>熱情的，熱切的</div>
+                  <div>沉靜，保守</div>
+                  <div>有組織力，重秩序</div>
+                  <div>振奮的，有活力的</div>
+                </div>
+              </div>
+            </div>
+            <div class="Q">
+                <div class="Qrow1">
+                  <div class="ML">
+                    <span>M</span>
+                    <span>L</span>
+                  </div>
+                </div>
+                <div class="Qrow2">
+                  <div class="qcolumn1">
+                    <p>93.</p>
+                    <p>94.</p>
+                    <p>95.</p>
+                    <p>96.</p>
+                  </div>
+                  <div class="qcolumn2">
+      
+                    <div class="ckb">
+                      <input type="checkbox" name="vehicle1" value="B">
+                      <input type="checkbox" name="vehicle1" value="C">
+                    </div>
+                    <div class="ckb">
+                      <input type="checkbox" name="vehicle1" value="I">
+                      <input type="checkbox" name="vehicle1" value="I">
+                    </div>
+                    <div class="ckb">
+                      <input type="checkbox" name="vehicle1" value="S">
+                      <input type="checkbox" name="vehicle1" value="S">
+                    </div>
+                    <div class="ckb">
+                      <input type="checkbox" name="vehicle1" value="D">
+                      <input type="checkbox" name="vehicle1" value="D">
+                    </div>
+                  </div>
+                  <div class="qcolumn3">
+                    <div>忠誠，一致</div>
+                    <div>有反應迅速，願回應</div>
+                    <div>樂於幫忙，協助人</div>
+                    <div>清楚底線，直接了當</div>
+                  </div>
+                </div>
+              </div>
+
+      </div>
+      <div class="uk-text-right">
+        <spen id="spinner_container"></spen>
+        <button class="uk-button uk-button-primary uk-button-small " id="Previous" name="Previous" type="button"
+          style="display: none;">上一頁</button>
+        <button class="uk-button uk-button-primary uk-button-small uk-width-auto " id="Next" name="Next" type="button"
+          style="">下一頁</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

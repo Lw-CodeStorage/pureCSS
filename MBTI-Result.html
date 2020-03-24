@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- chartJS -->
+    <script src="js/Chart.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/system/selfBs4ModalKit.css">
+    <link rel="stylesheet" href="css/system/MBTI－Result.css">
+    <script src="js/system/MBIT-Result.js"></script>
+</head>
+
+<body>
+    <div class="modal-dialog123">
+        <div class="selfModalContent">
+
+            <div class="chart">
+                <canvas id="myChart1" width="100%" height="100%"></canvas>
+
+            </div>
+            <p class="mbtiDescriptionTitle">MBTI個性傾向</p>
+            <div class="mbtiDescriptionContainer">
+                <div class="column1">
+                    <div class="mbtiImage"></div>
+                </div>
+                <div class="column2">
+                    <div class="mbtiDescription">
+                        <p>外向(E)</p>
+                        <div>
+                            喜愛人群，喜歡外在世界，對外在人事物到興趣，較主動且活躍，喜歡親身體驗，對環境較有反應，喜歡說話。
+                        </div>
+                        <p>內向(I)</p>
+                        <div>
+                            喜歡獨處，喜歡內在世界，對點子或觀念有興趣，較被動且不活躍，多自省，三思而後動，安靜，少說話。
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mbtiDescriptionContainer">
+                <div class="column1">
+                    <div class="mbtiImage"></div>
+                </div>
+                <div class="column2">
+                    <div class="mbtiDescription">
+                        <p>計畫(J)</p>
+                        <div>
+                            喜歡計劃性的生活方式，決斷性高，做事以成果為導向，喜歡經由思考來決定事情，喜歡事情的進行有計劃，喜歡準時。
+                        </div>
+                        <p>隨性(P)</p>
+                        <div>
+                            喜歡隨性的生活方式，不喜歡做決定，做事以過程為導向，喜歡經由直覺來理解事情，喜歡有變化的安排，對時間安排比較彈性隨性。
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mbtiDescriptionContainer">
+                <div class="column1">
+                    <div class="mbtiImage"></div>
+                </div>
+                <div class="column2">
+                    <div class="mbtiDescription">
+                        <p>思考(T)</p>
+                        <div>
+                            比較理性，喜歡以邏輯思考的結論來決定行動，喜歡客觀，傾向於對事不對人，不容易掉眼淚。
+                        </div>
+                        <p>感覺(F)</p>
+                        <div>
+                            比較感性，對於心靈層面的感受性較高，傾向於對人不對事，處理事情比較婉轉，不會輕易得罪別人，容易表達感情與好惡，喜歡和諧的場面。
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mbtiDescriptionContainer ">
+                <div class="column1">
+                    <div class="mbtiImage"></div>
+                </div>
+                <div class="column2  borderbot">
+                    <div class="mbtiDescription">
+                        <p>直覺(N)</p>
+                        <div>
+                            比較傾向憑直覺，思想快速、崇尚靈感、富想像力、容易創新、容易聯想、容易做夢。
+                        </div>
+                        <p>官覺(S)</p>
+                        <div class="addLine">
+                            比較傾向憑五官感覺，崇尚實際，相信經驗、善於觀察、小心遵守、對顏色造型敏感。
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="mbtiDescriptionTitle">MBTI性格傾向</p>
+            <div class="personalityType">
+                <div class="type">思考型Thinking</div>
+                <div class="typeDiscription">
+                    <div class="shortType">ISTP、INTP、ESTJ、ENTJ</div>
+                    <div class="typeDiscription">思考是人們用來進行邏輯判斷的工具之一，此類型的人通常善於客觀分析事情的輕重，注重公平、公義、公正、平等，喜歡高度知識性與技術性的工作。
+                    </div>
+                </div>
+
+            </div>
+            <div class="personalityType">
+                <div class="type">感覺型Feeling</div>
+                <div class="typeDiscription"> 
+                    <div class="shortType">ISFP、INFP、
+                        ESFJ、ENFJ
+                    </div>
+                    <div class="typeDiscription">此類型的人善於建立人性方面的價值，善於了解人的感覺，喜歡和諧的場面，講究溫暖的氣氛，富有憐憫心腸，喜歡從事人際關係方面的工作。</div>
+                </div>
+
+            </div>
+            <div class="personalityType">
+                <div class="type">官覺型Sensing</div>
+                <div class="typeDiscription">
+                    <div class="shortType">ISTJ、ISFJ、
+                        ESTP、ESFP
+                    </div>
+                    <div class="typeDiscription">
+                        此類型的人通常善於以感官來觀察看得見摸得到的事物，講究實務經驗甚於抽象理論，喜歡站在已知的事實上，有系統逐步的向前推演。喜歡正確性、秩序性、具體性與現在性的東西。</div>
+                </div>
+
+            </div>
+            <div class="personalityType ">
+                <div class="type">直覺型Intuition</div>
+                <div class="typeContainer addLine">
+                    <div class="shortType">INTJ、INFJ、
+                        ENTP、ENFP
+                    </div>
+                    <div class="typeDiscription">
+                        此類型的人通常會以聯想、直覺來理解抽象性、象徵性與理論性的東西。直覺的人具有創發性，能洞查未來性與可能性。喜歡靈感過於經驗；喜歡新鮮與尚未嘗試過的事，常用第六感學習新的事物。</div>
+
+                </div>
+
+            </div>
+
+            <p class="mbtiDescriptionTitle">測評結果</p>
+            <div class="mbtiResult">
+                <div class="col1">
+                    <p>思考型(ISTP)</p>
+                </div>
+                <div class="col2">
+                    <p>性格說明</p>
+                    <div>此類型之人冷靜、安靜、友善、保守、堅持原則、善於觀察、喜歡分析並了解事情細節。交談少而且說話簡潔，有時不善於言詞；對生命感動好奇、具幽默感、重休閒活動。喜歡了解事情的因果關係，及如何與為何的問題。只關心自己覺得有必要參與的事，不喜歡浪費精力在自己覺得無意義的事上。對於複雜的事能耐心處理並理出頭緒，重正確的表達方式。代表性職業頭銜：工程師。</div>
+                    <div class="col2Split">
+                        <div>
+                            <p>優點</p>
+                            <div>解決麻煩問題的高手，能快速的面對發生的危機，採取有效的因應行動，並自然而然的作成絕佳的決定。具有分析資料事實作出反應的高能力。</div>
+                        </div>
+                        <div>
+                            <p>弱點</p>
+                            <div>對於毫無危機存在的溝通、談判深感乏味，希望儘早結束，忽略別人的感受，以及尋求新的可能解決方案。</div>
+                        </div>
+                    </div>
+                    <div class="col2Split">
+                            <div>
+                                <p>有效溝通</p>
+                                <div>向此類人提議時，可附上一份詳列有關立即性效益的資料。</div>
+                            </div>
+                            <div>
+                                <p>無效溝通</p>
+                                <div>對於進行緩慢、拖延時日的協商甚感不耐，不耐煩大型的會議或有關理論性的討論。</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

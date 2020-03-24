@@ -1,0 +1,48 @@
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+
+@media (min-width: 300px) {
+  .discContainer {
+    max-width: 1280px;
+    margin: auto;
+    .uk-card {
+      padding: 40px;
+    }
+    .page0 {
+      display: none;
+      .discImage {
+        width: 100%;
+        height: 375px;
+        background-image: url("https://picsum.photos/id/56/2880/1920");
+        background-size: cover;
+        background-position: center;
+      }
+      .privateDescription {
+      }
+
+      .discDescriptionContent {
+        padding-right: 150px;
+      }
+      .uk-card-title {
+        margin-top: 10px;
+      }
+    }
+    .page1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .MBTIquation {
+        max-width: 300px;
+        width: 100%;
+        padding: 20px;
+        .MBTIquationTitle {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

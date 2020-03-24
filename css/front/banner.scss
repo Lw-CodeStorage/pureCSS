@@ -1,0 +1,37 @@
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: 100%;
+
+//   img {
+//     height: 170px;
+//     width: 100%;
+//   }
+  .bannerImage{
+    height: 170px;
+    width: 100%;
+    background-image: url('http://fois.online/wp-content/themes/fois2.0_theme/img/FOIS_Web-派案.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+  }
+  .bannerImageCover {
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    opacity: 0.4;
+    z-index: 2;
+    background-image: linear-gradient(-225deg, #20e2d7 0%, #f9fea5 100%);
+  }
+  .bannerTextCover {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    z-index: 2;
+  }
+}

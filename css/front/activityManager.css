@@ -1,0 +1,462 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-size: 16px;
+    background: rgb(245, 245, 245);
+}
+
+@media (min-width:1001px) {
+    .activityManagerWarp {
+        max-width: 1024px;
+        margin: auto;
+    }
+    .activityManagerContainer {
+        display: flex;
+        width: 100%;
+    }
+    .column1 {
+        width: 340px;
+        padding: 20px;
+    }
+    .activityManagerImage {
+        width: 200px;
+        height: 200px;
+        margin: 0px 50px 16px 50px;
+        background: white;
+    }
+    .activityManagerImage img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    .activityManagerInfo {
+        border: 2px solid rgb(233, 233, 233);
+        border-radius: 5px;
+        margin: 24px 0px 24px 0px;
+        width: 300px;
+    }
+    .activityManagerInfo>p:first-child {
+        background: rgb(245, 245, 245);
+        
+        color: gray;
+        font-size: 1rem;
+        padding: 20px;
+        text-align: center;
+    }
+    .activityManagerSub1 {
+        border-top: 1px solid rgb(233, 233, 233);
+        border-bottom: 1px solid rgb(233, 233, 233);
+        padding: 24px 20px 12px 20px;
+        background: white;
+    }
+    .activityManagerSubTitle {
+        margin-bottom: 20px;
+    }
+    .activityManagerSub1 small {
+        font-size: 0.8rem;
+        color: grey;
+    }
+    .activityManagerInfo a {
+        text-decoration: none;
+        color: green;
+    }
+    .activityManagerConnect {
+        padding: 20px;
+        background: white;
+    }
+    .activityManagerConnect a {
+        text-decoration: none;
+        color: white;
+        background: green;
+        border: 1px solid green;
+        border-radius: 5px;
+        margin-right: 20px;
+        padding: 5px 10px 5px 10px;
+    }
+    .column2 {
+        width: 684px;
+        padding: 0px 20px 0px 20px;
+        margin-top: 20px;
+        ;
+        border-left: 2px solid rgb(233, 233, 233);
+    }
+    .activityManagerRow {
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+        margin-bottom: 20px;
+        
+    }
+    .activityManagerRowTitle1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .activityManagerRowTitle1 i {
+        color: rgb(21, 160, 30);
+        font-size: 1.4rem;
+    }
+    .activityManagerRowTitle1 h4 {
+        color: rgb(21, 160, 30);
+        font-weight: bold;
+        font-size: 1.4rem;
+        display: inline-block;
+    }
+    .end{
+        border-radius: 5px;
+        border: 0px;
+        background: red;
+        color: white;
+        padding: 5px 20px 5px 20px;
+        outline-color: salmon;
+    }
+    .card1Title1 {
+        color: rgb(118, 86, 16);
+        border-radius: 5px;
+        background: rgb(254, 241, 194);
+        margin: 20px 0px 20px 0px;
+        padding: 20px;
+    }
+    .card1Title2 {
+        color: rgb(14, 67, 77);
+        border-radius: 5px;
+        background: rgb(199, 232, 237);
+        margin: 20px 0px 20px 0px;
+        padding: 20px;
+    }
+
+    .activityApplyTime {
+        margin-bottom: 20px;
+        display: flex;
+        color: gray;
+        font-size: 1rem;
+        justify-content: space-between;
+    }
+    .activityStopApplyTime {
+        margin-bottom: 20px;
+        display: flex;
+        color: lightcoral;
+        font-size: 1rem;
+        justify-content: space-between;
+    }
+
+    .card1Button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .card1Button button {
+        width: 33.33%;
+        padding: 10px;
+        background: gray;
+        outline-color: rgb(72, 79, 85);
+        border: 0px;
+        color: white;
+    }
+    .card1Button button:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    .card1Button button:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    .card1Button button:focus {
+        background: rgb(39, 44, 49);
+    }
+    .card1PublicButton {
+        background: rgb(27, 145, 169);
+        border: 0px;
+        border-radius: 3px;
+        color: white;
+        padding: 10px 30px 10px 30px;
+        width: 100%;
+    }
+    .card1PublicButton:focus {
+        outline-color: rgb(149, 208, 218);
+    }
+    .card3EditStudentList {
+        background: rgb(27, 145, 169);
+        border: 0px;
+        border-radius: 3px;
+        color: white;
+        padding: 10px 30px 10px 30px;
+        width: 100%;
+    }
+    .card3EditStudentList:focus {
+        outline-color: rgb(149, 208, 218);
+    }
+    .addNewActivity {
+        font-size: 0.9rem;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 20px;
+        border: 0px;
+        color: white;
+        background: rgb(37, 154, 54);
+    }
+    .addNewActivity:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgb(149, 207, 159);
+    }
+    .peopleApplyInfo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .peopleApplyInfo div {
+        width: 49%;
+        background: whitesmoke;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:992px) {
+    html {
+        font-size: 14px;
+    }
+    .activityManagerWarp {
+        max-width: 480px;
+        margin: auto;
+    }
+    .activityManagerContainer {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .column1 {
+        width: 100%;
+        padding: 20px;
+    }
+    .activityManagerImage {
+        width: 150px;
+        height: 150px;
+        background: white;
+        margin: auto;
+    }
+    .activityManagerImage img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    .activityManagerInfo {
+        border: 2px solid rgb(233, 233, 233);
+        border-radius: 5px;
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+    }
+    .activityManagerInfo>p:first-child {
+        background: rgb(245, 245, 245);
+        color: gray;
+        font-size: 1.5rem;
+        padding: 20px;
+        text-align: center;
+    }
+    .activityManagerSub1 {
+        border-top: 1px solid rgb(233, 233, 233);
+        border-bottom: 1px solid rgb(233, 233, 233);
+        padding: 24px 20px 12px 20px;
+        background: white;
+    }
+    .activityManagerSubTitle {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .activityManagerSub1 small {
+        font-size: 14px;
+        color: grey;
+    }
+    .activityManagerInfo a {
+        text-decoration: none;
+        color: green;
+    }
+    .activityManagerConnect {
+        font-size: 0.8rem;
+        padding: 20px;
+        background: white;
+    }
+    .activityManagerConnect a {
+        text-decoration: none;
+        color: white;
+        background: green;
+        border: 1px solid green;
+        border-radius: 5px;
+        margin-right: 20px;
+        padding: 5px 10px 5px 10px;
+    }
+    .column2 {
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+        margin-top: 20px;
+       
+    }
+    .activityManagerRow {
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    .activityManagerRowTitle1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .activityManagerRowTitle1 i {
+        
+        color: rgb(21, 160, 30);
+        font-size: 1.4rem;
+    }
+    .activityManagerRowTitle1 h4 {
+        color: rgb(21, 160, 30);
+        font-weight: bold;
+        font-size: 1.4rem;
+        display: inline-block;
+    }
+    .card1Title1 {
+        color: rgb(118, 86, 16);
+        border-radius: 5px;
+        background: rgb(254, 241, 194);
+        margin: 20px 0px 20px 0px;
+        padding: 20px;
+    }
+    .card1Title2 {
+        color: rgb(14, 67, 77);
+        border-radius: 5px;
+        background: rgb(199, 232, 237);
+        margin: 20px 0px 20px 0px;
+        padding: 20px;
+    }
+    .activityApplyTime {
+        margin-bottom: 20px;
+        display: flex;
+        color: gray;
+        font-size: 1rem;
+        justify-content: space-between;
+    }
+    .activityStopApplyTime {
+        margin-bottom: 20px;
+        display: flex;
+        color: lightcoral;
+        font-size: 1rem;
+        justify-content: space-between;
+    }
+
+    .end{
+        border-radius: 5px;
+        border: 0px;
+        background: red;
+        color: white;
+        padding: 5px 20px 5px 20px;
+        outline-color: salmon;
+    }
+
+    .card1Button {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .card1Button button {
+        width: 33.33%;
+        padding: 10px;
+        background: gray;
+        outline-color: rgb(72, 79, 85);
+        border: 0px;
+        color: white;
+    }
+    .card1Button button:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    .card1Button button:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    .card1Button button:focus {
+        background: rgb(39, 44, 49);
+    }
+    .card1PublicButton {
+        background: rgb(27, 145, 169);
+        border: 0px;
+        border-radius: 3px;
+        color: white;
+        padding: 10px 30px 10px 30px;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .card1PublicButton:focus {
+        outline-color: rgb(149, 208, 218);
+    }
+    .card3EditStudentList {
+        background: rgb(27, 145, 169);
+        border: 0px;
+        border-radius: 3px;
+        color: white;
+        padding: 10px 30px 10px 30px;
+        width: 100%;
+    }
+    .card3EditStudentList:focus {
+        outline-color: rgb(149, 208, 218);
+    }
+    .addNewActivity  {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 20px;
+        border: 0px;
+        color: white;
+        margin-bottom: 20px;
+        background: rgb(37, 154, 54);
+    }
+   
+    .addNewActivity:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgb(149, 207, 159);
+    }
+    .peopleApplyInfo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .peopleApplyInfo div {
+        width: 49%;
+        background: whitesmoke;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}

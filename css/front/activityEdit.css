@@ -1,0 +1,833 @@
+body {
+  font-size: 16px;
+  background: whitesmoke;
+}
+
+@media (min-width: 1001px) {
+  .activityEditBannerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    height: 170px;
+    background: forestgreen;
+  }
+  .activityEditWarp {
+    padding: 100px 0px 75px 0px;
+    max-width: 1024px;
+    margin: auto;
+  }
+  .activityEditContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .activityEditColumn1 {
+    padding: 0px 20px 30px 20px;
+    width: 400px;
+    top: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .activityEditColumn1 img {
+    max-width: 100%;
+  }
+  .activityEditColumn1 .activityEditImageCover {
+    position: absolute;
+    top: 195px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 360px;
+    height: 70px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .activityEditColumn1 .activityEditImageCover div:first-child {
+    color: white;
+    -webkit-box-flex: 9;
+        -ms-flex-positive: 9;
+            flex-grow: 9;
+  }
+  .activityEditColumn1 .activityEditImageCover div:last-child {
+    color: white;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .activityEditColumn1 .activityEditImageCover div:last-child a {
+    color: white;
+    background: green;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  .activityEditColumn1 .activityEditNameInput {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    width: 100%;
+    height: 40px;
+    outline-color: gray;
+  }
+  .activityEditColumn1 .activityEditButtonGroup {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .activityEditColumn1 .activityEditButtonGroup button:first-child {
+    border: 0px;
+    background: yellowgreen;
+    width: 70%;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+  }
+  .activityEditColumn1 .activityEditButtonGroup button:last-child {
+    border: 0px;
+    background: deepskyblue;
+    width: 25%;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    outline: none;
+  }
+  .activityEditColumn2 {
+    padding: 0px 20px 0px 20px;
+    width: 624px;
+    border-left: 1px solid #dddddd;
+  }
+  .activityEditColumn2Card {
+    max-width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+  .activityEditColumn2Card h4,
+  .activityEditColumn2Card i {
+    display: inline-block;
+    color: #15a01e;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button {
+    color: white;
+    margin-top: 20px;
+    background: #59626a;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #59626a;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button i {
+    color: white;
+    font-size: 1rem;
+    display: none;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button:focus {
+    outline: none;
+    background: #3f494f;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button:focus i {
+    display: inline-block;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .activityEditRow2Input {
+    margin-top: 20px;
+  }
+  .activityEditRow2Input input {
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px silver;
+    border-radius: 5px;
+    width: 100%;
+    height: 36px;
+  }
+  .classList {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    background: white;
+    overflow: scroll;
+  }
+  .classList .listCellTitle {
+    padding: 6px 6px 6px 6px;
+    margin-left: 0px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    color: white;
+    background: #16335f;
+  }
+  .classList .listCellTitle .addClass {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: orange;
+  }
+  .classList .listCellContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .classList .listCellContainer .listCell {
+    padding: 0px 0px 0px 10px;
+    width: 100%;
+  }
+  .classList .listCellContainer .listCell .c1 {
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+  }
+  .classList .listCellContainer .listCell .c1 p {
+    margin: 0px;
+    color: #16335f;
+  }
+  .classList .listCellContainer .listCell .c2 {
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+  }
+  .classList .listCellContainer .listCell .c2 p {
+    margin: 0px;
+    color: #16335f;
+  }
+  .classList .listCellContainer .listCell .c3 {
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+  }
+  .classList .listCellContainer .listCell .c3 .checkBoxGroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 180px;
+    color: #16335f;
+  }
+  .classList .listCellContainer .listCell .c3 p {
+    margin: 0px;
+    color: #16335f;
+  }
+  .classList .listCellContainer .classListDetailButton {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .classList .listCellContainer .classListDetailButton .addclass {
+    color: darkgrey;
+  }
+  .activityEditRow3TextArea p {
+    background: orange;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 20px 0px 10px 0px;
+  }
+  .activityEditRow3TextArea textarea {
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px;
+    resize: none;
+    max-width: 100%;
+    max-height: 100px;
+  }
+  .activityEditRow4 div {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activityEditRow4 span {
+    width: 150px;
+    text-align: center;
+  }
+  .activityEditRow4 input {
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    border: 1px solid silver;
+    width: 100%;
+  }
+  .activityEditRow5 div {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activityEditRow5 span {
+    text-align: center;
+    width: 150px;
+  }
+  .activityEditRow5 input {
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    border: 1px solid silver;
+    width: 100%;
+  }
+  .activityEditRow6 div {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activityEditRow6 span {
+    text-align: center;
+    width: 150px;
+  }
+  .activityEditRow6 input {
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    border: 1px solid silver;
+    width: 100%;
+  }
+  .activityEditRow6TextArea textarea {
+    outline: none;
+    margin-top: 20px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px;
+    resize: none;
+    max-width: 100%;
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .activityEditBannerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 170px;
+    background: forestgreen;
+  }
+  .activityEditWarp {
+    padding: 100px 15px 75px 15px;
+    max-width: 480px;
+    margin: auto;
+  }
+  .activityEditContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .activityEditColumn1 {
+    width: 100%;
+    top: 20px;
+    position: relative;
+  }
+  .activityEditColumn1 img {
+    width: 100%;
+  }
+  .activityEditColumn1 .activityEditImageCover {
+    position: absolute;
+    bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 70px;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .activityEditColumn1 .activityEditImageCover div:first-child {
+    color: white;
+    -webkit-box-flex: 9;
+        -ms-flex-positive: 9;
+            flex-grow: 9;
+  }
+  .activityEditColumn1 .activityEditImageCover div:last-child {
+    color: white;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .activityEditColumn1 .activityEditImageCover div:last-child a {
+    color: white;
+    background: green;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+  }
+  .activityEditColumn1 .activityEditNameInput {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    width: 100%;
+    height: 40px;
+    outline-color: gray;
+  }
+  .activityEditColumn1 .phoneSticky {
+    border-radius: 10px 10px 0px 0px;
+    max-width: 480px;
+    margin-left: -15px;
+    padding: 5px 20px 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    background: white;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0px;
+  }
+  .activityEditColumn1 .activityEditButtonGroup {
+    width: 100%;
+  }
+  .activityEditColumn1 .activityEditButtonGroup button:first-child {
+    border: 0px;
+    display: block;
+    background: yellowgreen;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .activityEditColumn1 .activityEditButtonGroup button:last-child {
+    border: 0px;
+    background: deepskyblue;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+  }
+  .activityEditColumn2 {
+    margin-top: 40px;
+  }
+  .activityEditColumn2Card {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+  .activityEditColumn2Card h4,
+  .activityEditColumn2Card i {
+    display: inline-block;
+    color: #15a01e;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button {
+    color: white;
+    margin-top: 20px;
+    background: #59626a;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #59626a;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button i {
+    color: white;
+    font-size: 1rem;
+    display: none;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button:focus {
+    outline: none;
+    background: #3f494f;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button:focus i {
+    display: inline-block;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .activityEditColumn2Card .activityEditRow1ButtonGroup button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .activityEditRow2Input {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  .activityEditRow2Input input {
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px silver;
+    border-radius: 5px;
+    width: 100%;
+    height: 36px;
+  }
+  .classList {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    background: white;
+    overflow: scroll;
+  }
+  .classList .listCellTitle {
+    padding: 6px 6px 6px 6px;
+    margin-left: 0px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    color: white;
+    background: #16335f;
+  }
+  .classList .listCellTitle .addClass {
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: orange;
+  }
+  .classList .listCellContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .classList .listCellContainer .listCell {
+    padding: 0px 0px 0px 10px;
+    width: 100%;
+  }
+  .classList .listCellContainer .listCell .c1 {
+    font-size: 14px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+  }
+  .classList .listCellContainer .listCell .c1 p {
+    margin: 0px;
+    color: #16335f;
+  }
+  .classList .listCellContainer .listCell .c2 {
+    font-size: 14px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+  }
+  .classList .listCellContainer .listCell .c2 p {
+    margin: 0px;
+    color: #16335f;
+  }
+  .classList .listCellContainer .listCell .c3 {
+    font-size: 14px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+  }
+  .classList .listCellContainer .listCell .c3 .checkBoxGroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 130px;
+    color: #16335f;
+    font-size: 14px;
+  }
+  .classList .listCellContainer .listCell .c3 p {
+    margin: 0px;
+    color: #16335f;
+  }
+  .classList .listCellContainer .classListDetailButton {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .classList .listCellContainer .classListDetailButton .preview {
+    font-size: 16px;
+  }
+  .activityEditRow3TextArea {
+    font-size: 1rem;
+  }
+  .activityEditRow3TextArea p {
+    background: orange;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 20px 0px 10px 0px;
+  }
+  .activityEditRow3TextArea textarea {
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px;
+    resize: none;
+    max-width: 100%;
+    max-height: 100px;
+  }
+  .activityEditRow4 {
+    font-size: 1rem;
+  }
+  .activityEditRow4 div {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activityEditRow4 span {
+    width: 150px;
+    text-align: center;
+  }
+  .activityEditRow4 input {
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    border: 1px solid silver;
+    width: 100%;
+  }
+  .activityEditRow5 {
+    font-size: 1rem;
+  }
+  .activityEditRow5 div {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activityEditRow5 span {
+    text-align: center;
+    width: 150px;
+  }
+  .activityEditRow5 input {
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    border: 1px solid silver;
+    width: 100%;
+  }
+  .activityEditRow6 {
+    font-size: 1rem;
+  }
+  .activityEditRow6 div {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activityEditRow6 span {
+    text-align: center;
+    width: 150px;
+  }
+  .activityEditRow6 input {
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+    border: 1px solid silver;
+    width: 100%;
+  }
+  .activityEditRow6TextArea textarea {
+    outline: none;
+    margin-top: 20px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px;
+    resize: none;
+    max-width: 100%;
+    max-height: 100px;
+  }
+}
+/*# sourceMappingURL=activityEdit.css.map */

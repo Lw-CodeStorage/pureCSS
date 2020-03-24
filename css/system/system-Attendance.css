@@ -1,0 +1,2431 @@
+@charset "UTF-8";
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+  border-top: 2px solid #363840;
+  border-bottom: 2px solid #2e3037;
+  border-right: 2px solid #2e3037;
+  background: #383a43 !important;
+}
+
+table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+  border-top: 2px solid #363840;
+  border-bottom: 2px solid #2e3037;
+  border-right: 2px solid #2e3037;
+  background: #2e3037 !important;
+}
+
+#table_id_example1 tr:hover td,
+#table_id_example2 tr:hover td,
+#table_id_example3 tr:hover td,
+#table_id_example4 tr:hover td,
+#table_id_example5 tr:hover td {
+  background-color: #454545 !important;
+}
+
+#table_id_example1_paginate,
+#table_id_example2_paginate,
+#table_id_example3_paginate,
+#table_id_example4_paginate,
+#table_id_example5_paginate {
+  padding: 0px;
+  margin-top: 10px;
+  border: 2px solid #494b54;
+  border-radius: 5px;
+}
+
+#table_id_example1_paginate a,
+#table_id_example2_paginate a,
+#table_id_example3_paginate a,
+#table_id_example4_paginate a,
+#table_id_example5_paginate a {
+  color: #818991 !important;
+}
+
+#table_id_example1_paginate .paginate_button:hover,
+#table_id_example2_paginate .paginate_button:hover,
+#table_id_example3_paginate .paginate_button:hover,
+#table_id_example4_paginate .paginate_button:hover,
+#table_id_example5_paginate .paginate_button:hover {
+  outline: none;
+  border: 0px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#table_id_example1_paginate .paginate_button.current,
+#table_id_example2_paginate .paginate_button.current,
+#table_id_example3_paginate .paginate_button.current,
+#table_id_example4_paginate .paginate_button.current,
+#table_id_example5_paginate .paginate_button.current {
+  outline: none;
+  border: 0px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#table_id_example1_paginate .paginate_button:active,
+#table_id_example2_paginate .paginate_button:active,
+#table_id_example3_paginate .paginate_button:active,
+#table_id_example4_paginate .paginate_button:active,
+#table_id_example5_paginate .paginate_button:active {
+  outline: none;
+  border: 0px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.onWorkPage {
+  display: none;
+}
+
+.onWorkRecord {
+  display: block;
+}
+
+.leaveRecord {
+  display: none;
+}
+
+.leaveRefusalRecord {
+  display: none;
+}
+
+.salaryPage {
+  display: none;
+}
+
+.performanceEquality {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  body {
+    font-family: apple !important;
+  }
+  .systemBodyContainer {
+    position: relative;
+    background: #25262e;
+    color: white;
+    padding: 10px 40px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+  .systemBodyContainer .onWorkPage .row1 {
+    width: 100%;
+    padding: 0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+  }
+  .systemBodyContainer .onWorkPage .row1 .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 30px;
+  }
+  .systemBodyContainer .onWorkPage .row1 .title i {
+    margin-right: 20px;
+    color: #f5981a;
+  }
+  .systemBodyContainer .onWorkPage .clockCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 1.2;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkPage .clockCard .clockTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+  .systemBodyContainer .onWorkPage .clockCard .clockTitle p:last-child {
+    margin-top: 5px;
+    color: #f5981a;
+    text-shadow: 0 0 20px #f5981a, 0 0 20px rgba(10, 175, 230, 0);
+  }
+  .systemBodyContainer .onWorkPage .row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .months-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1000px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .months-container .month-container {
+    margin: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .selectCard {
+    padding: 20px;
+    background: #2c2e36;
+    margin: 20px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .selectCard .selectTitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .selectCard select {
+    width: 100%;
+    outline: none;
+    border: 1px solid white;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .ipInfo {
+    margin: 20px;
+    padding: 20px;
+    background: #2c2e36;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .ipInfo .ipInfoTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction {
+    margin: 20px;
+    padding: 20px;
+    background: #2c2e36;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer1 {
+    width: 30px;
+    background: turquoise;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer2 {
+    width: 30px;
+    border-bottom: 4px solid green;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer3 {
+    width: 30px;
+    border-bottom: 4px solid steelblue;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer4 {
+    width: 30px;
+    border-bottom: 4px solid orange;
+  }
+  .systemBodyContainer .onWorkRecord {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer {
+    background: #2e3037;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDateSelect input {
+    border-radius: 5px;
+    text-align: center;
+    width: 350px;
+    outline: none;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect select {
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    width: 250px;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDutySelect select {
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    width: 250px;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable input,
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable label,
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRecord {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer {
+    background: #2e3037;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDateSelect input {
+    border-radius: 5px;
+    text-align: center;
+    width: 350px;
+    outline: none;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect select {
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    width: 250px;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDutySelect select {
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    width: 250px;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .leaveRefusalRecord {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable input,
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable label,
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .salaryPage {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable input,
+  .systemBodyContainer .salaryPage .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable label,
+  .systemBodyContainer .salaryPage .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .performanceEquality {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable input,
+  .systemBodyContainer .performanceEquality .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable label,
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 415px) {
+  body {
+    font-family: apple !important;
+  }
+  .systemBodyContainer {
+    position: relative;
+    background: #21242a;
+    color: white;
+    padding: 10px 80px;
+    width: 100%;
+    min-height: 1500px;
+    margin: 0 auto;
+  }
+  .systemBodyContainer .menuContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background: #1f2228;
+    color: white;
+    padding-top: 40px;
+    z-index: 999;
+  }
+  .systemBodyContainer .menuContainer p {
+    margin: 0px;
+  }
+  .systemBodyContainer .menuContainer .menuItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    padding: 5px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .systemBodyContainer .menuContainer .subItem {
+    height: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  .systemBodyContainer .menuContainer .more1-1,
+  .systemBodyContainer .menuContainer .more1-2,
+  .systemBodyContainer .menuContainer .more1-3 {
+    padding: 5px 30px;
+  }
+  .systemBodyContainer .menuContainer .menuLight {
+    border-left: 5px solid #f5981a;
+    padding-left: 15px;
+  }
+  .systemBodyContainer .menuContainer .menuSubLight {
+    border-left: 5px solid #b46a0b;
+    padding-left: 25px;
+  }
+  .systemBodyContainer .onWorkPage .row1 {
+    padding: 0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+  }
+  .systemBodyContainer .onWorkPage .row1 .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 26px;
+  }
+  .systemBodyContainer .onWorkPage .row1 .title i {
+    margin-right: 20px;
+    color: #f5981a;
+  }
+  .systemBodyContainer .onWorkPage .clockCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 1.2;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkPage .clockCard .clockTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+  .systemBodyContainer .onWorkPage .clockCard .clockTitle p:last-child {
+    margin-top: 5px;
+    color: #f5981a;
+    text-shadow: 0 0 20px #f5981a, 0 0 20px rgba(10, 175, 230, 0);
+  }
+  .systemBodyContainer .onWorkPage .row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .months-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1000px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .months-container .month-container {
+    margin: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .selectCard {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    padding: 20px;
+    background: #2c2e36;
+    margin: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .selectCard .selectTitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .selectCard select {
+    width: 100%;
+    outline: none;
+    border: 1px solid white;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .ipInfo {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    margin: 10px;
+    padding: 20px;
+    background: #2c2e36;
+    letter-spacing: 0px;
+    line-height: 1.5;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .ipInfo .ipInfoTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction {
+    -webkit-box-flex: 5;
+        -ms-flex-positive: 5;
+            flex-grow: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 10px;
+    padding: 20px;
+    background: #2c2e36;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer p {
+    padding-right: 5px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer1 {
+    width: 15px;
+    height: 15px;
+    background: turquoise;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer2 {
+    width: 15px;
+    border-bottom: 4px solid green;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer3 {
+    width: 15px;
+    border-bottom: 4px solid steelblue;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer4 {
+    width: 15px;
+    border-bottom: 4px solid orange;
+  }
+  .systemBodyContainer .onWorkRecord {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    margin: 0 auto;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer {
+    background: #2e3037;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDateSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDateSelect span {
+    width: 100px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDateSelect input {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect span {
+    width: 100px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect select {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDutySelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDutySelect span {
+    width: 100px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDutySelect select {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable input,
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable label,
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .leaveRecord {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    margin: 0 auto;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer {
+    background: #2e3037;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDateSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDateSelect span {
+    width: 100px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDateSelect input {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect span {
+    width: 100px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect select {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDutySelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDutySelect span {
+    width: 100px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDutySelect select {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable input,
+  .systemBodyContainer .leaveRecord .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable label,
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .leaveRefusalRecord {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    margin: 0 auto;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable input,
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable label,
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .salaryPage {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable input,
+  .systemBodyContainer .salaryPage .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable label,
+  .systemBodyContainer .salaryPage .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .performanceEquality {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable input,
+  .systemBodyContainer .performanceEquality .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable label,
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 415px) {
+  body {
+    font-family: apple !important;
+  }
+  .prev,
+  .next {
+    display: none;
+  }
+  .systemBodyContainer {
+    position: relative;
+    background: #21242a;
+    color: white;
+    width: 100%;
+    min-height: 1500px;
+  }
+  .systemBodyContainer .menuContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background: #1f2228;
+    color: white;
+    padding-top: 40px;
+    z-index: 999;
+  }
+  .systemBodyContainer .menuContainer p {
+    margin: 0px;
+  }
+  .systemBodyContainer .menuContainer .menuItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    padding: 5px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .systemBodyContainer .menuContainer .subItem {
+    height: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  .systemBodyContainer .menuContainer .more1-1,
+  .systemBodyContainer .menuContainer .more1-2,
+  .systemBodyContainer .menuContainer .more1-3 {
+    padding: 5px 30px;
+  }
+  .systemBodyContainer .menuContainer .menuLight {
+    border-left: 5px solid #f5981a;
+    padding-left: 15px;
+  }
+  .systemBodyContainer .menuContainer .menuSubLight {
+    border-left: 5px solid #b46a0b;
+    padding-left: 25px;
+  }
+  .systemBodyContainer .onWorkPage .row1 {
+    padding: 0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+  }
+  .systemBodyContainer .onWorkPage .row1 .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 26px;
+  }
+  .systemBodyContainer .onWorkPage .row1 .title i {
+    margin-right: 20px;
+    color: #f5981a;
+  }
+  .systemBodyContainer .onWorkPage .clockCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 1.2;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkPage .clockCard .clockTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+  .systemBodyContainer .onWorkPage .clockCard .clockTitle p:last-child {
+    display: none;
+    margin-top: 5px;
+    color: #f5981a;
+    text-shadow: 0 0 20px #f5981a, 0 0 20px rgba(10, 175, 230, 0);
+  }
+  .systemBodyContainer .onWorkPage .row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .months-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1000px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .months-container .month-container {
+    margin: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .selectCard {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    padding: 20px;
+    background: #2c2e36;
+    margin: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .selectCard .selectTitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .selectCard select {
+    width: 100%;
+    outline: none;
+    border: 1px solid white;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .ipInfo {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    margin: 10px;
+    padding: 20px;
+    background: #2c2e36;
+    letter-spacing: 0px;
+    line-height: 1.5;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .ipInfo .ipInfoTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction {
+    -webkit-box-flex: 5;
+        -ms-flex-positive: 5;
+            flex-grow: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 10px;
+    padding: 20px;
+    background: #2c2e36;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer p {
+    padding-right: 5px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer1 {
+    width: 15px;
+    height: 15px;
+    background: turquoise;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer2 {
+    width: 15px;
+    border-bottom: 4px solid green;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer3 {
+    width: 15px;
+    border-bottom: 4px solid steelblue;
+  }
+  .systemBodyContainer .onWorkPage .row2 .row2-1 .statusIntroduction .statusContainer .statusContainer4 {
+    width: 15px;
+    border-bottom: 4px solid orange;
+  }
+  .systemBodyContainer .onWorkRecord {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer {
+    background: #2e3037;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDateSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDateSelect span {
+    font-size: 14px;
+    width: 100px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDateSelect input {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect span {
+    font-size: 14px;
+    width: 100px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect select {
+    font-size: 14px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDutySelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDutySelect span {
+    width: 100px;
+    font-size: 14px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordInputContainer .onWorkRecordDutySelect select {
+    font-size: 14px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable input,
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable label,
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .onWorkRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .leaveRecord {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer {
+    background: #2e3037;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDateSelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDateSelect span {
+    font-size: 14px;
+    width: 100px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDateSelect input {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect span {
+    font-size: 14px;
+    width: 100px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordCompanySelect select {
+    font-size: 14px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDutySelect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDutySelect span {
+    width: 100px;
+    font-size: 14px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordInputContainer .onWorkRecordDutySelect select {
+    font-size: 14px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+    /*兼容chrome*/
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+    outline: none;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable input,
+  .systemBodyContainer .leaveRecord .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable label,
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .leaveRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .leaveRefusalRecord {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable input,
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable label,
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .leaveRefusalRecord .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .salaryPage {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable input,
+  .systemBodyContainer .salaryPage .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable label,
+  .systemBodyContainer .salaryPage .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .salaryPage .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .performanceEquality {
+    outline: none;
+    padding: 20px;
+    color: #818991;
+    /*自定義datatable*/
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable {
+    background: #2e3037;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable input,
+  .systemBodyContainer .performanceEquality .onWorkRecordTable select {
+    color: #949ba2;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+    background-color: #494b54;
+    font-size: 1rem;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable label,
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .dataTables_info {
+    color: white;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable table {
+    border: 0px;
+    border-collapse: collapse;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable thead th {
+    border: 0px;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example tr:hover td {
+    background-color: #454545 !important;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .odd td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .odd td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #383a43;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .even td:first-child {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable .even td {
+    border-top: 2px solid #363840;
+    border-bottom: 2px solid #2e3037;
+    border-right: 2px solid #2e3037;
+    background: #2e3037;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate {
+    padding: 0px;
+    margin-top: 10px;
+    border: 2px solid #494b54;
+    border-radius: 5px;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate a {
+    color: #818991 !important;
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate .paginate_button:hover {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate .paginate_button.current {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .systemBodyContainer .performanceEquality .onWorkRecordTable #table_id_example_paginate .paginate_button:active {
+    outline: none;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+/*# sourceMappingURL=system-Attendance.css.map */

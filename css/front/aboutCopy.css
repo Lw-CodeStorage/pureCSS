@@ -1,0 +1,696 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Reset Css*/
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+
+@media (min-width: 990px) {
+  html {
+    font-family: apple !important;
+  }
+  .warp1 {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(https://picsum.photos/id/381/8134/5562);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*視差滾動*/
+  }
+  .a1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .a1 div {
+    margin-top: 24.6vh;
+  }
+  .a1 div p:first-child {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 1.2rem;
+  }
+  .a1 div p:nth-child(2) {
+    font-size: 20px;
+    margin-bottom: 1.2rem;
+  }
+  .a1 div p:last-child {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 140px;
+    color: white;
+  }
+  .threeBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1450px;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 195px;
+  }
+  .threeBlock div {
+    height: 300px;
+    background: #fafdea;
+    padding: 80px 60px 80px 60px;
+    text-align: center;
+  }
+  .threeBlock div p:first-child {
+    margin-bottom: 13px;
+    font-size: 24px;
+  }
+  .threeBlock div p:last-child {
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 350;
+  }
+  .warp2 {
+    position: relative;
+    max-width: 100%;
+    height: 90vh;
+  }
+  .warp2 .f1 {
+    width: 100%;
+    height: 50px;
+    background: seagreen;
+    position: relative;
+  }
+  .warp2 .a21 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: #cdf3c8;
+  }
+  .warp2 .a21 p {
+    font-size: 28px;
+  }
+  .warp2 .a22 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 49.2vh;
+    padding: 100px 170px 100px 85px;
+  }
+  .warp2 .a22 p:nth-child(odd) {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .warp2 .a22 p:nth-child(even) {
+    font-size: 16px;
+    margin-bottom: 55px;
+  }
+  .warp2 .a23 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: calc(49.8vh - 90);
+    background: seagreen;
+    overflow: hidden;
+  }
+  .warp2 .a23 .a23Text {
+    max-width: 60%;
+    padding-top: 40px;
+    padding-right: 20px;
+    left: 40%;
+    position: absolute;
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .warp2 .a23 .sharp {
+    width: 30%;
+    height: 350px;
+    background: linear-gradient(-30deg, transparent 150px, #ffffff 0) bottom right, linear-gradient(-150deg, transparent 150px, #ffffff 0) top right;
+    background-size: 100% 50.1%;
+    background-repeat: no-repeat;
+  }
+  .warp2 .a23 .sharp p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 160px;
+    color: #4d7b52;
+    font-size: 32px;
+  }
+  .warp2 .a23 .iconRow {
+    position: absolute;
+    color: black;
+    width: 1000px;
+    top: 170px;
+    left: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .warp2 .a23 .iconRow .icon1 {
+    line-height: 20px;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    background-image: url(http://fois.online/wp-content/themes/fois2.0_theme/img/FOSB.svg);
+    color: greenyellow;
+  }
+  .warp2 .a23 .iconRow .icon1 .iconText {
+    text-align: center;
+    position: absolute;
+    top: 120px;
+  }
+  .warp2 .a23 .iconRow .icon2 {
+    line-height: 20px;
+    width: 130px;
+    height: 130px;
+    background-image: url(http://fois.online/wp-content/themes/fois2.0_theme/img/FJDD.svg);
+    color: greenyellow;
+  }
+  .warp2 .a23 .iconRow .icon2 .iconText {
+    text-align: center;
+    position: absolute;
+    top: 120px;
+  }
+  .warp2 .a23 .iconRow .icon3 {
+    line-height: 20px;
+    width: 130px;
+    height: 130px;
+    background-image: url(http://fois.online/wp-content/themes/fois2.0_theme/img/FTCD.svg);
+    color: greenyellow;
+  }
+  .warp2 .a23 .iconRow .icon3 .iconText {
+    text-align: center;
+    position: absolute;
+    top: 120px;
+  }
+  .warp2 .a23 .iconRow .icon4 {
+    line-height: 20px;
+    width: 130px;
+    height: 130px;
+    background-image: url(http://fois.online/wp-content/themes/fois2.0_theme/img/FCID.svg);
+    color: greenyellow;
+  }
+  .warp2 .a23 .iconRow .icon4 .iconText {
+    text-align: center;
+    position: absolute;
+    top: 120px;
+  }
+  .warp2 .a23 .iconRow .icon5 {
+    line-height: 20px;
+    width: 130px;
+    height: 130px;
+    background-image: url(http://fois.online/wp-content/themes/fois2.0_theme/img/FOAD.svg);
+    color: greenyellow;
+  }
+  .warp2 .a23 .iconRow .icon5 .iconText {
+    text-align: center;
+    position: absolute;
+    top: 120px;
+  }
+  .warp3 {
+    position: relative;
+    width: 100vw;
+    background: white;
+  }
+  .warp3 .introduction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 100px 100px 100px;
+  }
+  .warp3 .introduction .photo {
+    width: 400px;
+    height: 600px;
+    background: grey;
+    margin-right: 200px;
+    background-image: url(https://picsum.photos/id/669/400/600);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .warp3 .introduction .introductionText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 600px;
+  }
+  .warp3 .introduction .introductionText p:first-child {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .warp3 .introduction .introductionText p:last-child {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-family: apple !important;
+  }
+  .warp1 {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+  }
+  .a1 {
+    width: 100%;
+    height: 25vh;
+    margin-top: 60px;
+    margin: auto;
+  }
+  .a1 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .a1 div p:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
+    font-size: 20px;
+  }
+  .a1 div p:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px 0px 20px;
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .a1 div p:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #676767;
+  }
+  .threeBlock {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 75vh;
+    background: #fafdea;
+  }
+  .threeBlock div {
+    height: 25vh;
+    text-align: center;
+  }
+  .threeBlock div p:first-child {
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+    position: relative;
+  }
+  .threeBlock div .fluorescentPen1::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 10px;
+    width: 30%;
+    top: 15px;
+    left: 35%;
+    border-radius: 10px;
+    background: #ec407a;
+  }
+  .threeBlock div .fluorescentPen2::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 10px;
+    width: 30%;
+    top: 15px;
+    left: 35%;
+    border-radius: 10px;
+    background: #ec407a;
+  }
+  .threeBlock div .fluorescentPen3::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 10px;
+    width: 30%;
+    top: 15px;
+    left: 35%;
+    border-radius: 10px;
+    background: #ec407a;
+  }
+  .threeBlock div p:last-child {
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 350;
+  }
+  .warp2 {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+  }
+  .warp2 .f1 {
+    width: 100%;
+    height: 20px;
+    background: #2f6e35;
+    position: relative;
+  }
+  .warp2 .phoneA2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warp2 .a21 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 8vh;
+    background: #cdf3c8;
+  }
+  .warp2 .a21 p {
+    font-size: 24px;
+  }
+  .warp2 .a22 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 45vh;
+    padding: 20px;
+    overflow: hidden;
+    line-height: 20px;
+  }
+  .warp2 .a22 p:nth-child(odd) {
+    font-size: 16px;
+    font-weight: 600;
+    width: 128px;
+    margin-bottom: 10px;
+    color: #173753;
+  }
+  .warp2 .a22 p:nth-child(even) {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid whitesmoke;
+  }
+  .warp2 .a23 {
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    position: relative;
+  }
+  .warp2 .a23 .a23Text {
+    max-width: 100%;
+    text-align: center;
+    top: 15vw;
+    left: 0%;
+    padding: 15px;
+    position: absolute;
+    color: white;
+    line-height: 28px;
+    font-size: 14px;
+    z-index: 1;
+  }
+  .warp2 .a23 div {
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(165deg, transparent 27vw, #366c39 0) bottom right, linear-gradient(-165deg, transparent 27vw, #366c39 0) bottom left;
+    background-size: 100%;
+    /*背景高度 可設定多少 % 到多少 % */
+    background-repeat: no-repeat;
+  }
+  .warp2 .a23 div p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #184517;
+    font-size: 20px;
+  }
+  .iconRow {
+    display: none;
+  }
+  .warp3 {
+    position: relative;
+    width: 100vw;
+    background: white;
+  }
+  .warp3 .introduction {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warp3 .introduction .photo {
+    width: 120px;
+    height: 120px;
+    background-image: url(https://picsum.photos/id/669/400/600);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .warp3 .introduction .introductionText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warp3 .introduction .introductionText p:first-child {
+    top: 50px;
+    left: 190px;
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .warp3 .introduction .introductionText p:last-child {
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 36px;
+  }
+}
+/*# sourceMappingURL=aboutCopy.css.map */

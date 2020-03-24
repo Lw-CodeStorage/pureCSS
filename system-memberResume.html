@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/system/system-header.css">
+    <link rel="stylesheet" href="css/system/system-sideMenu.css">
+    <link rel="stylesheet" href="css/system/system-memberResume.css">
+
+
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="js/system/system-memberResume.js"></script>
+</head>
+
+<body>
+    <div class="systemHeaderContainer"></div>
+    <div class="systemBodyContainer">
+        <div class="menuContainer"> </div>
+        <div class="resumeContainer">
+            <div class="userImageContainer">
+                <div class="userimage">
+                </div>
+                <div class=phoneButtonGp>
+                    <div class="userimageText">
+                        <p>更新頭像</p>
+                    </div>
+                    <div class="userDataUpdate">
+                        <p>更新資訊</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Info">
+                <p class="baseInfoTitle">基本資料：</p>
+                <div class="baseInfoContent">
+                    <div class="baseInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 姓名：</span>
+                        </div>
+
+                        <input class="nameInput" type="text" value="欸你過來一下">
+                    </div>
+                    <div class="baseInfoContentRow">
+                        <div>
+                            <i class="fas fa-info-circle"></i><span> 性別：</span>
+                        </div>
+
+                        <select class="sexSelect" name="" id="">
+                            <option value="">男</option>
+                        </select>
+                    </div>
+                    <div class="baseInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 身份證字號：</span>
+                        </div>
+
+                        <input class="nameInput" type="text" value="E124674114">
+                    </div>
+                    <div class="baseInfoContentRow">
+                        <div>
+                            <i class="fas fa-calendar-day"></i><span> 生日：</span>
+                        </div>
+
+                        <input class="nameInput" type="text" value="1994/12/09">
+                    </div>
+                    <div class="baseInfoContentRow">
+                        <div>
+                            <i class="fas fa-phone"></i><span> 電話：</span>
+                        </div>
+
+                        <input class="nameInput" type="text" value="0900603506">
+                    </div>
+                    <div class="baseInfoContentRow">
+                        <div>
+                            <i class="far fa-envelope"></i><span> E-mail：<span></span></span>
+                        </div>
+
+                        <input class="nameInput" type="text" value="st831209@gmail.com">
+                    </div>
+                    <div class="baseInfoContentRow">
+                        <div>
+                            <i class="fas fa-map-marked-alt"></i><span> 地址：<span></span></span>
+                        </div>
+
+                        <input class="nameInput" type="text" value="高雄市三民區興隆街">
+                    </div>
+                    <div class="baseInfoContentRowTextArea">
+                        <div>
+                            <i class="fas fa-portrait"></i><span> 自我介紹：<span></span></span>
+                        </div>
+                        <textarea name="" id="" cols="20" rows="5"></textarea>
+
+                    </div>
+                </div>
+
+                <div class="eduTitle">
+                    <p class="titleP">學歷：</p>
+                    <p class="titleb"> 新增學歷</p>
+                </div>
+                <div class="eduInfoContent">
+                    <div class="eduInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 學校名稱：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="國立勤益科技大學">
+                    </div>
+                    <div class="eduInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 科系名稱：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="電子工程所">
+                    </div>
+                    <div class="eduInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 學位等級：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="碩士">
+                    </div>
+                    <div class="eduInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 畢業日期：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="2018/12/31">
+                    </div>
+                </div>
+                <div class="workTitle">
+                    <p class="titleP">工作資歷：</p>
+                    <p class="titleb"> 新增資歷</p>
+                </div>
+                <div class="workInfoContent">
+                    <div class="workInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 公司名稱：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="艾凡斯科技股份有限公司">
+                    </div>
+                    <div class="workInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 統一編號：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="4888888">
+                    </div>
+                    <div class="workInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 任職職稱：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="前端攻城獅">
+                    </div>
+                    <div class="workInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 工作年資：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="1">
+                    </div>
+                </div>
+                <div class="tranTitle">
+                    <p class="titleP">專業訓練：</p>
+                    <p class="titleb"> 新增訓練</p>
+                </div>
+                <div class="tranInfoContent">
+                    <div class="tranInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 課程名稱：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="網頁程式設計">
+                    </div>
+                    <div class="tranInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 課程時數：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="20">
+                    </div>
+                    <div class="tranInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 訓練單位：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="職訓局">
+                    </div>
+                    <div class="tranInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 結訓日期：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="2018/12/31">
+                    </div>
+                </div>
+                <div class="skillTitle">
+                    <p class="titleP">技能證照：</p>
+                    <p class="titleb"> 新增證照</p>
+                </div>
+                <div class="skillInfoContent">
+                    <div class="skillInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 證照名稱：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="硬體裝修乙級">
+                    </div>
+                    <div class="skillInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 取得日期：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="2018/09/28">
+                    </div>
+                    <div class="skillInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 授證單位：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="勞委會">
+                    </div>
+                    <div class="skillInfoContentRow">
+                        <div>
+                            <i class="fas fa-user-circle"></i><span> 證照狀況：</span>
+                        </div>
+                        <input class="nameInput" type="text" value="有效">
+                    </div>
+                </div>
+
+            </div>
+            <div style="height:120px;"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- chartJS -->
+    <script src="js/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/system/jobDescription.css">
+    <script src="js/system/jobDescription.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="jobDiscriptionContainer">
+        <p class="title">職業類別</p>
+        <div class="jobCategory">
+
+            <div class="jobNameContainer">
+                <p class="jobNameTitle"> 事業單位職位名稱
+                </p>
+                <p>資訊工程師</p>
+            </div>
+            <div class="jobCode">
+                <p class="jobCodeTitle">國際對應代碼</p>
+                <div class="phoneLay">
+                    <div class="jobCodeContent">
+                        <p>ANZSCO：</p>
+                        <p>13-1151.00</p>
+                    </div>
+                    <div class="jobCodeContent">
+                        <p>eDOT：</p>
+                        <p>13-1151.00</p>
+                    </div>
+
+                    <div class="jobCodeContent">
+                        <p>O*NET：</p>
+                        <p>13-1151.00</p>
+                    </div>
+
+                    <div class="jobCodeContent">
+                        <p>台灣官方：</p>
+                        <p>13-1151.00</p>
+                    </div>
+
+                    <div class="jobCodeContent">
+                        <p>ISCO-88：</p>
+                        <p>13-1151.00</p>
+                    </div>
+
+                    <div class="jobCodeContent">
+                        <p>ISCO-08：</p>
+                        <p>13-1151.00</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="jobName">
+                <p class="jobNameTitle">職類名稱</p>
+                <p>Training and Development Specialists </p>
+                <p>Training and Development Specialists </p>
+                <p>未定義</p>
+                <p>Training and Development Specialists </p>
+                <p>Training and Development Specialists </p>
+                <p>Training and Development Specialists </p>
+            </div>
+
+        </div>
+
+        <p class="title">職位摘要</p>
+        <div class="jobAbstract">
+            提升提到章節模組突破十年用品，為您信箱足夠，公主點評發言認真專區本文功能，陷入營銷機制去年展開土地幾個一週，你能升級不管死亡所謂強調斑竹配置幾天通訊設備來電明顯，確保裝備人士出來為此，構成躺在，人員。
+        </div>
+
+        <p class="title">組織關係</p>
+        <div class="orgStrucuret">
+            提升提到章節模組突破十年用品，為您信箱足夠，公主點評發言認真專區本文功能，陷入營銷機制去年展開土地幾個一週，你能升級不管死亡所謂強調斑竹配置幾天通訊設備來電明顯，確保裝備人士出來為此，構成躺在，人員。
+        </div>
+
+        <p class="title">工作任務</p>
+        <div class="jobTask">
+            <div class="jobTaskD1">
+                <div>
+                    <p>SVP :</p>
+                    <p>ZONE :</p>
+                    <p>ISCO :</p>
+                </div>
+                <div>
+                    <p class="levelCode">Level Code</p>
+                    <p class="levelCode">Level Code</p>
+                    <p class="levelCode">Level Code</p>
+                </div>
+            </div>
+            <div class="jobTaskD2">
+
+                <canvas id="myChart1" width="350px" height="250px"></canvas>
+
+            </div>
+            <div class="jobTaskD3">
+                <canvas id="myChart2" width="350px" height="250px"></canvas>
+            </div>
+        </div>
+        <div class="taskDescriptionContainer">
+            <div>UID</div>
+            <div>User Task Description</div>
+            <div>T</div>
+            <div>D</div>
+            <div>P</div>
+            <a href="#demo" data-toggle="collapse">+</a>
+        </div>
+        <!-- 收折 -->
+        <div id="demo" class="collapse">
+            <div class="scrollContainer">
+                <div id="list-example1" class="list-group scrollCol1">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">GWA</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">IWA</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">DWA</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Task</a>
+                </div>
+                <div data-spy="scroll" data-target="#list-example1" data-offset="0"
+                    class="scrollspy-example scrollCol2">
+                    <h4 id="list-item-1">GWA</h4>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Observing, receiving, and otherwise obtaining information from all
+                                relevant sources.</p>
+                            <p class="taskDetailCol2">透過相關資料來源，偵測、接收、獲取資訊。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Observing, receiving, and otherwise obtaining information from all
+                                relevant sources.</p>
+                            <p class="taskDetailCol2">透過相關資料來源，偵測、接收、獲取資訊。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Observing, receiving, and otherwise obtaining information from all
+                                relevant sources.</p>
+                            <p class="taskDetailCol2">透過相關資料來源，偵測、接收、獲取資訊。</p>
+                        </div>
+                    </div>
+                    <h4 id="list-item-2">IWA</h4>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1.I02</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Read documents or materials to inform work processes.</p>
+                            <p class="taskDetailCol2">閱讀檔案或文案資料，以獲取工作相關之作業資訊。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1.I02</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Read documents or materials to inform work processes.</p>
+                            <p class="taskDetailCol2">閱讀檔案或文案資料，以獲取工作相關之作業資訊。</p>
+                        </div>
+                    </div>
+                    <h4 id="list-item-3">DWA</h4>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1.I02.D06</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Study blueprints or other instructions to determine equipment
+                                setup requirements.</p>
+                            <p class="taskDetailCol2">研究藍圖或其他說明以確定設備設定要求。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1.I02.D06</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Read and analyze charts, work orders, production schedules, and
+                                other records and reports to determine production requirements and to evaluate current
+                                production estimates and outputs.</p>
+                            <p class="taskDetailCol2">研究藍圖或其他說明以確定設備設定要求。</p>
+                        </div>
+                    </div>
+                    <h4 id="list-item-4">Task</h4>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">8452</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Study blueprints or other instructions to determine equipment
+                                setup requirements.</p>
+                            <p class="taskDetailCol2">閱讀和分析圖表、 工作訂單、 生產計畫和其他記錄和 報告來確定生產要求，評價目前的生產估計和產出。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">8452</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Study blueprints or other instructions to determine equipment
+                                setup requirements.</p>
+                            <p class="taskDetailCol2">閱讀和分析圖表、 工作訂單、 生產計畫和其他記錄和 報告來確定生產要求，評價目前的生產估計和產出。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="taskDescriptionContainer">
+            <div>UID</div>
+            <div>User Task Description</div>
+            <div>T</div>
+            <div>D</div>
+            <div>P</div>
+            <a href="#demo1" data-toggle="collapse">+</a>
+        </div>
+        <!-- 收折 -->
+        <div id="demo1" class="collapse">
+            <div class="scrollContainer">
+                <div id="list-example2" class="list-group scrollCol1">
+                    <a class="list-group-item list-group-item-action" href="#list-item-5">GWA</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-6">IWA</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-7">DWA</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-8">Task</a>
+                </div>
+                <div data-spy="scroll" data-target="#list-example2" data-offset="0"
+                    class="scrollspy-example scrollCol2">
+                    <h4 id="list-item-5">GWA</h4>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Observing, receiving, and otherwise obtaining information from all
+                                relevant sources.</p>
+                            <p class="taskDetailCol2">透過相關資料來源，偵測、接收、獲取資訊。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Observing, receiving, and otherwise obtaining information from all
+                                relevant sources.</p>
+                            <p class="taskDetailCol2">透過相關資料來源，偵測、接收、獲取資訊。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Observing, receiving, and otherwise obtaining information from all
+                                relevant sources.</p>
+                            <p class="taskDetailCol2">透過相關資料來源，偵測、接收、獲取資訊。</p>
+                        </div>
+                    </div>
+                    <h4 id="list-item-6">IWA</h4>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1.I02</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Read documents or materials to inform work processes.</p>
+                            <p class="taskDetailCol2">閱讀檔案或文案資料，以獲取工作相關之作業資訊。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1.I02</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Read documents or materials to inform work processes.</p>
+                            <p class="taskDetailCol2">閱讀檔案或文案資料，以獲取工作相關之作業資訊。</p>
+                        </div>
+                    </div>
+                    <h4 id="list-item-7">DWA</h4>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1.I02.D06</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Study blueprints or other instructions to determine equipment
+                                setup requirements.</p>
+                            <p class="taskDetailCol2">研究藍圖或其他說明以確定設備設定要求。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">4.A.1.a.1.I02.D06</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Read and analyze charts, work orders, production schedules, and
+                                other records and reports to determine production requirements and to evaluate current
+                                production estimates and outputs.</p>
+                            <p class="taskDetailCol2">研究藍圖或其他說明以確定設備設定要求。</p>
+                        </div>
+                    </div>
+                    <h4 id="list-item-8">Task</h4>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">8452</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Study blueprints or other instructions to determine equipment
+                                setup requirements.</p>
+                            <p class="taskDetailCol2">閱讀和分析圖表、 工作訂單、 生產計畫和其他記錄和 報告來確定生產要求，評價目前的生產估計和產出。</p>
+                        </div>
+                    </div>
+                    <div class="taskDetail">
+                        <p class="taskDetailTitle">8452</p>
+                        <div class="taskDetailContent">
+                            <p class="taskDetailCol1">Study blueprints or other instructions to determine equipment
+                                setup requirements.</p>
+                            <p class="taskDetailCol2">閱讀和分析圖表、 工作訂單、 生產計畫和其他記錄和 報告來確定生產要求，評價目前的生產估計和產出。</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <p class="title" style="margin-top: 20px;">人員規範</p>
+        <div class="staffSpecificationContainer">
+            <div class="staffSpecificationContainerCard1">
+                <p class="staffSpecificationContainerCard1Col1">
+                    <span>經驗級別：</span>
+                    <span>教育級別：</span>
+                    <span>訓練級別：</span>
+                </p>
+                <p class="staffSpecificationContainerCard1Col2">
+                    <span>Level</span>
+                    <span>Level</span>
+                    <span>Level</span>
+                </p>
+            </div>
+            <div class="staffSpecificationContainerCard1">
+                <p class="staffSpecificationContainerCard1Col1">
+                    <span>職業性向：</span>
+                    <span>職業興趣：</span>
+                    <span>工作風格：</span>
+                    <span>工作價值觀：</span>
+                </p>
+                <p class="staffSpecificationContainerCard1Col2">
+                    <span>Level</span>
+                    <span>Level</span>
+                    <span>code</span>
+                    <span>code</span>
+                </p>
+            </div>
+            <div class="staffSpecificationContainerCard1">
+                <p class="staffSpecificationContainerCard1Col1">
+                    <span>語文級別：</span>
+                    <span>數學級別：</span>
+                    <span>推理級別：</span>
+                </p>
+                <p class="staffSpecificationContainerCard1Col2">
+                    <span>Level</span>
+                    <span>Level</span>
+                    <span>Level</span>
+                </p>
+            </div>
+        </div>
+
+        <p class="title">職能需求</p>
+        <div class="functionalRequirementsContainer">
+            <div class="functionalRequirementsContainerCard1">
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+
+
+            </div>
+            <div class="functionalRequirementsContainerCard1">
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+            </div>
+
+            <div class="functionalRequirementsContainerCard1">
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+                <p>職能代碼</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

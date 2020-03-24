@@ -1,0 +1,114 @@
+@media (min-width: 765px) {
+  .discTitle {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .chartContainer {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .chartContainer .chart {
+    width: 500px;
+    height: 400px;
+    margin-bottom: 100px;
+  }
+  .evaluationResultContainer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .evaluationResultContainer .evaluationResultTitle {
+    min-width: 235px;
+    font-size: 18px;
+  }
+  .evaluationResultContainer .evaluationResultContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid lightslategray;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .evaluationResultContainer .evaluationResultContent p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .evaluationResultContainer .evaluationResultContent div {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .discTitle {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .chartContainer {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .chartContainer .chart {
+    width: 500px;
+    margin-bottom: 20px;
+  }
+  .evaluationResultContainer {
+    margin-bottom: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .evaluationResultContainer .evaluationResultTitle {
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid lightslategray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .evaluationResultContainer .evaluationResultContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .evaluationResultContainer .evaluationResultContent p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .evaluationResultContainer .evaluationResultContent div {
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+}
+/*# sourceMappingURL=DISC-Result.css.map */

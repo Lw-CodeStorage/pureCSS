@@ -1,0 +1,28 @@
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+
+body {
+  font-family: apple !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.systemBodyContainer {
+  background: #25262e;
+  position: relative;
+  color: white;
+  padding: 40px 40px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 416px) {
+  .systemBodyContainer {
+    padding: 40px 10px;
+  }
+}

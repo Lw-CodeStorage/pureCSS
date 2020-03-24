@@ -1,0 +1,680 @@
+$cardColor: rgb(46, 48, 55); //卡片顏色
+$inversColor: rgb(57, 58, 66); //反白顏色
+$inputColor: #494b54;//input顏色
+$backgroundColor: rgb(37, 38, 46);
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+@media (min-width: 767px) {
+  body {
+    font-family: apple !important;
+  }
+  .systemBodyContainer {
+    position: relative;
+    background: $backgroundColor;
+    color: white;
+    padding: 40px 40px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    .resumeContainer {
+      display: flex;
+      justify-content: center;
+      max-width: 1400px;
+      margin: auto;
+
+      .userImageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        position: sticky;       //單側黏住flex css
+        align-self: flex-start; //單側黏住flex css
+        top: 20px;              //單側黏住flex css
+        .userimage {
+          background-image: url(https://picsum.photos/id/40/300/300);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border: 5px solid $cardColor;
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+        }
+        .userimageText {
+          p {
+            margin: 0px;
+          }
+          padding: 10px 40px 10px 40px;
+          background: $cardColor;
+          margin-top: 40px;
+      
+        }
+        .userimageText:hover {
+          cursor: pointer;
+          background: $inversColor;
+        }
+
+        .userDataUpdate {
+          
+          p {
+            margin: 0px;
+          }
+          padding: 10px 40px 10px 40px;
+          background: $cardColor;
+          margin-top: 40px;
+        }
+        .userDataUpdate:hover {
+          cursor: pointer;
+          background: $inversColor;
+      }
+    }
+      .Info {
+         
+        padding-left: 40px;
+        margin: 10px;
+        width: 900px;
+
+        .baseInfoTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+        }
+        .baseInfoContent {
+          background: $cardColor;
+          padding: 20px 30px 20px 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          letter-spacing: 2px;
+
+          .baseInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid $inversColor;
+
+          }
+          .baseInfoContentRowTextArea{
+            display: flex;
+            flex-direction: column;
+            textarea{
+              padding: 20px;
+              margin-top: 20px;
+              outline: none;
+              background: $inputColor;
+              color: white;
+              border: 0px;
+              resize : none;
+              overflow: auto;
+            }
+
+          }
+          select {
+            text-align: center;
+            text-align-last: center; /*兼容chrome*/
+            color: white;
+            outline: none;
+            max-width: 300px;
+            background: $cardColor;
+            border-color: $inversColor;
+          }
+          option {
+            text-align: center;
+          }
+          input {
+            color: white;
+            background: $cardColor;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: right;
+          }
+          .nameInput {
+            max-width: 300px;
+          }
+        }
+        .eduTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP{
+            margin: 0;
+          }
+          .titleb{
+            margin: 0;
+            border: 2px solid $inversColor;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 10px;
+          }
+          .titleb:hover{
+            background: $inversColor;
+            color: $backgroundColor;
+            cursor: pointer;
+          }
+        }
+        .eduInfoContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          .eduInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+          input {
+            max-width: 300px;
+            color: white;
+            background: $inputColor;
+            border-radius: 5px;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: center;
+          }
+        }
+
+        .workTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP{
+            margin: 0;
+          }
+          .titleb{
+            margin: 0;
+            border: 2px solid $inversColor;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 10px;
+          }
+          .titleb:hover{
+            background: $inversColor;
+            color: $backgroundColor;
+            cursor: pointer;
+          }
+        }
+        .workInfoContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          .workInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+          input {
+            max-width: 300px;
+            color: white;
+            background: $inputColor;
+            border-radius: 5px;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: center;
+          }
+        }
+
+        .tranTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP{
+            margin: 0;
+          }
+          .titleb{
+            margin: 0;
+            border: 2px solid $inversColor;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 10px;
+          }
+          .titleb:hover{
+            background: $inversColor;
+            color: $backgroundColor;
+            cursor: pointer;
+          }
+        }
+        .tranInfoContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          .tranInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+          input {
+            max-width: 300px;
+            color: white;
+            background: $inputColor;
+            border-radius: 5px;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: center;
+          }
+        }
+
+        .skillTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP{
+            margin: 0;
+          }
+          .titleb{
+            margin: 0;
+            border: 2px solid $inversColor;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 10px;
+          }
+          .titleb:hover{
+            background: $inversColor;
+            color: $backgroundColor;
+            cursor: pointer;
+          }
+        }
+        .skillInfoContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          .skillInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+          input {
+            max-width: 300px;
+            color: white;
+            background: $inputColor;
+            border-radius: 5px;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 415px){
+  body {
+    font-family: apple !important;
+  }
+  .systemBodyContainer {
+    position: relative;
+    background: $backgroundColor;
+    color: white;
+    padding: 20px 20px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-size: 14px;
+    letter-spacing: 10;
+    .resumeContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1400px;
+      margin: auto;
+      .userImageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        .userimage {
+          background-image: url(https://picsum.photos/id/40/300/300);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border: 5px solid $cardColor;
+          border-radius: 50%;
+          width: 180px;
+          height: 180px;
+        }
+        .phoneButtonGp{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding: 10px;
+          margin-top: 10px;
+          background:$inversColor ;
+          border-radius: 5px;
+          position: fixed;       //單側黏住flex css
+          bottom: 0px;              //單側黏住flex css
+        }
+        .userimageText {
+         
+          p {
+            margin: 0px;
+          }
+          border-radius: 10px;
+          padding: 10px 40px 10px 40px;
+          background: $cardColor;
+        
+        }
+        .userimageText:active {
+          background: $inversColor;
+        }
+        .userDataUpdate {
+          p {
+            margin: 0px;
+          }
+          border-radius: 10px;
+          padding: 10px 40px 10px 40px;
+          background: $cardColor;
+          margin-top: 10px;
+         
+        }
+        .userDataUpdate:active {
+          background: $inversColor;
+        }
+      }
+      .Info {
+        margin: 10px;
+        width: 900px;
+
+        .baseInfoTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+        }
+        .baseInfoContent {
+        
+          background: $cardColor;
+          padding: 20px 30px 20px 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          letter-spacing: 2px;
+
+          .baseInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid $inversColor;
+
+          }
+          .baseInfoContentRowTextArea{
+            display: flex;
+            flex-direction: column;
+            textarea{
+              font-size: 14px;
+              padding: 10px;
+              margin-top: 20px;
+              outline: none;
+              background: $inputColor;
+              color: white;
+              border: 0px;
+              resize : none;
+              overflow: auto;
+            }
+
+          }
+          select {
+            text-align: center;
+            text-align-last: center; /*兼容chrome*/
+            color: white;
+            outline: none;
+            max-width: 300px;
+            background: $cardColor;
+            border-color: $inversColor;
+          }
+          option {
+            text-align: center;
+          }
+          input {
+            color: white;
+            background: $cardColor;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: right;
+          }
+          .nameInput {
+            max-width: 300px;
+          }
+        }
+        .eduTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP{
+            margin: 0;
+          }
+          .titleb{
+            margin: 0;
+            border: 2px solid $inversColor;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 10px;
+          }
+          .titleb:hover{
+            background: $inversColor;
+            color: $backgroundColor;
+            cursor: pointer;
+          }
+        }
+        .eduInfoContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          .eduInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+          input {
+            max-width: 300px;
+            color: white;
+            background: $inputColor;
+            border-radius: 5px;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: center;
+          }
+        }
+
+        .workTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP{
+            margin: 0;
+          }
+          .titleb{
+            margin: 0;
+            border: 2px solid $inversColor;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 10px;
+          }
+          .titleb:hover{
+            background: $inversColor;
+            color: $backgroundColor;
+            cursor: pointer;
+          }
+        }
+        .workInfoContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          .workInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+          input {
+            max-width: 300px;
+            color: white;
+            background: $inputColor;
+            border-radius: 5px;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: center;
+          }
+        }
+
+        .tranTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP{
+            margin: 0;
+          }
+          .titleb{
+            margin: 0;
+            border: 2px solid $inversColor;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 10px;
+          }
+          .titleb:hover{
+            background: $inversColor;
+            color: $backgroundColor;
+            cursor: pointer;
+          }
+        }
+        .tranInfoContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          .tranInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+          input {
+            max-width: 300px;
+            color: white;
+            background: $inputColor;
+            border-radius: 5px;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: center;
+          }
+        }
+
+        .skillTitle {
+          padding: 20px 0px 10px 0px;
+          font-size: 20px;
+          border-bottom: 2px solid $inversColor;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .titleP{
+            margin: 0;
+          }
+          .titleb{
+            margin: 0;
+            border: 2px solid $inversColor;
+            font-size: 16px;
+            padding: 5px 20px;
+            border-radius: 10px;
+          }
+          .titleb:hover{
+            background: $inversColor;
+            color: $backgroundColor;
+            cursor: pointer;
+          }
+        }
+        .skillInfoContent {
+          padding: 20px 30px 20px 30px;
+          letter-spacing: 2px;
+          background: $cardColor;
+          .skillInfoContentRow {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+          }
+          input {
+            max-width: 300px;
+            color: white;
+            background: $inputColor;
+            border-radius: 5px;
+            outline: none;
+            border-style: solid;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

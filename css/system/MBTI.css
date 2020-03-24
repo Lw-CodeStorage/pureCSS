@@ -1,0 +1,51 @@
+@font-face {
+  font-family: apple;
+  src: url(/fonts/GenJyuuGothic-Monospace-Normal.ttf);
+}
+
+@media (min-width: 300px) {
+  .discContainer {
+    max-width: 1280px;
+    margin: auto;
+  }
+  .discContainer .uk-card {
+    padding: 40px;
+  }
+  .discContainer .page0 {
+    display: none;
+  }
+  .discContainer .page0 .discImage {
+    width: 100%;
+    height: 375px;
+    background-image: url("https://picsum.photos/id/56/2880/1920");
+    background-size: cover;
+    background-position: center;
+  }
+  .discContainer .page0 .discDescriptionContent {
+    padding-right: 150px;
+  }
+  .discContainer .page0 .uk-card-title {
+    margin-top: 10px;
+  }
+  .discContainer .page1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .discContainer .page1 .MBTIquation {
+    max-width: 300px;
+    width: 100%;
+    padding: 20px;
+  }
+  .discContainer .page1 .MBTIquation .MBTIquationTitle {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+}
+/*# sourceMappingURL=MBTI.css.map */

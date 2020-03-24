@@ -1,0 +1,469 @@
+.title {
+  padding: 5px 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (min-width: 765px) {
+  .jobDiscriptionContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .jobCategory {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 2px solid gainsboro;
+    margin-bottom: 20px;
+    .jobNameContainer {
+      width: 200px;
+      .jobNameTitle {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .jobCode {
+      width: 200px;
+      margin-right: 20px;
+      .jobCodeTitle {
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .jobCodeContent {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .jobName {
+      width: 400px;
+      .jobNameTitle {
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+  }
+  .jobAbstract {
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .orgStrucuret {
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .jobTask {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    .jobTaskD1 {
+      width: 350px;
+      height: 250px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 20px;
+      div {
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        p {
+          padding: 5px 20px;
+        }
+        .levelCode {
+          background: navajowhite;
+          border-radius: 5px;
+        }
+      }
+    }
+    .jobTaskD2 {
+      width: 350px;
+      height: 250px;
+      margin-bottom: 20px;
+      .chart {
+        width: 200px !important;
+        height: 200px !important;
+      }
+    }
+    .jobTaskD3 {
+      width: 350px;
+      height: 250px;
+      margin-bottom: 20px;
+    }
+  }
+  .taskDescriptionContainer {
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    div:nth-child(1) {
+      text-align: center;
+      width: 100px;
+      background: gainsboro;
+    }
+    div:nth-child(2) {
+      text-align: center;
+      width: 800px;
+      background: gainsboro;
+    }
+    div:nth-child(3) {
+      text-align: center;
+      width: 50px;
+      background: gainsboro;
+    }
+    div:nth-child(4) {
+      text-align: center;
+      width: 50px;
+      background: gainsboro;
+    }
+    div:nth-child(5) {
+      text-align: center;
+      width: 50px;
+      background: gainsboro;
+    }
+  }
+  .scrollContainer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 600px;
+    margin-top: 20px;
+    .scrollCol1 {
+      width: 200px;
+    }
+    .scrollCol2 {
+      width: 800px;
+      overflow: scroll;
+      .taskDetail {
+        .taskDetailTitle {
+          font-weight: 800;
+        }
+        .taskDetailContent {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #000;
+          margin-bottom: 10px;
+          margin: 20px 20px;
+          .taskDetailCol1 {
+            width: 350px;
+          }
+          .taskDetailCol2 {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+  .staffSpecificationContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    .staffSpecificationContainerCard1 {
+      width: 350px;
+      height: 300px;
+      border: 2px solid lightslategray;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 10px;
+      .staffSpecificationContainerCard1Col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+      }
+      .staffSpecificationContainerCard1Col2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+
+        span {
+          text-align: center;
+          width: 150px;
+          background: gainsboro;
+          padding: 5px 20px;
+        }
+      }
+    }
+  }
+
+  .functionalRequirementsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    .functionalRequirementsContainerCard1 {
+      margin: 10px;
+      padding: 5px;
+      width: 350px;
+      height: 200px;
+      border: 2px solid lightslategray;
+      font-size: 16px;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: scroll;
+      p {
+        padding: 5px 10px;
+        background: lightslategray;
+        margin: 0px;
+        width: 140px;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .jobDiscriptionContainer {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .jobCategory {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 2px solid gainsboro;
+    margin-bottom: 20px;
+    .jobNameContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
+      .jobNameTitle {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .jobCode {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      .jobCodeTitle {
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .phoneLay {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .jobCodeContent {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .jobName {
+      width: 100%;
+      margin-bottom: 10px;
+      .jobNameTitle {
+        font-weight: 600;
+        font-size: 18px;
+       
+      }
+    }
+  }
+  .jobAbstract {
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .orgStrucuret {
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .jobTask {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    .jobTaskD1 {
+      width: 350px;
+      height: 250px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 20px;
+      div {
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        p {
+          padding: 5px 20px;
+        }
+        .levelCode {
+          background: navajowhite;
+          border-radius: 5px;
+        }
+      }
+    }
+    .jobTaskD2 {
+      width: 350px;
+      height: 250px;
+      margin-bottom: 20px;
+      .chart {
+        width: 200px !important;
+        height: 200px !important;
+      }
+    }
+    .jobTaskD3 {
+      width: 350px;
+      height: 250px;
+      margin-bottom: 20px;
+    }
+  }
+  .taskDescriptionContainer {
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    div:nth-child(1) {
+      text-align: center;
+      width: 100px;
+      background: gainsboro;
+    }
+    div:nth-child(2) {
+      text-align: center;
+      width: 800px;
+      background: gainsboro;
+    }
+    div:nth-child(3) {
+      text-align: center;
+      width: 50px;
+      background: gainsboro;
+    }
+    div:nth-child(4) {
+      text-align: center;
+      width: 50px;
+      background: gainsboro;
+    }
+    div:nth-child(5) {
+      text-align: center;
+      width: 50px;
+      background: gainsboro;
+    }
+  }
+  .scrollContainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 600px;
+    margin-top: 20px;
+    padding: 20px;
+    .scrollCol1 {
+      width: 100px;
+      margin-right: 20px;
+    }
+    .scrollCol2 {
+      
+      overflow: scroll;
+      .taskDetail {
+        .taskDetailTitle {
+          font-weight: 800;
+        }
+        .taskDetailContent {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #000;
+          margin-bottom: 10px;
+          margin: 20px 20px;
+          .taskDetailCol1 {
+            width: 350px;
+          }
+          .taskDetailCol2 {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+  .staffSpecificationContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    .staffSpecificationContainerCard1 {
+      width: 350px;
+      height: 300px;
+      border: 2px solid lightslategray;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 10px;
+      .staffSpecificationContainerCard1Col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+      }
+      .staffSpecificationContainerCard1Col2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+
+        span {
+          text-align: center;
+          width: 150px;
+          background: gainsboro;
+          padding: 5px 20px;
+        }
+      }
+    }
+  }
+
+  .functionalRequirementsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    .functionalRequirementsContainerCard1 {
+      margin: 10px;
+      padding: 5px;
+      width: 350px;
+      height: 200px;
+      border: 2px solid lightslategray;
+      font-size: 16px;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: scroll;
+      p {
+        padding: 5px 10px;
+        background: lightslategray;
+        margin: 0px;
+        width: 140px;
+        margin: 10px;
+      }
+    }
+  }
+}
