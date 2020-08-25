@@ -20,14 +20,9 @@ body::-webkit-scrollbar {
   .activityPageWarp .activityContainer {
     width: 100%;
     padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .activityPageWarp .activityContainer .activityCardContainer {
     width: 400px;
@@ -36,8 +31,7 @@ body::-webkit-scrollbar {
     border-radius: 0px;
     border-bottom: 5px solid turquoise;
     background: white;
-    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
   }
@@ -52,8 +46,7 @@ body::-webkit-scrollbar {
     padding: 5px;
     text-align: center;
     background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     z-index: 1;
     color: white;
   }
@@ -63,25 +56,19 @@ body::-webkit-scrollbar {
     position: relative;
   }
   .activityPageWarp .activityContainer .activityCardContainer .activityPageImage {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     background-image: url(https://picsum.photos/id/486/400/300);
     z-index: 0;
   }
   .activityPageWarp .activityContainer .activityCardContainer .activityPageImage:hover,
   .activityPageWarp .activityContainer .activityCardContainer .activityPageImage:focus {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     cursor: pointer;
   }
   .activityPageWarp .activityContainer .activityCardContainer .activityPageImage::before {
@@ -119,39 +106,24 @@ body::-webkit-scrollbar {
     position: absolute;
     left: 10px;
     bottom: -80px;
-    -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     font-size: 36px;
     color: turquoise;
     cursor: pointer;
   }
   .activityPageWarp .activityContainer .activityCardContainer .imageScale:hover .imageImage,
   .activityPageWarp .activityContainer .activityCardContainer .imageScale:focus .imageImage {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     left: 10px;
     bottom: 20px;
   }
   .activityPageWarp .activityContainer .activityCardContainer .activityTitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    justify-content: space-between;
+    align-items: baseline;
     position: relative;
     font-size: 22px;
     padding: 20px 20px 10px 20px;
@@ -218,14 +190,9 @@ body::-webkit-scrollbar {
   .activityPageWarp .activityContainer {
     width: 100%;
     padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .activityPageWarp .activityContainer .activityCardContainer {
     width: 400px;
@@ -234,8 +201,7 @@ body::-webkit-scrollbar {
     border-radius: 0px;
     border-bottom: 5px solid turquoise;
     background: white;
-    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
   }
@@ -250,8 +216,7 @@ body::-webkit-scrollbar {
     padding: 5px;
     text-align: center;
     background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     z-index: 1;
     color: white;
   }
@@ -261,25 +226,19 @@ body::-webkit-scrollbar {
     position: relative;
   }
   .activityPageWarp .activityContainer .activityCardContainer .activityPageImage {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     background-image: url(https://picsum.photos/id/486/400/300);
     z-index: 0;
   }
   .activityPageWarp .activityContainer .activityCardContainer .activityPageImage:hover,
   .activityPageWarp .activityContainer .activityCardContainer .activityPageImage:focus {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
     cursor: pointer;
   }
   .activityPageWarp .activityContainer .activityCardContainer .activityPageImage::before {
@@ -317,39 +276,24 @@ body::-webkit-scrollbar {
     position: absolute;
     left: 10px;
     bottom: -80px;
-    -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     font-size: 36px;
     color: turquoise;
     cursor: pointer;
   }
   .activityPageWarp .activityContainer .activityCardContainer .imageScale:hover .imageImage,
   .activityPageWarp .activityContainer .activityCardContainer .imageScale:focus .imageImage {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     left: 10px;
     bottom: 20px;
   }
   .activityPageWarp .activityContainer .activityCardContainer .activityTitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    justify-content: space-between;
+    align-items: baseline;
     position: relative;
     font-size: 20px;
     padding: 20px 20px 10px 20px;
@@ -406,4 +350,3 @@ body::-webkit-scrollbar {
     color: white;
   }
 }
-/*# sourceMappingURL=activityPage.css.map */

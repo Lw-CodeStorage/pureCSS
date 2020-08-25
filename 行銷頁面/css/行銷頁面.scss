@@ -7,1295 +7,4501 @@ body {
   font-family: apple !important;
   scroll-behavior: smooth; //滾動滑順用於錨點
   margin: 0px;
+  body::-webkit-scrollbar {
+    display: none;
+  }
 }
 p {
   margin: 0px;
 }
-
-.frame {
-  .selfMenu {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 50px;
-    z-index: 999;
-    animation: menuMove 1.5s ease;
-    @keyframes menuMove {
-      0% {
-        top: -40px;
-      }
-      100% {
-        top: 50px;
-      }
-    }
-
-    .logo {
-      width: 400px;
-      margin-left: 120px;
-      background-image: url("/行銷頁面/img/Logo.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-    .selfMenuItem {
-      display: flex;
-      margin-right: 83px;
-      justify-content: space-around;
-      align-content: space-between;
-      width: 480px;
-      align-items: baseline;
-      font-size: 20px;
-    }
+a {
+  text-decoration: none;
+}
+.foisWeb {
+  display: none;
+}
+.foisPhone {
+  display: none;
+}
+@media (min-width: 1900px) {
+  .foisWeb {
+    display: block;
   }
-
-  .Container1 {
-    max-width: 1920px;
-    height: 100vh;
-    margin: auto;
-
-    .i1 {
-      padding: 35px 40px 40px 40px;
-      margin: auto;
-      position: relative;
-      top: calc(50vh - 330px);
-      .bp1 {
-        max-width: 1920px;
-        width: 100%;
-        height: 660px;
+  :target {
+    scroll-behavior: smooth; //滾動滑順用於錨點
+  }
+  .frame {
+    .rgButtom {
+      width: 70px;
+      height: 70px;
+      position: fixed;
+      top: 100px;
+      right: 100px;
+      background: darkgreen;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      z-index: 999;
+      animation-iteration-count: infinite;
+      cursor: pointer;
+      .rgText {
+        font-weight: 500;
         position: absolute;
-        background-image: url(/行銷頁面/img/bp1.svg); //載入的陸姓是看此css的地點下去推的
+        left: -220px;
+        font-size: 18px;
+        color: darkgreen;
+      }
+      .fas {
+        font-size: 28px;
+        color: white;
+      }
+    }
+    .selfMenu {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 50px;
+      z-index: 999;
+      animation: menuMove 1.5s ease;
+      @keyframes menuMove {
+        0% {
+          top: -40px;
+        }
+        100% {
+          top: 50px;
+        }
+      }
+
+      .logo {
+        width: 400px;
+        margin-left: 120px;
+        background-image: url(/img/Logo.svg);
         background-repeat: no-repeat;
         background-position: center center;
-        left: 0;
-        animation: bp1-movement 0.8s ease 0s;
+      }
+      .selfMenuItem {
+        display: flex;
+        margin-right: 83px;
+        justify-content: space-around;
+        align-content: space-between;
+        width: 480px;
+        align-items: baseline;
+        font-size: 20px;
+      }
+    }
 
-        @keyframes bp1-movement {
-          0% {
-            top: 400px;
-            opacity: 0;
+    .Container1 {
+      max-width: 1920px;
+      height: 100vh;
+      margin: auto;
+
+      .i1 {
+        padding: 35px 40px 40px 40px;
+        margin: auto;
+        position: relative;
+        top: calc(50vh - 330px);
+        .bp1 {
+          max-width: 1920px;
+          width: 100%;
+          height: 660px;
+          position: absolute;
+          background-image: url(/img/bp1.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          left: 0;
+          animation: bp1-movement 0.8s ease 0s;
+
+          @keyframes bp1-movement {
+            0% {
+              top: 400px;
+              opacity: 0;
+            }
+            50% {
+              opacity: 0.2;
+            }
+            100% {
+              top: 35px;
+              opacity: 1;
+            }
+          }
+        }
+        .bp2 {
+          max-width: 1920px;
+          width: 100%;
+          height: 660px;
+          position: absolute;
+          background-image: url(/img/bp2.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          left: 0;
+          animation: bp2-movement 1.2s ease 0s;
+          @keyframes bp2-movement {
+            0% {
+              top: 400px;
+              opacity: 0;
+            }
+            100% {
+              top: 35px;
+              opacity: 1;
+            }
+          }
+        }
+        .bp3 {
+          max-width: 1920px;
+          width: 100%;
+          height: 660px;
+          position: absolute;
+          background-image: url(/img/bp3.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          left: 0;
+          animation: bp3-movement 1.4s ease 0s;
+          @keyframes bp3-movement {
+            0% {
+              top: 400px;
+              opacity: 0.2;
+            }
+            100% {
+              top: 35px;
+              opacity: 1;
+            }
+          }
+        }
+        .bp4-pointer {
+          width: 200px;
+          height: 200px;
+          background: red;
+          background: transparent;
+          position: absolute;
+          left: 44%;
+          top: 250px;
+          cursor: pointer;
+          z-index: 99999;
+        }
+        .bp4 {
+          max-width: 1920px;
+          width: 100%;
+          height: 660px;
+          position: absolute;
+          background-image: url(/img/bp4.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          left: 0;
+          z-index: 9;
+          animation: bp4-movement 1.8s ease 0s;
+          @keyframes bp4-movement {
+            0% {
+              top: 400px;
+              opacity: 0;
+            }
+            100% {
+              top: 35px;
+              opacity: 1;
+            }
+          }
+        }
+
+        //hover後 同層其他元素變化
+        .bp4-pointer:hover + .bp4 {
+          transition: 0.6s;
+          transform: scale(1.2);
+        }
+        .bp4-pointer:not(:hover) + .bp4 {
+          transition: 2s;
+          transform: scale(1);
+        }
+      }
+    }
+
+    .i1-footer {
+      width: 100%;
+      height: 90px;
+      background: #b9d4b9;
+      position: absolute;
+      top: calc(100vh - 90px);
+    }
+    // .fa-chevron-down {
+    //   position: absolute;
+    //   left: 50%;
+    //   margin-left: -13px;
+    //   font-size: 30px;
+    //   animation: down-movement 0.6s linear 0s infinite alternate;
+    //   top: 640px;
+    // }
+
+    // @keyframes down-movement {
+    //   100% {
+    //     top: 670px;
+    //   }
+    // }
+
+    // .shandow {
+    //   width: 16px;
+    //   height: 3px;
+    //   background: darkgray;
+    //   border-radius: 100%;
+    //   margin: auto;
+    //   margin-top: 650px;
+    //   animation: down-shandow 0.6s linear 0s infinite alternate;
+    // }
+    //   @keyframes down-shandow {
+    //   100% {
+    //     transform: scale(1.5);
+
+    //     background: gray;
+    //   }
+    // }
+  }
+  .Container2 {
+    height: 1400vh;
+    .fixedFrame {
+      top: 10px;
+      position: sticky;
+      width: 100%;
+    }
+    .i2Ttitle {
+      margin: auto;
+      max-width: 392px;
+      font-size: 44px;
+      letter-spacing: 4.5px;
+      color: #5f5f5f;
+      text-align: center;
+      padding-top: 160px;
+      border-bottom: 5px solid #707070;
+    }
+    .i2Subtitle {
+      text-align: center;
+      height: 52px;
+      font-size: 37px;
+      color: #5f5f5f;
+      letter-spacing: 8.5px;
+      font: Regular 37px/52px Arial Black;
+    }
+    .i2 {
+      margin: auto;
+      max-width: 1920px;
+      display: flex;
+      height: 800px;
+      .RAISEC-Circle {
+        margin: auto;
+        width: 443px;
+        height: 443px;
+        margin-top: 100px;
+        background-image: url(/img/RIASEC底圖.svg); //載入的陸姓是看此css的地點下去推的
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        opacity: 0;
+
+        .circleItem-C {
+          margin: auto;
+          width: 162px;
+          height: 138px;
+          background-image: url(/img/C.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          position: absolute;
+          top: 18px;
+          left: 53px;
+          transition: 0.5s;
+          transform: scale(0);
+        }
+        .circleItem-R {
+          margin: auto;
+          width: 161px;
+          height: 137px;
+          background-image: url(/img/R.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          position: absolute;
+          top: 17px;
+          right: 50px;
+          z-index: 50;
+          transition: 0.5s;
+          transform: scale(0);
+        }
+        .circleItem-I {
+          margin: auto;
+          width: 103px;
+          height: 185px;
+          background-image: url(/img/I.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          position: absolute;
+          bottom: 130px;
+          right: 15px;
+          transition: 0.5s;
+          transform: scale(0);
+        }
+        .circleItem-A {
+          margin: auto;
+          width: 162px;
+          height: 138px;
+          background-image: url(/img/A.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          position: absolute;
+          bottom: 20px;
+          right: 50px;
+          transition: 0.5s;
+          transform: scale(0);
+        }
+        .circleItem-S {
+          margin: auto;
+          width: 162px;
+          height: 138px;
+          background-image: url(/img/S.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          position: absolute;
+          bottom: 20px;
+          left: 50px;
+          transition: 0.5s;
+          transform: scale(0);
+        }
+        .circleItem-E {
+          margin: auto;
+          width: 103px;
+          height: 185px;
+          background-image: url(/img/E.svg); //載入的陸姓是看此css的地點下去推的
+          background-repeat: no-repeat;
+          background-position: center center;
+          position: absolute;
+          bottom: 130px;
+          left: 15px;
+          transition: 0.5s;
+          transform: scale(0);
+        }
+        .circleItem-A:hover,
+        .circleItem-S:hover,
+        .circleItem-C:hover,
+        .circleItem-R:hover,
+        .circleItem-I:hover,
+        .circleItem-E:hover {
+          cursor: pointer;
+          transition: 0.2s ease;
+          transform: scale(1.1) !important;
+        }
+      }
+      .RAISEC-Circle-Aninimation {
+        animation: circleMove 2s ease;
+        animation-fill-mode: forwards;
+        @keyframes circleMove {
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+      .RAISEC-Circle:hover {
+        // transition: 0.5s;
+        // transform: scale(1.1);
+      }
+      .RAISEC-Circle:not(:hover) {
+        // transition: 0.5s;
+        // transform: scale(1);
+      }
+      //R
+      #Rline {
+        right: -170px;
+        top: -50px;
+        position: absolute;
+        display: none;
+        stroke-width: 6;
+        stroke: #707070;
+        fill: none;
+
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      #Rimage {
+        display: none;
+        position: absolute;
+        right: -470px;
+        top: -50px;
+        width: 400px;
+        height: 275px;
+        background-image: url(/img/Rimage.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        .RTitle {
+          margin-top: 350px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .RSubTitle {
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .typing {
+          width: 550px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing 1s steps(32, end);
+
+          word-break: break-all;
+          overflow: hidden;
+        }
+        /* 打印效果 */
+        @keyframes typing {
+          100% {
+            width: 550px;
+          }
+        }
+        /* 光标闪啊闪 */
+        @keyframes blink-caret {
+          from,
+          to {
+            border-color: transparent;
           }
           50% {
-            opacity: 0.2;
-          }
-          100% {
-            top: 35px;
-            opacity: 1;
+            border-color: currentColor;
           }
         }
       }
-      .bp2 {
-        max-width: 1920px;
-        width: 100%;
-        height: 660px;
+      #Rchart {
+        display: none;
+        width: 340px;
+        height: 380px;
         position: absolute;
-        background-image: url(/行銷頁面/img/bp2.svg); //載入的陸姓是看此css的地點下去推的
-        background-repeat: no-repeat;
-        background-position: center center;
-        left: 0;
-        animation: bp2-movement 1.2s ease 0s;
-        @keyframes bp2-movement {
-          0% {
-            top: 400px;
-            opacity: 0;
-          }
-          100% {
-            top: 35px;
-            opacity: 1;
-          }
+        left: -480px;
+        bottom: -180px;
+        // fill: rgb(19, 134, 117);
+        // stroke: rgb(19, 134, 117);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+
+        #Rresult {
+          position: absolute;
+          stroke: #707070;
+          stroke-width: 2px;
+          fill-opacity: 0;
+          fill: rgba(19, 134, 117, 0.5);
+          width: 180px !important;
+          height: 165px;
+          z-index: -1 !important;
+          top: 24px;
+          left: 79px;
+          width: 160px;
+        }
+        .RresultFinished {
+          fill-opacity: 1 !important;
+          transition: 1s;
+        }
+        .RresultLeave {
+          fill-opacity: 0 !important;
+          transition: 0.5s;
         }
       }
-      .bp3 {
-        max-width: 1920px;
-        width: 100%;
-        height: 660px;
+      .RContext {
+        display: none;
         position: absolute;
-        background-image: url(/行銷頁面/img/bp3.svg); //載入的陸姓是看此css的地點下去推的
-        background-repeat: no-repeat;
-        background-position: center center;
-        left: 0;
-        animation: bp3-movement 1.4s ease 0s;
-        @keyframes bp3-movement {
-          0% {
-            top: 400px;
-            opacity: 0.2;
-          }
-          100% {
-            top: 35px;
-            opacity: 1;
-          }
+        top: -480px;
+        left: -480px;
+        .R1Title {
+          margin-top: 300px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
         }
-      }
-      .bp4-pointer {
-        width: 200px;
-        height: 200px;
-        background: red;
-        background: transparent;
-        position: absolute;
-        left: 44%;
-        top: 250px;
-        cursor: pointer;
-        z-index: 99999;
-      }
-      .bp4 {
-        max-width: 1920px;
-        width: 100%;
-        height: 660px;
-        position: absolute;
-        background-image: url(/行銷頁面/img/bp4.svg); //載入的陸姓是看此css的地點下去推的
-        background-repeat: no-repeat;
-        background-position: center center;
-        left: 0;
-        z-index: 9;
-        animation: bp4-movement 1.8s ease 0s;
-        @keyframes bp4-movement {
-          0% {
-            top: 400px;
-            opacity: 0;
-          }
-          100% {
-            top: 35px;
-            opacity: 1;
-          }
+        .R1subTitle {
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+        .R2Title {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+        }
+        .R2subTitle {
+          margin-top: 10px;
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
         }
       }
 
-      //hover後 同層其他元素變化
-      .bp4-pointer:hover + .bp4 {
-        transition: 0.6s;
-        transform: scale(1.2);
+      //I
+      #Iline {
+        display: none;
+        right: -270px;
+        top: 100px;
+        position: absolute;
+        stroke-width: 6;
+        stroke: #707070;
+        fill: none;
+
+        stroke-linecap: round;
+        stroke-linejoin: round;
       }
-      .bp4-pointer:not(:hover) + .bp4 {
-        transition: 2s;
-        transform: scale(1);
+      #Iimage {
+        display: none;
+        position: absolute;
+        right: -580px;
+        top: 20px;
+        width: 320px;
+        height: 290px;
+        background-image: url(/img/Iimage.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        .ITitle {
+          margin-top: 350px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .ISubTitle {
+          width: 400px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .ISubTitle2 {
+          width: 0px;
+          overflow: hidden;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .typing2 {
+          width: 230px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+          word-break: break-all;
+        }
+
+        /* 打印效果 2*/
+        @keyframes typing2 {
+          from {
+            width: 0;
+          }
+          to {
+            width: 230px;
+          }
+        }
+        .typing {
+          width: 400px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+          word-break: break-all;
+          overflow: hidden;
+        }
+        /* 打印效果 */
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 400px;
+          }
+        }
+        /* 光标闪啊闪 */
+        @keyframes blink-caret {
+          from,
+          to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: currentColor;
+          }
+        }
+      }
+      #Ichart {
+        display: none;
+        width: 340px;
+        height: 380px;
+        position: absolute;
+        left: -480px;
+        bottom: -150px;
+        // fill: rgb(19, 134, 117);
+        // stroke: rgb(19, 134, 117);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        #Iresult {
+          position: absolute;
+          stroke: #707070;
+          stroke-width: 2px;
+          fill-opacity: 0;
+          fill: rgba(122, 0, 154, 0.5);
+          width: 140px;
+          height: 160px;
+          z-index: -1 !important;
+          top: 70px;
+          left: 175px;
+        }
+        .IresultFinished {
+          fill-opacity: 1 !important;
+          transition: 1s;
+        }
+        .IresultLeave {
+          fill-opacity: 0 !important;
+          transition: 0.5s;
+        }
+      }
+      .IContext {
+        display: none;
+        position: absolute;
+        top: -480px;
+        left: -480px;
+        .I1Title {
+          margin-top: 300px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .I1subTitle {
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+        .I2Title {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+        }
+        .I2subTitle {
+          margin-top: 10px;
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+      }
+
+      //A
+
+      #Aline {
+        display: none;
+        right: -127px;
+        top: 400px;
+        width: 175px;
+        height: 15px;
+        position: absolute;
+        stroke-width: 4;
+        stroke: #707070;
+        fill: none;
+
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      #Aimage {
+        display: none;
+        position: absolute;
+        right: -450px;
+        top: 160px;
+        width: 280px;
+        height: 347px;
+        background-image: url(/img/Aimage.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        .AimageContext {
+          position: absolute;
+          top: -550px;
+          left: -100px;
+        }
+        .ATitle {
+          margin-top: 350px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .ASubTitle {
+          width: 400px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .ASubTitle2 {
+          width: 0px;
+          overflow: hidden;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .typing2 {
+          width: 255px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+          word-break: break-all;
+        }
+
+        /* 打印效果 2*/
+        @keyframes typing2 {
+          from {
+            width: 0;
+          }
+          to {
+            width: 260px;
+          }
+        }
+        .typing {
+          width: 400px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+          word-break: break-all;
+          overflow: hidden;
+        }
+        /* 打印效果 */
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 350px;
+          }
+        }
+        /* 光标闪啊闪 */
+        @keyframes blink-caret {
+          from,
+          to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: currentColor;
+          }
+        }
+      }
+      #Achart {
+        display: none;
+        width: 340px;
+        height: 380px;
+        position: absolute;
+        left: -480px;
+        bottom: -180px;
+        // fill: rgb(19, 134, 117);
+        // stroke: rgb(19, 134, 117);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        #Aresult {
+          position: absolute;
+          stroke: #707070;
+          stroke-width: 2px;
+          fill-opacity: 0;
+          fill: rgba(16, 60, 95, 0.7);
+          width: 140px;
+          height: 160px;
+          z-index: -1 !important;
+          top: 125px;
+          left: 175px;
+        }
+        .AresultFinished {
+          fill-opacity: 1 !important;
+          transition: 1s;
+        }
+        .AresultLeave {
+          fill-opacity: 0 !important;
+          transition: 0.5s;
+        }
+      }
+      .AContext {
+        display: none;
+        position: absolute;
+        top: -480px;
+        left: -480px;
+        .A1Title {
+          margin-top: 300px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .A1subTitle {
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+        .A2Title {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+        }
+        .A2subTitle {
+          margin-top: 10px;
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+      }
+      //S
+
+      #Sline {
+        display: none;
+        right: 370px;
+        top: 400px;
+        width: 175px;
+        height: 15px;
+        position: absolute;
+        stroke-width: 4;
+        stroke: #707070;
+        fill: none;
+
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      #Simage {
+        display: none;
+        position: absolute;
+        left: -550px;
+        top: 160px;
+        width: 350px;
+        height: 328px;
+        background-image: url(/img/Simage.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        .SimageContext {
+          position: absolute;
+          top: -550px;
+          left: -17px;
+        }
+        .STitle {
+          margin-top: 350px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .SSubTitle {
+          width: 400px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .SSubTitle2 {
+          width: 0px;
+          overflow: hidden;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .typing2 {
+          width: 200px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+          word-break: break-all;
+        }
+
+        /* 打印效果 2*/
+        @keyframes typing2 {
+          from {
+            width: 0;
+          }
+          to {
+            width: 200px;
+          }
+        }
+        .typing {
+          width: 400px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+          word-break: break-all;
+          overflow: hidden;
+        }
+        /* 打印效果 */
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 350px;
+          }
+        }
+        /* 光标闪啊闪 */
+        @keyframes blink-caret {
+          from,
+          to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: currentColor;
+          }
+        }
+      }
+      #Schart {
+        display: none;
+        width: 340px;
+        height: 380px;
+        position: absolute;
+        right: -555px;
+        bottom: -200px;
+        // fill: rgb(19, 134, 117);
+        // stroke: rgb(19, 134, 117);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        #Sresult {
+          position: absolute;
+          stroke: #707070;
+          stroke-width: 2px;
+          fill-opacity: 0;
+          fill: rgba(239, 59, 63, 0.7);
+          width: 187px;
+          height: 158px;
+          z-index: -1 !important;
+          top: 188px;
+          left: 92px;
+        }
+        .SresultFinished {
+          fill-opacity: 1 !important;
+          transition: 1s;
+        }
+        .SresultLeave {
+          fill-opacity: 0 !important;
+          transition: 0.5s;
+        }
+      }
+      .SContext {
+        display: none;
+        position: absolute;
+        top: -480px;
+        right: -550px;
+        .S1Title {
+          margin-top: 300px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .S1subTitle {
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+        .S2Title {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+        }
+        .S2subTitle {
+          margin-top: 10px;
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+      }
+
+      //E
+      #Eline {
+        display: none;
+        right: 450px;
+        top: 230px;
+        width: 175px;
+        height: 15px;
+        position: absolute;
+        stroke-width: 4;
+        stroke: #707070;
+        fill: none;
+
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      #Eimage {
+        display: none;
+        position: absolute;
+        left: -550px;
+        top: 160px;
+        width: 295px;
+        height: 337px;
+        background-image: url(/img/Eimage.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        .EimageContext {
+          position: absolute;
+          top: -550px;
+          left: -17px;
+        }
+        .ETitle {
+          margin-top: 350px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .ESubTitle {
+          width: 400px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .ESubTitle2 {
+          width: 0px;
+          overflow: hidden;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .typing2 {
+          width: 200px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+          word-break: break-all;
+        }
+
+        /* 打印效果 2*/
+        @keyframes typing2 {
+          from {
+            width: 0;
+          }
+          to {
+            width: 200px;
+          }
+        }
+        .typing {
+          width: 500px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+          word-break: break-all;
+          overflow: hidden;
+        }
+        /* 打印效果 */
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 500px;
+          }
+        }
+        /* 光标闪啊闪 */
+        @keyframes blink-caret {
+          from,
+          to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: currentColor;
+          }
+        }
+      }
+      #Echart {
+        display: none;
+        width: 340px;
+        height: 380px;
+        position: absolute;
+        right: -555px;
+        bottom: -200px;
+        // fill: rgb(19, 134, 117);
+        // stroke: rgb(19, 134, 117);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        #Eresult {
+          position: absolute;
+          stroke: #707070;
+          stroke-width: 2px;
+          fill-opacity: 0;
+          fill: rgba(247, 143, 8, 0.7);
+          width: 136px;
+          height: 155px;
+          z-index: 50 !important;
+          top: 143px;
+          left: 39px;
+        }
+        .EresultFinished {
+          fill-opacity: 1 !important;
+          transition: 1s;
+        }
+        .EresultLeave {
+          fill-opacity: 0 !important;
+          transition: 0.5s;
+        }
+      }
+      .EContext {
+        display: none;
+        position: absolute;
+        top: -480px;
+        right: -550px;
+        .E1Title {
+          margin-top: 300px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .E1subTitle {
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+        .E2Title {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+        }
+        .E2subTitle {
+          margin-top: 10px;
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+      }
+
+      //c
+      #Cline {
+        display: none;
+        right: 380px;
+        top: 20px;
+        width: 175px;
+        height: 15px;
+        position: absolute;
+        stroke-width: 4;
+        stroke: #707070;
+        fill: none;
+
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      #Cimage {
+        display: none;
+        position: absolute;
+        left: -550px;
+        top: 160px;
+        width: 300px;
+        height: 346px;
+        background-image: url(/img/Cimage.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        .CimageContext {
+          position: absolute;
+          top: -550px;
+          left: -17px;
+        }
+        .CTitle {
+          margin-top: 350px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .CSubTitle {
+          width: 400px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .CSubTitle2 {
+          width: 0px;
+          overflow: hidden;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 20px;
+        }
+        .typing2 {
+          width: 250px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
+          word-break: break-all;
+        }
+
+        /* 打印效果 2*/
+        @keyframes typing2 {
+          from {
+            width: 0;
+          }
+          to {
+            width: 250px;
+          }
+        }
+        .typing {
+          width: 350px;
+          height: 1.25em;
+          border-right: 1px solid transparent;
+          animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
+
+          word-break: break-all;
+          overflow: hidden;
+        }
+        /* 打印效果 */
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 350px;
+          }
+        }
+        /* 光标闪啊闪 */
+        @keyframes blink-caret {
+          from,
+          to {
+            border-color: transparent;
+          }
+          50% {
+            border-color: currentColor;
+          }
+        }
+      }
+      #Cchart {
+        display: none;
+        width: 340px;
+        height: 380px;
+        position: absolute;
+        right: -555px;
+        bottom: -200px;
+        // fill: rgb(19, 134, 117);
+        // stroke: rgb(19, 134, 117);
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        #Cresult {
+          position: absolute;
+          stroke: #707070;
+          stroke-width: 2px;
+          fill-opacity: 0;
+          fill: rgba(85, 191, 196, 0.7);
+          width: 139px;
+          height: 148px;
+          z-index: 10 !important;
+          top: 93px;
+          left: 37px;
+        }
+        .CresultFinished {
+          fill-opacity: 1 !important;
+          transition: 1s;
+        }
+        .CresultLeave {
+          fill-opacity: 0 !important;
+          transition: 0.5s;
+        }
+      }
+      .CContext {
+        display: none;
+        position: absolute;
+        top: -480px;
+        right: -550px;
+        .C1Title {
+          margin-top: 300px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+        .C1subTitle {
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
+        .C2Title {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          letter-spacing: 2px;
+          color: #676767;
+          font-size: 26px;
+        }
+        .C2subTitle {
+          margin-top: 10px;
+          letter-spacing: 2px;
+          color: #676767 !important;
+          font-size: 20px;
+          width: 380px;
+        }
       }
     }
   }
-
-  .i1-footer {
-    width: 100%;
-    height: 90px;
-    background: #b9d4b9;
-    position: absolute;
-    top: calc(100vh - 90px);
-  }
-  // .fa-chevron-down {
-  //   position: absolute;
-  //   left: 50%;
-  //   margin-left: -13px;
-  //   font-size: 30px;
-  //   animation: down-movement 0.6s linear 0s infinite alternate;
-  //   top: 640px;
-  // }
-
-  // @keyframes down-movement {
-  //   100% {
-  //     top: 670px;
-  //   }
-  // }
-
-  // .shandow {
-  //   width: 16px;
-  //   height: 3px;
-  //   background: darkgray;
-  //   border-radius: 100%;
-  //   margin: auto;
-  //   margin-top: 650px;
-  //   animation: down-shandow 0.6s linear 0s infinite alternate;
-  // }
-  //   @keyframes down-shandow {
-  //   100% {
-  //     transform: scale(1.5);
-
-  //     background: gray;
-  //   }
-  // }
-}
-.Container2 {
-  height: 1300vh;
-  .fixedFrame {
-    top: 10px;
-    position: sticky;
-    width: 100%;
-  }
-  .i2Ttitle {
-    margin: auto;
-    max-width: 392px;
-    font-size: 44px;
-    letter-spacing: 4.5px;
-    color: #5f5f5f;
-    text-align: center;
-    padding-top: 160px;
-    border-bottom: 5px solid #707070;
-  }
-  .i2Subtitle {
-    text-align: center;
-    height: 52px;
-    font-size: 37px;
-    color: #5f5f5f;
-    letter-spacing: 8.5px;
-    font: Regular 37px/52px Arial Black;
-  }
-  .i2 {
-    margin: auto;
-    max-width: 1920px;
-    display: flex;
-
-    .RAISEC-Circle {
+  .Container3 {
+    //
+    height: 1200vh;
+    //background: salmon;
+    .stickyFrame {
+      top: 10px;
+      position: sticky;
+      width: 100%;
+      height: 1080px;
+    }
+    .RIASEC {
       margin: auto;
+      position: relative;
       width: 443px;
       height: 443px;
       margin-top: 100px;
-      background-image: url(/行銷頁面/img/RIASEC底圖.svg); //載入的陸姓是看此css的地點下去推的
+    }
+    .WorkStyle-Circle {
+      background-image: url(/img/RIASEC底圖.svg); //載入的陸姓是看此css的地點下去推的
       background-repeat: no-repeat;
       background-position: center center;
-      position: relative;
-      opacity: 0;
-
-      .circleItem-C {
-        margin: auto;
-        width: 162px;
-        height: 138px;
-        background-image: url(/行銷頁面/img/C.svg); //載入的陸姓是看此css的地點下去推的
+      width: 443px;
+      height: 443px;
+      position: absolute;
+      position: sticky;
+      top: 0;
+      .circleItem-Problem {
+        width: 253.29px;
+        height: 123px;
+        background-image: url(/img/Problem.svg); //載入的陸姓是看此css的地點下去推的
         background-repeat: no-repeat;
         background-position: center center;
         position: absolute;
-        top: 18px;
-        left: 53px;
+        top: 9px;
+        left: 96.4px;
         transition: 0.5s;
         transform: scale(0);
       }
-      .circleItem-R {
+      .circleItem-Drive {
+        transform: scale(0);
         margin: auto;
-        width: 161px;
-        height: 137px;
-        background-image: url(/行銷頁面/img/R.svg); //載入的陸姓是看此css的地點下去推的
+        width: 146.68px;
+        height: 257.96px;
+        background-image: url(/img/Drive.svg); //載入的陸姓是看此css的地點下去推的
         background-repeat: no-repeat;
         background-position: center center;
         position: absolute;
-        top: 17px;
-        right: 50px;
-        z-index: 50;
+        top: 49.48px;
+        right: 9.81px;
         transition: 0.5s;
-        transform: scale(0);
       }
-      .circleItem-I {
+      .circleItem-InterPersonal {
+        transform: scale(0);
         margin: auto;
-        width: 103px;
-        height: 185px;
-        background-image: url(/行銷頁面/img/I.svg); //載入的陸姓是看此css的地點下去推的
+        width: 239.28px;
+        height: 177.67px;
+        background-image: url(/img/Interpersonal.svg); //載入的陸姓是看此css的地點下去推的
         background-repeat: no-repeat;
         background-position: center center;
         position: absolute;
-        bottom: 130px;
-        right: 15px;
+        bottom: 9.87px;
+        right: 20.21px;
         transition: 0.5s;
-        transform: scale(0);
       }
-      .circleItem-A {
+      .circleItem-Adjust {
+        transform: scale(0);
         margin: auto;
-        width: 162px;
-        height: 138px;
-        background-image: url(/行銷頁面/img/A.svg); //載入的陸姓是看此css的地點下去推的
+        width: 201.7px;
+        height: 199.1px;
+        background-image: url(/img/Adjust.svg); //載入的陸姓是看此css的地點下去推的
         background-repeat: no-repeat;
         background-position: center center;
         position: absolute;
-        bottom: 20px;
-        right: 50px;
+        bottom: 9.82px;
+        left: 19.38px;
         transition: 0.5s;
-        transform: scale(0);
       }
-      .circleItem-S {
+      .circleItem-Responsibility {
+        transform: scale(0);
         margin: auto;
-        width: 162px;
-        height: 138px;
-        background-image: url(/行銷頁面/img/S.svg); //載入的陸姓是看此css的地點下去推的
+        width: 151.69px;
+        height: 237.12px;
+        background-image: url(/img/Responsibility.svg); //載入的陸姓是看此css的地點下去推的
         background-repeat: no-repeat;
         background-position: center center;
         position: absolute;
-        bottom: 20px;
-        left: 50px;
+        top: 49.51px;
+        left: 9px;
         transition: 0.5s;
-        transform: scale(0);
       }
-      .circleItem-E {
-        margin: auto;
-        width: 103px;
-        height: 185px;
-        background-image: url(/行銷頁面/img/E.svg); //載入的陸姓是看此css的地點下去推的
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: absolute;
-        bottom: 130px;
-        left: 15px;
-        transition: 0.5s;
-        transform: scale(0);
-      }
-      .circleItem-A:hover,
-      .circleItem-S:hover,
-      .circleItem-C:hover,
-      .circleItem-R:hover,
-      .circleItem-I:hover,
-      .circleItem-E:hover {
+      .circleItem-Problem:hover,
+      .circleItem-Drive:hover,
+      .circleItem-Adjust:hover,
+      .circleItem-Responsibility:hover,
+      .circleItem-InterPersonal:hover {
         cursor: pointer;
         transition: 0.2s ease;
         transform: scale(1.1) !important;
       }
     }
-    .RAISEC-Circle-Aninimation {
-      animation: circleMove 2s ease;
-      animation-fill-mode: forwards;
-      @keyframes circleMove {
+    #magnifier {
+      display: none;
+      width: 126px !important;
+      margin: auto;
+      position: absolute;
+      fill: white;
+      fill-opacity: 0;
+      stroke: black !important;
+      top: 160px;
+      left: 165px;
+      margin: auto;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 1 !important;
+    }
+    .magnifierAnimation {
+      animation: magniferMove 1s linear 0s forwards;
+      @keyframes magniferMove {
+        70% {
+          transform: scale(1.5);
+        }
         100% {
-          opacity: 1;
+          transform: scale(0);
+          opacity: 0;
         }
       }
     }
-    .RAISEC-Circle:hover {
-      // transition: 0.5s;
-      // transform: scale(1.1);
+    .i3Ttitle {
+      margin: auto;
+      max-width: 392px;
+      font-size: 44px;
+      letter-spacing: 4.5px;
+      color: #5f5f5f;
+      text-align: center;
+      padding-top: 160px;
+      border-bottom: 5px solid #707070;
     }
-    .RAISEC-Circle:not(:hover) {
-      // transition: 0.5s;
-      // transform: scale(1);
+    .i3Subtitle {
+      text-align: center;
+      height: 52px;
+      font-size: 37px;
+      color: #5f5f5f;
+      letter-spacing: 8.5px;
+      font: Regular 37px/52px Arial Black;
     }
-    //R
-    #Rline {
-      right: -170px;
-      top: -50px;
-      position: absolute;
-      display: none;
-      stroke-width: 6;
-      stroke: #707070;
-      fill: none;
-
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-    #Rimage {
+    #Problemline {
       display: none;
       position: absolute;
-      right: -470px;
-      top: -50px;
-      width: 400px;
-      height: 275px;
-      background-image: url(/行銷頁面/img/Rimage.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      .RTitle {
-        margin-top: 350px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-        margin-bottom: 20px;
-      }
-      .RSubTitle {
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 20px;
-      }
-      .typing {
-        width: 550px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing 8s steps(24, end);
-
-        word-break: break-all;
-        overflow: hidden;
-      }
-      /* 打印效果 */
-      @keyframes typing {
-        100% {
-          width: 550px;
-        }
-      }
-      /* 光标闪啊闪 */
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: currentColor;
-        }
-      }
+      right: -70px;
+      top: -20px;
+      width: 183px;
+      height: 20px;
     }
-    #Rchart {
-      display: none;
-      width: 340px;
-      height: 380px;
-      position: absolute;
-      left: -480px;
-      bottom: -180px;
-      // fill: rgb(19, 134, 117);
-      // stroke: rgb(19, 134, 117);
-      stroke-miterlimit: 10;
-      stroke-width: 2px;
-
-      #Rresult {
-        position: absolute;
-        stroke: #707070;
-        stroke-width: 2px;
-        fill-opacity: 0;
-        fill: rgba(19, 134, 117, 0.5);
-        width: 180px !important;
-        height: 165px;
-        z-index: -1 !important;
-        top: 24px;
-        left: 79px;
-        width: 160px;
-      }
-      .RresultFinished {
-        fill-opacity: 1 !important;
-        transition: 1s;
-      }
-      .RresultLeave {
-        fill-opacity: 0 !important;
-        transition: 0.5s;
-      }
-    }
-    .RContext {
+    .problemImg {
       display: none;
       position: absolute;
-      top: -480px;
-      left: -480px;
-      .R1Title {
-        margin-top: 300px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-        margin-bottom: 20px;
-      }
-      .R1subTitle {
-        letter-spacing: 2px;
-        color: #676767 !important;
-        font-size: 20px;
-        width: 380px;
-      }
-      .R2Title {
-        margin-top: 40px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-      }
-      .R2subTitle {
-        margin-top: 10px;
-        letter-spacing: 2px;
-        color: #676767 !important;
-        font-size: 20px;
-        width: 380px;
-      }
-    }
-
-    //I
-    #Iline {
-      display: none;
-      right: -270px;
-      top: 100px;
-      position: absolute;
-      stroke-width: 6;
-      stroke: #707070;
-      fill: none;
-
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-    #Iimage {
-      display: none;
-      position: absolute;
-      right: -580px;
-      top: 20px;
-      width: 320px;
-      height: 290px;
-      background-image: url(/行銷頁面/img/Iimage.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      .ITitle {
-        margin-top: 350px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-        margin-bottom: 20px;
-      }
-      .ISubTitle {
-        width: 400px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 20px;
-      }
-      .ISubTitle2 {
-        width: 0px;
-        overflow: hidden;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 20px;
-      }
-      .typing2 {
-        width: 230px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
-        word-break: break-all;
-      }
-
-      /* 打印效果 2*/
-      @keyframes typing2 {
-        from {
-          width: 0;
-        }
-        to {
-          width: 230px;
-        }
-      }
-      .typing {
-        width: 400px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
-
-        word-break: break-all;
-        overflow: hidden;
-      }
-      /* 打印效果 */
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 400px;
-        }
-      }
-      /* 光标闪啊闪 */
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: currentColor;
-        }
-      }
-    }
-    #Ichart {
-      display: none;
-      width: 340px;
-      height: 380px;
-      position: absolute;
-      left: -480px;
-      bottom: -150px;
-      // fill: rgb(19, 134, 117);
-      // stroke: rgb(19, 134, 117);
-      stroke-miterlimit: 10;
-      stroke-width: 2px;
-      #Iresult {
-        position: absolute;
-        stroke: #707070;
-        stroke-width: 2px;
-        fill-opacity: 0;
-        fill: rgba(122, 0, 154, 0.5);
-        width: 140px;
-        height: 160px;
-        z-index: -1 !important;
-        top: 70px;
-        left: 175px;
-      }
-      .IresultFinished {
-        fill-opacity: 1 !important;
-        transition: 1s;
-      }
-      .IresultLeave {
-        fill-opacity: 0 !important;
-        transition: 0.5s;
-      }
-    }
-    .IContext {
-      display: none;
-      position: absolute;
-      top: -480px;
-      left: -480px;
-      .I1Title {
-        margin-top: 300px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-        margin-bottom: 20px;
-      }
-      .I1subTitle {
-        letter-spacing: 2px;
-        color: #676767 !important;
-        font-size: 20px;
-        width: 380px;
-      }
-      .I2Title {
-        margin-top: 40px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-      }
-      .I2subTitle {
-        margin-top: 10px;
-        letter-spacing: 2px;
-        color: #676767 !important;
-        font-size: 20px;
-        width: 380px;
-      }
-    }
-
-    //A
-
-    #Aline {
-      display: none;
-      right: -127px;
-      top: 400px;
-      width: 175px;
-      height: 15px;
-      position: absolute;
-      stroke-width: 4;
-      stroke: #707070;
-      fill: none;
-
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-    #Aimage {
-      display: none;
-      position: absolute;
-      right: -450px;
-      top: 160px;
-      width: 280px;
-      height: 347px;
-      background-image: url(/行銷頁面/img/Aimage.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      .AimageContext {
-        position: absolute;
-        top: -550px;
-        left: -100px;
-      }
-      .ATitle {
-        margin-top: 350px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-        margin-bottom: 20px;
-      }
-      .ASubTitle {
-        width: 400px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 20px;
-      }
-      .ASubTitle2 {
-        width: 0px;
-        overflow: hidden;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 20px;
-      }
-      .typing2 {
-        width: 255px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
-        word-break: break-all;
-      }
-
-      /* 打印效果 2*/
-      @keyframes typing2 {
-        from {
-          width: 0;
-        }
-        to {
-          width: 260px;
-        }
-      }
-      .typing {
-        width: 400px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
-
-        word-break: break-all;
-        overflow: hidden;
-      }
-      /* 打印效果 */
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 350px;
-        }
-      }
-      /* 光标闪啊闪 */
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: currentColor;
-        }
-      }
-    }
-    #Achart {
-      display: none;
-      width: 340px;
-      height: 380px;
-      position: absolute;
-      left: -480px;
-      bottom: -180px;
-      // fill: rgb(19, 134, 117);
-      // stroke: rgb(19, 134, 117);
-      stroke-miterlimit: 10;
-      stroke-width: 2px;
-      #Aresult {
-        position: absolute;
-        stroke: #707070;
-        stroke-width: 2px;
-        fill-opacity: 0;
-        fill: rgba(16, 60, 95, 0.7);
-        width: 140px;
-        height: 160px;
-        z-index: -1 !important;
-        top: 125px;
-        left: 175px;
-      }
-      .AresultFinished {
-        fill-opacity: 1 !important;
-        transition: 1s;
-      }
-      .AresultLeave {
-        fill-opacity: 0 !important;
-        transition: 0.5s;
-      }
-    }
-    .AContext {
-      display: none;
-      position: absolute;
-      top: -480px;
-      left: -480px;
-      .A1Title {
-        margin-top: 300px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-        margin-bottom: 20px;
-      }
-      .A1subTitle {
-        letter-spacing: 2px;
-        color: #676767 !important;
-        font-size: 20px;
-        width: 380px;
-      }
-      .A2Title {
-        margin-top: 40px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-      }
-      .A2subTitle {
-        margin-top: 10px;
-        letter-spacing: 2px;
-        color: #676767 !important;
-        font-size: 20px;
-        width: 380px;
-      }
-    }
-    //S
-
-    #Sline {
-      display: none;
-      right: 370px;
-      top: 400px;
-      width: 175px;
-      height: 15px;
-      position: absolute;
-      stroke-width: 4;
-      stroke: #707070;
-      fill: none;
-
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-    #Simage {
-      display: none;
-      position: absolute;
-      left: -550px;
-      top: 160px;
-      width: 350px;
-      height: 328px;
-      background-image: url(/行銷頁面/img/Simage.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      .SimageContext {
-        position: absolute;
-        top: -550px;
-        left: -17px;
-      }
-      .STitle {
-        margin-top: 350px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-        margin-bottom: 20px;
-      }
-      .SSubTitle {
-        width: 400px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 20px;
-      }
-      .SSubTitle2 {
-        width: 0px;
-        overflow: hidden;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 20px;
-      }
-      .typing2 {
-        width: 200px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
-        word-break: break-all;
-      }
-
-      /* 打印效果 2*/
-      @keyframes typing2 {
-        from {
-          width: 0;
-        }
-        to {
-          width: 200px;
-        }
-      }
-      .typing {
-        width: 400px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
-
-        word-break: break-all;
-        overflow: hidden;
-      }
-      /* 打印效果 */
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 350px;
-        }
-      }
-      /* 光标闪啊闪 */
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: currentColor;
-        }
-      }
-    }
-    #Schart {
-      display: none;
-      width: 340px;
-      height: 380px;
-      position: absolute;
-      right: -555px;
-      bottom: -200px;
-      // fill: rgb(19, 134, 117);
-      // stroke: rgb(19, 134, 117);
-      stroke-miterlimit: 10;
-      stroke-width: 2px;
-      #Sresult {
-        position: absolute;
-        stroke: #707070;
-        stroke-width: 2px;
-        fill-opacity: 0;
-        fill: rgba(239, 59, 63, 0.7);
-        width: 187px;
-        height: 158px;
-        z-index: -1 !important;
-        top: 188px;
-        left: 92px;
-      }
-      .SresultFinished {
-        fill-opacity: 1 !important;
-        transition: 1s;
-      }
-      .SresultLeave {
-        fill-opacity: 0 !important;
-        transition: 0.5s;
-      }
-    }
-    .SContext {
-      display: none;
-      position: absolute;
-      top: -480px;
-      right: -550px;
-      .S1Title {
-        margin-top: 300px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-        margin-bottom: 20px;
-      }
-      .S1subTitle {
-        letter-spacing: 2px;
-        color: #676767 !important;
-        font-size: 20px;
-        width: 380px;
-      }
-      .S2Title {
-        margin-top: 40px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
-      }
-      .S2subTitle {
-        margin-top: 10px;
-        letter-spacing: 2px;
-        color: #676767 !important;
-        font-size: 20px;
-        width: 380px;
-      }
-    }
-
-    //E
-    #Eline {
-      display: none;
-      right: 450px;
-      top: 230px;
-      width: 175px;
-      height: 15px;
-      position: absolute;
-      stroke-width: 4;
-      stroke: #707070;
-      fill: none;
-
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-    #Eimage {
-      display: none;
-      position: absolute;
-      left: -550px;
-      top: 160px;
+      left: 600px;
+      top: -40px;
       width: 295px;
       height: 337px;
-      background-image: url(/行銷頁面/img/Eimage.svg);
+      background-image: url(/img/problemImage.svg);
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: cover;
-      .EimageContext {
-        position: absolute;
-        top: -550px;
-        left: -17px;
-      }
-      .ETitle {
-        margin-top: 350px;
-        letter-spacing: 2px;
-        color: #676767;
+    }
+    .problemContext1 {
+      display: none;
+      position: absolute;
+      width: 400px;
+      top: 400px;
+      right: -520px;
+      .problemTitle {
         font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
         margin-bottom: 20px;
       }
-      .ESubTitle {
-        width: 400px;
-        letter-spacing: 2px;
-        color: #676767;
+      .problemSubTitle {
+        width: 420px;
         font-size: 20px;
-      }
-      .ESubTitle2 {
-        width: 0px;
-        overflow: hidden;
         letter-spacing: 2px;
-        color: #676767;
-        font-size: 20px;
-      }
-      .typing2 {
-        width: 200px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
-        word-break: break-all;
-      }
-
-      /* 打印效果 2*/
-      @keyframes typing2 {
-        from {
-          width: 0;
-        }
-        to {
-          width: 200px;
-        }
-      }
-      .typing {
-        width: 500px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
-
-        word-break: break-all;
-        overflow: hidden;
-      }
-      /* 打印效果 */
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 500px;
-        }
-      }
-      /* 光标闪啊闪 */
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: currentColor;
-        }
+        color: #002d6a;
       }
     }
-    #Echart {
+    .problemChart {
       display: none;
-      width: 340px;
-      height: 380px;
+      left: -517px;
+      width: 333px;
+      height: 325px;
       position: absolute;
-      right: -555px;
-      bottom: -200px;
-      // fill: rgb(19, 134, 117);
-      // stroke: rgb(19, 134, 117);
-      stroke-miterlimit: 10;
-      stroke-width: 2px;
-      #Eresult {
-        position: absolute;
-        stroke: #707070;
-        stroke-width: 2px;
-        fill-opacity: 0;
-        fill: rgba(247, 143, 8, 0.7);
-        width: 136px;
-        height: 155px;
-        z-index: 50 !important;
-        top: 143px;
-        left: 39px;
-      }
-      .EresultFinished {
-        fill-opacity: 1 !important;
-        transition: 1s;
-      }
-      .EresultLeave {
-        fill-opacity: 0 !important;
-        transition: 0.5s;
-      }
+      top: 275px;
+      stroke: #668922;
     }
-    .EContext {
+    .problemResult {
+      width: 150px;
+      height: 225px;
+      position: absolute;
+      top: 47px;
+      left: 20px;
+      fill-opacity: 0;
+      fill: rgba(160, 196, 86, 0.7);
+    }
+    .problemResultFinsh {
+      fill-opacity: 1 !important;
+      transition: 1s;
+    }
+    .problemContext2 {
+      display: none;
+      width: 400px;
+      position: absolute;
+      left: -560px;
+      top: -150px;
+    }
+    .problemTitle1 {
+      font-size: 26px;
+      color: #002d6a;
+      letter-spacing: 2.6px;
+      margin-bottom: 20px;
+    }
+    .problemSubtitle1 {
+      font-size: 20px;
+      color: #002d6a;
+      margin-bottom: 40px;
+    }
+    .problemTitle2 {
+      font-size: 22px;
+      color: #002d6a;
+      margin-bottom: 20px;
+    }
+    .peoblemSubtitle2 {
+      font-size: 20px;
+      color: #002d6a;
+    }
+
+    #Driveline {
       display: none;
       position: absolute;
-      top: -480px;
-      right: -550px;
-      .E1Title {
-        margin-top: 300px;
-        letter-spacing: 2px;
-        color: #676767;
+      right: -195px;
+      top: 135px;
+      width: 183px;
+      height: 20px;
+    }
+    .driveImg {
+      display: none;
+      position: absolute;
+      left: 600px;
+      top: -40px;
+      width: 295px;
+      height: 337px;
+      background-image: url(/img/driveImage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .driveChart {
+      display: none;
+      left: -517px;
+      width: 333px;
+      height: 325px;
+      position: absolute;
+      top: 275px;
+
+      stroke: rgb(89, 183, 183);
+    }
+    .driveContext1 {
+      display: none;
+      .driveTitle {
         font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        position: absolute;
+        top: 340px;
+        right: -360px;
+      }
+      .driveSubTitle {
+        width: 420px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #002d6a;
+        position: absolute;
+        top: 400px;
+        right: -540px;
+      }
+    }
+
+    .driveResult {
+      width: 226.5px;
+      height: 155.5px;
+      position: absolute;
+      top: 25px;
+      left: 64px;
+      fill-opacity: 0;
+      fill: rgba(89, 183, 183, 0.7);
+    }
+    .driveResultFinsh {
+      fill-opacity: 1 !important;
+      transition: 1s;
+    }
+    .driveContext2 {
+      display: none;
+      width: 400px;
+      position: absolute;
+      left: -560px;
+      top: -150px;
+      .driveTitle1 {
+        font-size: 26px;
+        color: #002d6a;
+        letter-spacing: 2.6px;
         margin-bottom: 20px;
       }
-      .E1subTitle {
-        letter-spacing: 2px;
-        color: #676767 !important;
+      .driveSubtitle1 {
         font-size: 20px;
-        width: 380px;
+        color: #002d6a;
+        margin-bottom: 40px;
       }
-      .E2Title {
-        margin-top: 40px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        color: #676767;
+      .driveTitle2 {
+        font-size: 22px;
+        color: #002d6a;
+        margin-bottom: 20px;
+      }
+      .driveSubtitle2 {
+        font-size: 20px;
+        color: #002d6a;
+      }
+    }
+
+    #Interpersonalline {
+      display: none;
+      position: absolute;
+      right: -130px;
+      top: 380px;
+      width: 183px;
+      height: 20px;
+    }
+    .interpersonalImg {
+      display: none;
+      position: absolute;
+      left: 600px;
+      top: 200px;
+      width: 295px;
+      height: 337px;
+      background-image: url(/img/interpersonalImage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .interpersonalChart {
+      display: none;
+      left: -517px;
+      width: 333px;
+      height: 325px;
+      position: absolute;
+      top: 275px;
+    }
+    .interpersonalContext1 {
+      display: none;
+      .interpersonalTitle {
         font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        position: absolute;
+        top: 0px;
+        right: -473px;
       }
-      .E2subTitle {
-        margin-top: 10px;
-        letter-spacing: 2px;
-        color: #676767 !important;
+      .interpersonalSubTitle {
+        width: 420px;
         font-size: 20px;
-        width: 380px;
+        letter-spacing: 2px;
+        color: #002d6a;
+        position: absolute;
+        top: 60px;
+        right: -540px;
       }
     }
 
-    //c
-    #Cline {
-      display: none;
-      right: 380px;
-      top: 20px;
-      width: 175px;
-      height: 15px;
+    .interpersonalResult {
+      width: 146px;
+      height: 180px;
       position: absolute;
-      stroke-width: 4;
-      stroke: #707070;
-      fill: none;
-
-      stroke-linecap: round;
-      stroke-linejoin: round;
+      top: 89px;
+      left: 166px;
+      fill-opacity: 0;
+      fill: rgba(162, 69, 137, 0.7);
     }
-    #Cimage {
+    .interpersonalFinsh {
+      fill-opacity: 1 !important;
+      transition: 1s;
+    }
+    .interpersonalContext2 {
+      display: none;
+      width: 400px;
+      position: absolute;
+      left: -560px;
+      top: -150px;
+      .interpersonalTitle1 {
+        font-size: 26px;
+        color: #002d6a;
+        letter-spacing: 2.6px;
+        margin-bottom: 20px;
+      }
+      .interpersonalSubtitle1 {
+        font-size: 20px;
+        color: #002d6a;
+        margin-bottom: 40px;
+      }
+      .interpersonalTitle2 {
+        font-size: 22px;
+        color: #002d6a;
+        margin-bottom: 20px;
+      }
+      .interpersonalSubtitle2 {
+        font-size: 20px;
+        color: #002d6a;
+      }
+    }
+
+    #Adjustline {
       display: none;
       position: absolute;
-      left: -550px;
+      right: 390px;
+      top: 380px;
+      width: 183px;
+      height: 20px;
+    }
+    .adjustImg {
+      display: none;
+      position: absolute;
+      left: -540px;
+      top: 200px;
+      width: 358px;
+      height: 296px;
+      background-image: url(/img/adjustImage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .adjustChart {
+      display: none;
+      right: -480px;
+      width: 333px;
+      height: 325px;
+      position: absolute;
+      top: 215px;
+    }
+    .adjustContext1 {
+      display: none;
+      .adjustTitle {
+        font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        position: absolute;
+        top: -70px;
+        left: -540px;
+      }
+      .adjustSubTitle {
+        width: 420px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #002d6a;
+        position: absolute;
+        top: -10px;
+        left: -540px;
+      }
+    }
+
+    .adjustResult {
+      width: 180px;
+      height: 160px;
+      position: absolute;
+      top: 145px;
+      left: 90px;
+      fill-opacity: 0;
+      fill: rgba(221, 109, 50, 0.7);
+    }
+    .adjustFinsh {
+      fill-opacity: 1 !important;
+      transition: 1s;
+    }
+    .adjustContext2 {
+      display: none;
+      width: 400px;
+      position: absolute;
+      right: -560px;
+      top: -150px;
+      .adjustTitle1 {
+        font-size: 26px;
+        color: #002d6a;
+        letter-spacing: 2.6px;
+        margin-bottom: 20px;
+      }
+      .adjustSubtitle1 {
+        font-size: 20px;
+        color: #002d6a;
+        margin-bottom: 40px;
+      }
+      .adjustTitle2 {
+        font-size: 22px;
+        color: #002d6a;
+        margin-bottom: 20px;
+      }
+      .adjustSubtitle2 {
+        font-size: 20px;
+        color: #002d6a;
+      }
+    }
+
+    #Responsibilityline {
+      display: none;
+      position: absolute;
+      right: 450px;
+      top: 110px;
+      width: 183px;
+      height: 20px;
+    }
+    .responsibilityImg {
+      display: none;
+      position: absolute;
+      left: -480px;
       top: 160px;
-      width: 300px;
-      height: 346px;
-      background-image: url(/行銷頁面/img/Cimage.svg);
+      width: 250px;
+      height: 322px;
+      background-image: url(/img/responsibilityImage.svg);
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: cover;
-      .CimageContext {
-        position: absolute;
-        top: -550px;
-        left: -17px;
-      }
-      .CTitle {
-        margin-top: 350px;
-        letter-spacing: 2px;
-        color: #676767;
+    }
+    .responsibilityChart {
+      display: none;
+      right: -480px;
+      width: 333px;
+      height: 325px;
+      position: absolute;
+      top: 215px;
+    }
+    .responsibilityContext1 {
+      display: none;
+      .responsibilityTitle {
         font-size: 26px;
-        margin-bottom: 20px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        position: absolute;
+        top: -70px;
+        left: -540px;
       }
-      .CSubTitle {
-        width: 400px;
-        letter-spacing: 2px;
-        color: #676767;
+      .responsibilitySubTitle {
+        width: 420px;
         font-size: 20px;
-      }
-      .CSubTitle2 {
-        width: 0px;
-        overflow: hidden;
         letter-spacing: 2px;
-        color: #676767;
-        font-size: 20px;
-      }
-      .typing2 {
-        width: 250px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing2 1s steps(37, end), blink-caret 0.75s step-end infinite;
-        word-break: break-all;
-      }
-
-      /* 打印效果 2*/
-      @keyframes typing2 {
-        from {
-          width: 0;
-        }
-        to {
-          width: 250px;
-        }
-      }
-      .typing {
-        width: 350px;
-        height: 1.25em;
-        border-right: 1px solid transparent;
-        animation: typing 1.5s steps(37, end), blink-caret 0.75s step-end infinite;
-
-        word-break: break-all;
-        overflow: hidden;
-      }
-      /* 打印效果 */
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 350px;
-        }
-      }
-      /* 光标闪啊闪 */
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: currentColor;
-        }
+        color: #002d6a;
+        position: absolute;
+        top: -10px;
+        left: -540px;
       }
     }
-    #Cchart {
-      display: none;
-      width: 340px;
-      height: 380px;
+
+    .responsibilityResult {
+      width: 180px;
+      height: 160px;
       position: absolute;
-      right: -555px;
-      bottom: -200px;
-      // fill: rgb(19, 134, 117);
-      // stroke: rgb(19, 134, 117);
-      stroke-miterlimit: 10;
-      stroke-width: 2px;
-      #Cresult {
-        position: absolute;
-        stroke: #707070;
-        stroke-width: 2px;
-        fill-opacity: 0;
-        fill: rgba(85, 191, 196, 0.7);
-        width: 139px;
-        height: 148px;
-        z-index: 10 !important;
-        top: 93px;
-        left: 37px;
-      }
-      .CresultFinished {
-        fill-opacity: 1 !important;
-        transition: 1s;
-      }
-      .CresultLeave {
-        fill-opacity: 0 !important;
-        transition: 0.5s;
-      }
+      top: 144px;
+      left: 54px;
+      fill-opacity: 0;
+      fill: rgba(225, 60, 50, 0.7);
     }
-    .CContext {
+    .responsibilityResultFinsh {
+      fill-opacity: 1 !important;
+      transition: 1s;
+    }
+    .responsibilityContext2 {
       display: none;
+      width: 400px;
       position: absolute;
-      top: -480px;
-      right: -550px;
-      .C1Title {
-        margin-top: 300px;
-        letter-spacing: 2px;
-        color: #676767;
+      right: -560px;
+      top: -150px;
+      .responsibilityTitle1 {
         font-size: 26px;
+        color: #002d6a;
+        letter-spacing: 2.6px;
         margin-bottom: 20px;
       }
-      .C1subTitle {
-        letter-spacing: 2px;
-        color: #676767 !important;
+      .responsibilitySubtitle1 {
         font-size: 20px;
-        width: 380px;
+        color: #002d6a;
+        margin-bottom: 40px;
       }
-      .C2Title {
-        margin-top: 40px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        color: #676767;
-        font-size: 26px;
+      .responsibilityTitle2 {
+        font-size: 22px;
+        color: #002d6a;
+        margin-bottom: 20px;
       }
-      .C2subTitle {
-        margin-top: 10px;
-        letter-spacing: 2px;
-        color: #676767 !important;
+      .responsibilitySubtitle2 {
         font-size: 20px;
-        width: 380px;
+        color: #002d6a;
       }
     }
   }
+  .Container4 {
+    height: 1300vh;
+
+    //background: salmon;
+    .stickyFrame {
+      top: 10px;
+      position: sticky;
+      width: 100%;
+      height: 1080px;
+    }
+    .i4Title {
+      margin: auto;
+      max-width: 450px;
+      font-size: 44px;
+      letter-spacing: 4.5px;
+      color: #5f5f5f;
+      text-align: center;
+      padding-top: 130px;
+      padding-bottom: 10px;
+      border-bottom: 5px solid #707070;
+    }
+    .i4Subtitle {
+      padding-top: 10px;
+      text-align: center;
+      height: 52px;
+      font-size: 37px;
+      color: #5f5f5f;
+      letter-spacing: 8.5px;
+      font: Regular 37px/52px Arial Black;
+    }
+    .RIASEC {
+      margin: auto;
+      position: relative;
+      width: 443px;
+      height: 443px;
+      margin-top: 100px;
+    }
+    .WorkImportance-Circle {
+      background-image: url(/img/RIASEC底圖.svg); //載入的陸姓是看此css的地點下去推的
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 443px;
+      height: 443px;
+      position: absolute;
+      position: sticky;
+      top: 0;
+      .circleItem-Independence {
+        background-image: url(/img/Independence.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 171.68px;
+        height: 165.08px;
+        position: absolute;
+        right: 37px;
+        top: 12px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-Relationships {
+        background-image: url(/img/Relationships.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 132px;
+        height: 201.3px;
+        position: absolute;
+        right: 8px;
+        top: 126px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-Recognition {
+        background-image: url(/img/Recongnition.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 210px;
+        height: 155px;
+        position: absolute;
+        right: 42px;
+        top: 279px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-Support {
+        background-image: url(/img/Support.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 210px;
+        height: 155px;
+        position: absolute;
+        right: 214px;
+        top: 276px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-Achievement {
+        background-image: url(/img/Achievement.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 132px;
+        height: 199.54px;
+        position: absolute;
+        right: 298px;
+        top: 116px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-WorkingConditions {
+        background-image: url(/img/WorkingConditions.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 208.16px;
+        height: 156.42px;
+        position: absolute;
+        right: 188px;
+        top: 9px;
+        transition: 0.5s;
+        transform: scale(0);
+      }
+      .circleItem-Independence:hover,
+      .circleItem-Relationships:hover,
+      .circleItem-Recognition:hover,
+      .circleItem-Support:hover,
+      .circleItem-Achievement:hover,
+      .circleItem-WorkingConditions:hover {
+        cursor: pointer;
+        transition: 0.2s ease;
+        transform: scale(1.1) !important;
+      }
+    }
+    #Independenceline {
+      display: none;
+      position: absolute;
+      right: -110px;
+      top: 40px;
+      width: 183px;
+      height: 20px;
+    }
+    .IndependenceImg {
+      display: none;
+      position: absolute;
+      left: 620px;
+      top: -40px;
+      width: 295px;
+      height: 337px;
+      background-image: url(/img/independenceImage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .IndependenceContext1 {
+      display: none;
+      position: absolute;
+      width: 400px;
+      top: 400px;
+      right: -550px;
+      .IndependenceTitle {
+        font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        margin-bottom: 20px;
+      }
+      .IndependenceSubTitle {
+        width: 420px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #002d6a;
+      }
+    }
+    .IndependenceChart {
+      display: none;
+      left: -530px;
+      width: 350px;
+      height: 380px;
+      position: absolute;
+      top: 220px;
+    }
+    .IndependenceResult {
+      width: 134px;
+      height: 153px;
+      position: absolute;
+      top: 82px;
+      left: 172px;
+      fill-opacity: 0;
+      fill: rgba(120, 89, 153, 0.7) !important;
+    }
+    .IndependenceResultFinsh {
+      fill-opacity: 1 !important;
+      transition: 1s;
+    }
+    .IndependenceContext2 {
+      display: none;
+      width: 400px;
+      position: absolute;
+      left: -550px;
+      top: -150px;
+    }
+    .IndependenceTitle1 {
+      font-size: 26px;
+      color: #002d6a;
+      letter-spacing: 2.6px;
+      margin-bottom: 20px;
+    }
+    .IndependenceSubtitle1 {
+      font-size: 20px;
+      color: #002d6a;
+      margin-bottom: 40px;
+    }
+    .IndependenceTitle2 {
+      font-size: 22px;
+      color: #002d6a;
+      margin-bottom: 20px;
+    }
+    .IndependenceSubtitle2 {
+      font-size: 20px;
+      color: #002d6a;
+    }
+
+    #Relationshipsline {
+      display: none;
+      position: absolute;
+      right: -180px;
+      top: 200px;
+      width: 183px;
+      height: 20px;
+    }
+    .RelationshipsImg {
+      display: none;
+      position: absolute;
+      left: 620px;
+      top: 0px;
+      width: 295px;
+      height: 337px;
+      background-image: url(/img/relationshipImage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .RelationshipsContext1 {
+      display: none;
+      position: absolute;
+      width: 400px;
+      top: 380px;
+      right: -550px;
+      .RelationshipsTitle {
+        font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        margin-bottom: 20px;
+      }
+      .RelationshipsSubTitle {
+        width: 420px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #002d6a;
+      }
+    }
+    .RelationshipsChart {
+      display: none;
+      left: -530px;
+      width: 350px;
+      height: 380px;
+      position: absolute;
+      top: 245px;
+    }
+    .RelationshipsResult {
+      width: 137px;
+      height: 165px;
+      position: absolute;
+      top: 139px;
+      left: 175px;
+      fill-opacity: 0;
+      fill: rgba(139, 176, 50, 0.7) !important;
+      transition: 1s;
+    }
+    .RelationshipsFinsh {
+      fill-opacity: 1 !important;
+    }
+    .RelationshipsContext2 {
+      display: none;
+      width: 400px;
+      position: absolute;
+      left: -540px;
+      top: -115px;
+    }
+    .RelationshipsTitle1 {
+      font-size: 26px;
+      color: #002d6a;
+      letter-spacing: 2.6px;
+      margin-bottom: 20px;
+    }
+    .RelationshipsSubtitle1 {
+      font-size: 20px;
+      color: #002d6a;
+      margin-bottom: 40px;
+    }
+    .RelationshipsTitle2 {
+      font-size: 22px;
+      color: #002d6a;
+      margin-bottom: 20px;
+    }
+    .RelationshipsSubtitle2 {
+      font-size: 20px;
+      color: #002d6a;
+    }
+
+    #Recognitionline {
+      display: none;
+      position: absolute;
+      right: -100px;
+      top: 400px;
+      width: 183px;
+      height: 20px;
+    }
+    .RecognitionImg {
+      display: none;
+      position: absolute;
+      left: 560px;
+      top: 172px;
+      width: 341.65px;
+      height: 312.2px;
+      background-image: url(/img/recognitionImage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .RecognitionContext1 {
+      display: none;
+      position: absolute;
+      width: 400px;
+      top: -50px;
+      right: -520px;
+      .RecognitionTitle {
+        font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        margin-bottom: 20px;
+      }
+      .RecognitionSubTitle {
+        width: 420px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #002d6a;
+      }
+    }
+    .RecognitionChart {
+      display: none;
+      left: -530px;
+      width: 350px;
+      height: 380px;
+      position: absolute;
+      top: 245px;
+    }
+    .RecognitionResult {
+      width: 195px;
+      height: 154px;
+      position: absolute;
+      top: 192px;
+      left: 78px;
+      fill-opacity: 0;
+      fill: rgba(244, 111, 24, 0.7) !important;
+      transition: 1s;
+    }
+    .RecognitionFinsh {
+      fill-opacity: 1 !important;
+    }
+    .RecognitionContext2 {
+      display: none;
+      width: 400px;
+      position: absolute;
+      left: -540px;
+      top: -115px;
+    }
+    .RecognitionTitle1 {
+      font-size: 26px;
+      color: #002d6a;
+      letter-spacing: 2.6px;
+      margin-bottom: 20px;
+    }
+    .RecognitionSubtitle1 {
+      font-size: 20px;
+      color: #002d6a;
+      margin-bottom: 40px;
+    }
+    .RecognitionTitle2 {
+      font-size: 22px;
+      color: #002d6a;
+      margin-bottom: 20px;
+    }
+    .RecognitionSubtitle2 {
+      font-size: 20px;
+      color: #002d6a;
+    }
+
+    #Supportline {
+      display: none;
+      position: absolute;
+      right: 370px;
+      top: 400px;
+      width: 183px;
+      height: 20px;
+    }
+    .SupportImg {
+      display: none;
+      position: absolute;
+      left: -540px;
+      top: 180px;
+      width: 380px;
+      height: 290px;
+      background-image: url(/img/supportImage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .SupportContext1 {
+      display: none;
+      position: absolute;
+      width: 400px;
+      top: -30px;
+      right: 575px;
+      .SupportTitle {
+        font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        margin-bottom: 20px;
+      }
+      .SupportSubTitle {
+        width: 420px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #002d6a;
+      }
+    }
+    .SupportChart {
+      display: none;
+      left: 600px;
+      width: 350px;
+      height: 380px;
+      position: absolute;
+      top: 245px;
+    }
+    .SupportResult {
+      width: 138.5px;
+      height: 156.5px;
+      position: absolute;
+      top: 146px;
+      left: 39px;
+      fill-opacity: 0;
+      fill: rgba(235, 86, 81, 0.7) !important;
+      transition: 1s;
+    }
+    .SupportFinsh {
+      fill-opacity: 1 !important;
+    }
+    .SupportContext2 {
+      display: none;
+      width: 400px;
+      position: absolute;
+      left: 600px;
+      top: -160px;
+    }
+    .SupportTitle1 {
+      font-size: 26px;
+      color: #002d6a;
+      letter-spacing: 2.6px;
+      margin-bottom: 20px;
+    }
+    .SupportTitle2 {
+      font-size: 20px;
+      color: #002d6a;
+      margin-bottom: 40px;
+    }
+    .SupportSubtitle1 {
+      font-size: 22px;
+      color: #002d6a;
+      margin-bottom: 20px;
+    }
+    .SupportSubtitle2 {
+      font-size: 20px;
+      color: #002d6a;
+    }
+
+    #Achievementline {
+      display: none;
+      position: absolute;
+      right: 430px;
+      top: 200px;
+      width: 183px;
+      height: 20px;
+    }
+    .AchievementImg {
+      display: none;
+      position: absolute;
+      left: -540px;
+      top: 180px;
+      width: 366px;
+      height: 347px;
+      background-image: url(/img/achievementImage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .AchievementContext1 {
+      display: none;
+      position: absolute;
+      width: 400px;
+      top: -30px;
+      right: 575px;
+      .AchievementTitle {
+        font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        margin-bottom: 20px;
+      }
+      .AchievementSubTitle {
+        width: 420px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #002d6a;
+      }
+    }
+    .AchievementChart {
+      display: none;
+      left: 600px;
+      width: 350px;
+      height: 380px;
+      position: absolute;
+      top: 245px;
+    }
+    .AchievementResult {
+      width: 175px;
+      height: 155px;
+      position: absolute;
+      top: 40px;
+      left: 97px;
+      fill-opacity: 0;
+      fill: rgba(71, 90, 102, 0.7) !important;
+      transition: 1s;
+    }
+    .AchievementFinsh {
+      fill-opacity: 1 !important;
+    }
+    .AchievementContext2 {
+      display: none;
+      width: 400px;
+      position: absolute;
+      left: 600px;
+      top: -160px;
+    }
+    .AchievementTitle1 {
+      font-size: 26px;
+      color: #002d6a;
+      letter-spacing: 2.6px;
+      margin-bottom: 20px;
+    }
+    .AchievementTitle2 {
+      font-size: 20px;
+      color: #002d6a;
+      margin-bottom: 40px;
+    }
+    .AchievementSubtitle1 {
+      font-size: 22px;
+      color: #002d6a;
+      margin-bottom: 20px;
+    }
+    .AchievementSubtitle2 {
+      font-size: 20px;
+      color: #002d6a;
+    }
+
+    #WorkingConditionsline {
+      display: none;
+      position: absolute;
+      right: 350px;
+      top: 20px;
+      width: 183px;
+      height: 20px;
+    }
+    .WorkingConditionsImg {
+      display: none;
+      position: absolute;
+      left: -540px;
+      top: -100px;
+      width: 366px;
+      height: 347px;
+      background-image: url(/img/workingconditionImage.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .WorkingConditionsContext1 {
+      display: none;
+      position: absolute;
+      width: 430px;
+      top: 350px;
+      right: 575px;
+      .WorkingConditionsTitle {
+        font-size: 26px;
+        letter-spacing: 2.6px;
+        color: #002d6a;
+        margin-bottom: 20px;
+      }
+      .WorkingConditionsSubTitle {
+        width: 420px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #002d6a;
+      }
+    }
+    .WorkingConditionsChart {
+      display: none;
+      left: 600px;
+      width: 350px;
+      height: 380px;
+      position: absolute;
+      top: 245px;
+    }
+    .WorkingConditionsResult {
+      width: 175px;
+      height: 155px;
+      position: absolute;
+      top: 104px;
+      left: 21px;
+      fill-opacity: 0;
+      fill: rgba(104, 183, 197, 0.7) !important;
+      transition: 1s;
+    }
+    .WorkingConditionsFinsh {
+      fill-opacity: 1 !important;
+    }
+    .WorkingConditionsContext2 {
+      display: none;
+      width: 430px;
+      position: absolute;
+      left: 600px;
+      top: -160px;
+    }
+    .WorkingConditionsTitle1 {
+      font-size: 26px;
+      color: #002d6a;
+      letter-spacing: 2.6px;
+      margin-bottom: 20px;
+    }
+    .WorkingConditionsTitle2 {
+      font-size: 20px;
+      color: #002d6a;
+      margin-bottom: 40px;
+    }
+    .WorkingConditionsSubtitle1 {
+      font-size: 22px;
+      color: #002d6a;
+      margin-bottom: 20px;
+    }
+    .WorkingConditionsSubtitle2 {
+      font-size: 20px;
+      color: #002d6a;
+    }
+  }
+  .Container5 {
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 180px;
+    background: #dbebdb;
+    // svg:not(:root) {
+    //   overflow: visible;
+    // }
+
+    #tt {
+      padding-top: 350px;
+      width: 310px;
+      height: 310px;
+      stroke-opacity: 1;
+      position: relative;
+    }
+    .ttf {
+      transition: 0.2s;
+      transition-timing-function: ease-in;
+      stroke-opacity: 0 !important;
+    }
+
+    .c5A {
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      background-image: url("/img/放大鏡.svg");
+      background-repeat: no-repeat;
+      opacity: 0;
+    }
+    .c5AF {
+      animation-name: c5Af;
+      animation-duration: 1.5s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+    @keyframes c5Af {
+      //動畫要考慮頭尾 頭尾並不會應為過度的效果而最後固定
+      0% {
+        opacity: 0.2;
+      }
+      80% {
+        transform: scale(0.3);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+    }
+
+    .pt1 {
+      display: none;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      margin-left: -12px;
+      width: 25px;
+      height: 25px;
+      background-image: url("/img/point.svg");
+      background-position: center center;
+      background-size: cover;
+      z-index: 10;
+    }
+    .pt1Item {
+      display: none;
+      position: absolute;
+      top: -150px;
+      left: 70%;
+      width: 170px;
+      height: 170px;
+      background-image: url("/img/pt1Item.svg");
+      background-position: center center;
+      background-size: cover;
+    }
+    .pt1Item:hover {
+      background-image: url("/img/pt1ItemDetail.svg");
+      background-position: center center;
+      background-size: cover;
+      width: 261px;
+      height: 261px;
+      transition: 0.1s;
+      cursor: pointer;
+    }
+
+    .pt1Pop {
+      display: none;
+      background-image: url("/img/pt1Pop.svg");
+      background-position: center center;
+      background-size: cover;
+
+      width: 530px;
+      height: 227px;
+      position: absolute;
+      right: 275px;
+      top: -140px;
+    }
+    .pt1Item:hover + .pt1Pop {
+      display: block !important;
+    }
+    #pt1Line {
+      position: absolute;
+      stroke-opacity: 1 !important;
+      top: -35px;
+      left: 144px;
+      width: 20px;
+      height: 250px;
+    }
+    .pt2 {
+      display: none;
+      position: absolute;
+      top: 185px;
+      left: 50%;
+      margin-left: -12px;
+      width: 25px;
+      height: 25px;
+      background-image: url("/img/point.svg");
+      background-position: center center;
+      background-size: cover;
+      z-index: 10;
+    }
+    .pt2Item {
+      animation-duration: 1s;
+      display: none;
+      position: absolute;
+      top: 120px;
+      left: -28%;
+
+      width: 170px;
+      height: 170px;
+      background-image: url("/img/pt2Item.svg");
+      background-position: center center;
+      background-size: cover;
+    }
+    .pt2Item:hover {
+      background-image: url("/img/pt2ItemDetail.svg");
+      background-position: center center;
+      background-size: cover;
+      width: 261px;
+      height: 261px;
+      left: -56%;
+      transition: 0.1s;
+      cursor: pointer;
+    }
+    .pt2Pop {
+      display: none;
+      background-image: url("/img/pt2Pop.svg");
+      background-position: center center;
+      background-size: cover;
+
+      width: 530px;
+      height: 227px;
+      position: absolute;
+      left: 290px;
+      top: 60px;
+    }
+    .pt2Item:hover + .pt2Pop {
+      display: block !important;
+    }
+    #pt2Line {
+      position: absolute;
+      stroke-opacity: 1 !important;
+      top: 176px;
+      left: 151px;
+      width: 20px;
+      height: 250px;
+    }
+    .pt3 {
+      display: none;
+      position: absolute;
+      top: 392px;
+      left: 50%;
+      margin-left: -12px;
+      width: 25px;
+      height: 25px;
+      background-image: url("/img/point.svg");
+      background-position: center center;
+      background-size: cover;
+      z-index: 10;
+    }
+    .pt3Item {
+      animation-duration: 1s;
+      display: none;
+      position: absolute;
+      top: 325px;
+      left: 70%;
+      width: 170px;
+      height: 170px;
+      background-image: url("/img/pt3Item.svg");
+      background-position: center center;
+      background-size: cover;
+    }
+    .pt3Item:hover {
+      background-image: url("/img/pt3ItemDetail.svg");
+      background-position: center center;
+      background-size: cover;
+      width: 261px;
+      height: 261px;
+
+      cursor: pointer;
+    }
+    .pt3Pop {
+      display: none;
+      background-image: url("/img/pt3Pop.svg");
+      background-position: center center;
+      background-size: cover;
+
+      width: 530px;
+      height: 227px;
+      position: absolute;
+      right: 275px;
+      top: 315px;
+    }
+    .pt3Item:hover + .pt3Pop {
+      display: block !important;
+    }
+    #pt3Line {
+      position: absolute;
+      stroke-opacity: 1 !important;
+      top: 385px;
+      left: 145px;
+      width: 20px;
+      height: 250px;
+    }
+    .pt4 {
+      display: none;
+      position: absolute;
+      top: 605px;
+      left: 50%;
+      margin-left: -12px;
+      width: 25px;
+      height: 25px;
+      background-image: url("/img/point.svg");
+      background-position: center center;
+      background-size: cover;
+      z-index: 10;
+    }
+    .pt4Item {
+      animation-duration: 1s;
+      display: none;
+      position: absolute;
+      top: 557px;
+      left: -28%;
+
+      width: 170px;
+      height: 170px;
+      background-image: url("/img/pt4Item.svg");
+      background-position: center center;
+      background-size: cover;
+    }
+    .pt4Item:hover {
+      background-image: url("/img/pt4ItemDetail.svg");
+      background-position: center center;
+      background-size: cover;
+      width: 261px;
+      height: 261px;
+      left: -56%;
+
+      cursor: pointer;
+    }
+    .pt4Pop {
+      display: none;
+      background-image: url("/img/pt4Pop.svg");
+      background-position: center center;
+      background-size: cover;
+
+      width: 530px;
+      height: 227px;
+      position: absolute;
+      left: 290px;
+      top: 510px;
+    }
+    .pt4Item:hover + .pt4Pop {
+      display: block !important;
+    }
+    #pt4Line {
+      position: absolute;
+      stroke-opacity: 1 !important;
+      top: 598px;
+      left: 151px;
+      width: 20px;
+      height: 250px;
+    }
+    .pt5 {
+      display: none;
+      position: absolute;
+      top: 815px;
+      left: 50%;
+      margin-left: -12px;
+      width: 25px;
+      height: 25px;
+      background-image: url("/img/point.svg");
+      background-position: center center;
+      background-size: cover;
+      z-index: 10;
+    }
+    .pt5Item {
+      animation-duration: 1s;
+      display: none;
+      position: absolute;
+      top: 750px;
+      left: 70%;
+
+      width: 170px;
+      height: 170px;
+      background-image: url("/img/pt5Item.svg");
+      background-position: center center;
+      background-size: cover;
+    }
+    .pt5Item:hover {
+      background-image: url("/img/pt5ItemDetail.svg");
+      background-position: center center;
+      background-size: cover;
+      width: 261px;
+      height: 261px;
+      transition: 0.1s;
+      cursor: pointer;
+    }
+    .pt5Pop {
+      display: none;
+      background-image: url("/img/pt5Pop.svg");
+      background-position: center center;
+      background-size: cover;
+
+      width: 530px;
+      height: 227px;
+      position: absolute;
+      right: 275px;
+      top: 750px;
+    }
+    .pt5Item:hover + .pt5Pop {
+      display: block !important;
+    }
+    #pt5Line {
+      position: absolute;
+      stroke-opacity: 1 !important;
+      top: 808px;
+      left: 147px;
+      width: 20px;
+      height: 250px;
+    }
+    .pt6 {
+      display: none;
+      position: absolute;
+      top: 1025px;
+      left: 45%;
+      margin-left: -12px;
+      width: 60px;
+      height: 60px;
+      background-image: url("/img/pt6.svg");
+      background-position: center center;
+      background-size: cover;
+      z-index: 10;
+      cursor: pointer;
+    }
+    .pt6Iteration {
+      animation-iteration-count: infinite;
+    }
+
+    .pt6text {
+      display: none;
+
+      font-size: 28px;
+      width: 524px;
+      letter-spacing: 2.8px;
+      color: #d44040;
+      text-align: center;
+      position: absolute;
+      bottom: -550px;
+      left: -30%;
+    }
+    .pt6:hover + .pt6text {
+      display: block;
+    }
+  }
+}
+@media (max-width: 1899px) {
+  body{
+    background: #ededed !important;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .foisPhone {
+  
+    display: block;
+    background: #ededed;
+   
+  }
+
+  .headerContainer {
+    position: fixed;
+    top: 0px;
+    padding: 10px;
+    height: 48px;
+    width: 100%;
+    background: #138675;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 99;
+    .Logo {
+      height: 24px;
+      width: 150px;
+      background-image: url(/img/phoneLogo.svg);
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  .selectMenu {
+    position: fixed;
+    top: 48px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    z-index: 100;
+    //未選擇
+    .m1,
+    .m2,
+    .m3,
+    .m4 {
+      width: 100%;
+      height: 100%;
+      color: #dadada;
+      text-align: center;
+      line-height: 40px;
+      background: white;
+      cursor: pointer;
+    }
+    .m1:focus + .m2 {
+      border-bottom: 3px solid rgba(239, 83, 80, 0.3);
+    }
+    //選擇到
+    .ms {
+      border-bottom: 3px solid #138675;
+      color: #a7aebc;
+    }
+  }
+
+  .content {
+    margin: 20px auto 20px auto;
+    width: 95vw;
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
+  }
+  .interest {
+    .girdRContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneRchart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #138675;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(19, 134, 117, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 82px;
+        background-image: url(/img/phoneRimage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdIContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneIchart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #8e24aa;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(142, 36, 170, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 120px;
+        height: 120px;
+        background-image: url(/img/phoneIimage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdAContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneAchart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #094d72;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(9, 77, 114, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 130px;
+        background-image: url(/img/phoneAimage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdSContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneSchart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #ef5350;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(239, 83, 80, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 100px;
+        background-image: url(/img/phoneSimage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdEContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneEchart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #ffa000;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(255, 160, 0, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 115px;
+        background-image: url(/img/phoneEimage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdCContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneCchart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #64cacf;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(100, 202, 207, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 150px;
+        height: 120px;
+        background-image: url(/img/phoneCimage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+  }
+  .workStyle {
+    .girdProblemContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneProblemChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #668922;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(102, 137, 34, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 147px;
+        background-image: url(/img/phoneProblemImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdDriveContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneDriveChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #B0468F;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(176, 70, 143, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 120px;
+        height: 120px;
+        background-image: url(/img/phoneDriveImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdInterpersonalContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneInterpersonalChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #B0468F;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(191, 81, 9, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 130px;
+        background-image: url(/img/phoneInterpersonalImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdAdjustmentContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneAdjustmentChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #BF5109;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(191, 81, 9, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 100px;
+        background-image: url(/img/phoneAdjustmentImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdResponsibilityContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneResponsibilityChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #E21900;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(226, 25, 0, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .f {
+        grid-area: f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .g {
+        grid-area: g;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 130px;
+        background-image: url(/img/phoneResponsibilityImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+  }
+  .workValue {
+    .girdIndependenceContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phopneIndependenceChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #8C6FAA;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(140, 111, 170, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+    
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 147px;
+        background-image: url(/img/phoneIndependenceImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdRelationshipsContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneRelationshipChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #A0B854;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(160, 184, 84, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+     
+      .gImage {
+        grid-area: image;
+        width: 120px;
+        height: 120px;
+        background-image: url(/img/phoneRelationshipImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdRecognitionContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneRecognitionChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #E8893A;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(232, 137, 58, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+     
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 130px;
+        background-image: url(/img/phoneRecognitionImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdSupportContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneSupportChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #E17569;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(225, 117, 105, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 100px;
+        background-image: url(/img/phoneSupportImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdAchievementContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneAchievementChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #596D79;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(89, 109, 121, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+     
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 130px;
+        background-image: url(/img/phoneAchievementImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+    .girdWorkingconditionsContainer {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      grid-template-areas:
+        "title title title title title . chart chart chart chart "
+        "a a b b b b b b b b "
+        "line line line line line line line line line line"
+        "d d e e e e e e e e"
+        "f f g g g g g g g g"
+        "image image image image image image image image image image";
+
+      .gChart {
+        justify-self: end;
+        grid-area: chart;
+        width: 130px;
+        height: 130px;
+        background-image: url(/img/phoneWorkingconditionChart.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .gTitle {
+        grid-area: title;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 17px;
+        color: #79C3D0;
+      }
+
+      .a {
+        grid-area: a;
+        font-weight: bold;
+      }
+      .b {
+        grid-area: b;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+      .line {
+        grid-area: line;
+        border: 2px solid rgba(121, 195, 208, 0.3);
+        border-radius: 5px;
+      }
+      .d {
+        grid-area: d;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      .e {
+        grid-area: e;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #878787;
+      }
+     
+      .gImage {
+        grid-area: image;
+        width: 100px;
+        height: 130px;
+        background-image: url(/img/phoneWorkingconditionImage.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-self: center;
+      }
+    }
+  }
+
+  // .footer {
+  //   margin-top: 20px;
+  //   width: 100%;
+  //   height: 100px;
+  //   background: ededed;
+  // }
 }
